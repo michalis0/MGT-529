@@ -3,5 +3,5 @@
 Use this repository to view the code and assignments for the course.
 
 - Week 1: [Recap of Wolfram Language 1](https://github.com/michalis0/MGT-529/tree/main/01.Review)
-
+- Week 2: [APIs and Cloud Deployment](https://github.com/michalis0/MGT-529/tree/main/02.APIs_Cloud)
 
