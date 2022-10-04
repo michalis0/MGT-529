@@ -1,0 +1,1103 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Data"," ","Science"," ","and"," ","Machine"," ","Learning"," ","II"}],
+"Title",ExpressionUUID -> "5c98f17f-6dc3-4aac-b5e8-1a8678857b0a"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Lab"," ","session"," ","02",StyleBox[RowBox[{":"," "}]],"APIs",StyleBox[
+RowBox[{","," "}]],"Big"," ","Data",StyleBox[RowBox[{","," "}]],"Cloud"}],"Subtitle",
+ExpressionUUID -> "d35e0e0c-684c-434f-9888-cd57ecb4bacc"],Cell[
+CellGroupData[{Cell[
+TextData[
+{"Cloud"," ","Deployment"}],"Section",ExpressionUUID -> "504e04ce-61b3-4e19-88cf-084a1333e1b0"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Wolfram"," ","Cloud"}],"Subsection",ExpressionUUID -> "8dce2797-0d3e-47c5-a105-fb246ef1ff55"],Cell[
+TextData[
+{"As"," ","you"," ","know",StyleBox[RowBox[{","," "}]],ButtonBox[RowBox[{"Wolfram"," ","Cloud"}],
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://www.wolframcloud.com/"],None},
+ButtonNote -> "https://www.wolframcloud.com/"]," ","is"," ","the"," ","online"," ","version"," ","of"," ","Mathematica",StyleBox[
+RowBox[{"."," "}]],"\n","\n","If"," ","you"," ","are"," ","using"," ","Wolfram"," ","Cloud"," ","to"," ","design"," ","notebooks",StyleBox[
+RowBox[{","," "}]],"then"," ","it"," ","is"," ","very"," ","easy"," ","to"," ","deploy"," ","your"," ","notebook","!","\n","You"," ","just"," ","have"," ","to"," ","click"," ","on"," ","Publish",StyleBox[
+RowBox[{" ","("}]],"top","-","right",StyleBox[RowBox[{"),"," "}]],"select"," ","the"," ","options"," ","you"," ","wish",StyleBox[
+RowBox[{" ","("}]],"e",".","g",StyleBox[RowBox[{".,"," "}]],"folder",StyleBox[RowBox[
+{","," "}]],"public"," ","vs"," ","password"," ","protected",StyleBox[RowBox[{"),"," "}]],"and"," ","here"," ","you"," ","go",StyleBox[
+RowBox[{","," "}]],"your"," ","notebook"," ","is"," ","deployed","!","\n","You"," ","can"," ","also"," ","Share"," ","your"," ","notebook"," ","to"," ","collaborate"," ","with"," ","someone",".","\n","\n","You"," ","can"," ","also"," ","deploy"," ","your"," ","notebooks"," ","from"," ","the"," ","desktop"," ","version"," ","of"," ","Mathematica",StyleBox[
+RowBox[{"."," "}]],"We"," ","will"," ","see"," ","how"," ","below","."}],"Text",ExpressionUUID -> "7bee9a78-2cfd-472f-ad4f-ec48fbbc6db6"]},
+{1}],ExpressionUUID -> "25efc8ad-e253-4fb4-af67-373620d394f7"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Connecting"," ","to"," ","the"," ","Cloud"}],"Subsection",ExpressionUUID -> "dc1ffe15-f18f-4d0f-9953-189b035dee15"],Cell[
+TextData[
+{"Connect"," ","to"," ","the"," ","cloud"," ","with"," ",ButtonBox["CloudConnect",
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudConnect.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudConnect.html"],":"}],
+"Text",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "7eb5f5fd-09a9-42eb-aff8-037033f2e8ee"],Cell[
+BoxData[RowBox[{"CloudConnect","[","]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "d6717f4a-334a-436a-aa1a-d079d5028272"],Cell[
+TextData[
+{"Check"," ","your"," ","connection"," ","with"," ",ButtonBox[RowBox[{"$","CloudConnected"}],
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/$CloudConnected.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/$CloudConnected.html"],StyleBox[
+RowBox[{"."," "}]],"It"," ","will"," ","returns"," ",StyleBox[StyleBox["True",FontSize -> 13],
+FontFamily -> "Bitstream Vera Sans Mono"]," ","if"," ","you"," ","are"," ","connected",StyleBox[
+RowBox[{","," "}]],"and"," ",StyleBox[StyleBox["False",FontSize -> 13],FontFamily -> "Bitstream Vera Sans Mono"]," ","otherwise",":"}],
+"Text",ExpressionUUID -> "8d8cfb32-74bb-4c7d-9efb-98558f6392e5"],Cell[
+CellGroupData[
+{Cell[
+BoxData["$CloudConnected"],"Input",CellLabel -> "In[4]:= ",ExpressionUUID -> "3d63f2e7-0c25-47d1-82ce-ca363c07f80a"],Cell[
+BoxData[
+"True",StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "f65a1e3c-14a1-4d2f-bf3b-54abd3bab729"]},
+Open],ExpressionUUID -> "30c79dd8-d1e8-43a5-bbf6-8d9984830a80"],Cell[
+TextData[{"Disconnect"," ","from"," ","the"," ","cloud"," ","with"," ",ButtonBox[
+"CloudDisconnect",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudDisconnect.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudDisconnect.html"],":"}],
+"Text",ExpressionUUID -> "afd936b0-9e4f-4fd7-b946-66d4c6830f2c"],Cell[
+BoxData[RowBox[
+{"CloudDisconnect","[","]"}]],"Input",ExpressionUUID -> "3af0f035-02b8-43ee-a86b-8a2c7cd9a95a"],Cell[
+TextData[
+{"Choose"," ","a"," ","cloud"," ","server"," ","with"," ",ButtonBox[RowBox[{"$","CloudBase"}],
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/$CloudBase.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/$CloudBase.html"]," ","and"," ","reconnect",":"}],
+"Text",ExpressionUUID -> "a5c42e7d-f2a6-4b7f-bf1d-dea44d2c23a7"],Cell[
+BoxData[{RowBox[
+{RowBox[{RowBox[{"$CloudBase"," ","="," ","\"https://www.wolframcloud.com\""}],";"}]," "}],"\n",RowBox[
+{"CloudConnect","[","]"}]}],"Input",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "4505991f-b622-4151-bddb-39e9953a6a74"]},{1}],ExpressionUUID -> "64984ca7-0796-4992-a9ad-d9052015b783"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Deploying"," ","content"}],"Subsection",ExpressionUUID -> "cabac573-c436-4ffb-bedb-84037ef39d6c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"CloudDeploy"," ","and"," ","CloudPublish"}],"Subsubsection",ExpressionUUID -> "e2be933e-1725-4ead-8519-140393c1ddc2"],Cell[
+TextData[
+{"You"," ","can"," ","deploy"," ","an"," ","expression"," ","to"," ","the"," ","cloud"," ","with"," ",ButtonBox[
+"CloudDeploy",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudDeploy.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudDeploy.html"],StyleBox[
+RowBox[{"."," "}]],"For"," ","instance",StyleBox[RowBox[{","," "}]],"let's"," ","deploy"," ","a"," ",ButtonBox[
+"RandomImage",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/RandomImage.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/RandomImage.html"],StyleBox[
+RowBox[{"."," "}]],"The"," ","second"," ","argument"," ","of"," ","CloudDeploy"," ","specifies"," ","the"," ","location"," ","of"," ","your"," ","file"," ","relative"," ","to"," ","the"," ","current"," ","cloud"," ","directory",StyleBox[
+RowBox[{"."," "}]],"Here"," ","we"," ","deploy"," ","our"," ","randomly","-","generated"," ","image"," ","to"," ","the"," ","folder",StyleBox[
+RowBox[{" ","\""}]],"WebServices",StyleBox[RowBox[{"\","," "}]],"and"," ","we"," ","call"," ","our"," ","file",StyleBox[
+RowBox[{" ","\""}]],"RandomImage","\":"}],"Text",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "ff881a0a-a127-4384-b92b-208eaf167a7e"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{RowBox[{"RandomImage","[","]"}],","," ","\"WebServices/RandomImage\""}],"]"}]],"Input",
+ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "180fabd4-04a6-4155-8935-f0a27d4bdff3"],Cell[
+TextData[{"You"," ","can"," ","choose"," ","who"," ","has"," ","access"," ","with"," ","the"," ",ButtonBox[
+"Permissions",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/Permissions.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/Permissions.html"]," ","option",StyleBox[
+RowBox[{"."," "}]],"The"," ","default"," ","is"," ","private",StyleBox[RowBox[{","," "}]],"i",".","e",StyleBox[
+RowBox[{".,"," "}]],"only"," ","accessible"," ","to"," ","you","."}],"Text",ShowGroupOpener -> "Inline",
+CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "88a52569-9f76-4ce6-941c-baa4abbb9b3f"],Cell[
+BoxData[
+RowBox[{"CloudDeploy","[","\[IndentingNewLine]",RowBox[{RowBox[{"RandomImage","[","]"}],",","\[IndentingNewLine]","\"WebServices/RandomImagePrivate\"",",","\[IndentingNewLine]",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Private\""}]}],"\[IndentingNewLine]","]"}]],"Input",
+ShowGroupOpener -> "Inline",ExpressionUUID -> "bf48e2bd-b7ac-4f37-b014-1e3f790564c3"],Cell[
+TextData[
+{"Another"," ","option"," ","to"," ","deploy"," ","expressions","/","notebooks"," ","is"," ","to"," ","use"," ",ButtonBox[
+"CloudPublish",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudPublish.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudPublish.html"],StyleBox[
+RowBox[{"."," "}]],"This"," ","function"," ","is"," ","essentially"," ","CloudDeploy"," ","with"," ","public"," ","permissions"," ","set"," ","by"," ","default",":"}],
+"Text",ExpressionUUID -> "2bc910eb-02b8-4fbb-b1ec-9e181d08dfd9"],Cell[
+BoxData[RowBox[
+{"CloudPublish","[","\[IndentingNewLine]",RowBox[{RowBox[{"RandomImage","[","]"}],",","\[IndentingNewLine]","\"WebServices/RandomImagePublic\""}],"\[IndentingNewLine]","]"}]],
+"Input",ExpressionUUID -> "01fe1daf-cad8-4607-86b2-45588985e8df"],Cell[
+TextData[
+{"We'll"," ","later"," ","explore"," ","more"," ","advanced"," ","permissions"," ","options","."}],
+"Text",ExpressionUUID -> "6fd7345e-cf77-48d8-a256-093dcefe82b2"]},{1}],ExpressionUUID -> "327bf282-f74a-408a-b210-4b58bced3eeb"],Cell[
+CellGroupData[
+{Cell[
+"\<Performance\>","Subsubsection",ExpressionUUID -> "b0e7bd76-07b5-4d88-b18b-7c676ef92795"],Cell[
+TextData[
+{"A"," ","cloud","-","deployed"," ","version"," ","of"," ","code"," ","will"," ","generally"," ","behave"," ","the"," ","same"," ","as"," ","on"," ","desktop",StyleBox[
+RowBox[{","," "}]],"albeit"," ","slower",StyleBox[RowBox[{"."," "}]],"You"," ","can"," ","test"," ","it"," ","by"," ","running"," ","this"," ","code"," ","locally"," ","and"," ","then"," ","online",StyleBox[
+RowBox[{"."," "}]],"It"," ","plots"," ","the"," ","sinus"," ","function"," ","from"," ","0"," ","to"," ","xMax",StyleBox[
+RowBox[{","," "}]],"where"," ","the"," ","user"," ","can"," ","select"," ","the"," ","value"," ","of"," ","xMax",StyleBox[
+RowBox[{"."," "}]]}],"Text",ExpressionUUID -> "f70c2b78-430c-4502-8a72-165839fe2c11"],Cell[
+BoxData[
+RowBox[{"sinManipulate"," ","="," ",RowBox[{"Manipulate","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"Plot","[",RowBox[{RowBox[{"Sin","[","x","]"}],",",RowBox[{"{",RowBox[{"x",",","0",",","xMax"}],"}"}],","," ",RowBox[
+{"PlotRange","\[Rule]",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"0",",",RowBox[{"2","*","Pi"}]}],"}"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"-","1.5"}],",","1.5"}],"}"}]}],"}"}]}]}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{RowBox[{"{",RowBox[{"xMax",","," ","0.01",","," ","\"x\""}],"}"}],","," ","0.01",",",RowBox[
+{"2","*","Pi"}]}],"}"}],",","\[IndentingNewLine]",RowBox[{"ControlType"," ","\[Rule]"," ","LabeledSlider"}]}],"\[IndentingNewLine]","]"}]}]],
+"Input",CellLabel -> "In[9]:= ",ExpressionUUID -> "8cf9beb1-527a-42c7-aac3-acaf19250549"],Cell[
+BoxData[
+RowBox[{"CloudDeploy","[",RowBox[{"sinManipulate",","," ","\"WebServices/SinManipulate\""}],"]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "9a53cbef-0539-46fc-a33f-e78b38dc769e"]},
+{1}],ExpressionUUID -> "d9707154-854e-480d-b98d-771df9b3338a"],Cell[
+CellGroupData[
+{Cell[
+"\<Localisation\>","Subsubsection",ExpressionUUID -> "abb4b032-3c52-42a4-a572-ae205a40f28e"],Cell[
+TextData[
+{"It"," ","is"," ","recommended"," ","to"," ","localise"," ","variables"," ","before"," ","deployment",StyleBox[
+RowBox[{"."," "}]],"You"," ","can"," ","do"," ","so"," ","using",ButtonBox[RowBox[
+{" ","DynamicModule"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/DynamicModule.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/DynamicModule.html"],StyleBox[
+RowBox[{"."," "," "}]]}],"Text",ExpressionUUID -> "43387e9a-8362-410b-99a6-b51054be60ff"],Cell[
+BoxData[
+RowBox[{"CloudDeploy","[","\[IndentingNewLine]",RowBox[{RowBox[{"DynamicModule","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"var"," ","="," ","0"}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"Column","[",RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"Row","[",RowBox[
+{"Table","[",RowBox[{RowBox[{"Row","[",RowBox[{"{",RowBox[{RowBox[{"Slider","[",RowBox[
+{RowBox[{"Dynamic","[","var","]"}],","," ",RowBox[{"{",RowBox[{"0",",","10",",","1"}],"}"}]}],"]"}],",","\" \""}],"}"}],"]"}],",",RowBox[
+{"{",RowBox[{"x",",","1",",","4"}],"}"}]}],"]"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Grid","[",RowBox[{"ConstantArray","[",RowBox[{RowBox[{"Dynamic","[","var","]"}],",",RowBox[
+{"{",RowBox[{"3",",","10"}],"}"}]}],"]"}],"]"}]}],"\[IndentingNewLine]","}"}],"]"}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]","\"WebServices/Slider1\""}],"\[IndentingNewLine]","]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "199c2887-79e2-457a-a5a1-fff169f7b714"],Cell[
+TextData[
+{"Not"," ","doing"," ","so"," ","may"," ","lead"," ","to"," ","unexpected"," ","results",":"}],
+"Text",ExpressionUUID -> "de8558ba-aa83-4e29-a6f4-60efeebd7c4a"],Cell[
+BoxData[{RowBox[
+{RowBox[{"var"," ","="," ","10"}],";"}],"\n",RowBox[{RowBox[{RowBox[{"sliders"," ","="," ",RowBox[
+{"Column","[",RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"Row","[",RowBox[
+{"Table","[",RowBox[{RowBox[{"Row","[",RowBox[{"{",RowBox[{RowBox[{"Slider","[",RowBox[
+{RowBox[{"Dynamic","[","var","]"}],","," ",RowBox[{"{",RowBox[{"0",",","10",",","1"}],"}"}]}],"]"}],",","\" \""}],"}"}],"]"}],",",RowBox[
+{"{",RowBox[{"x",",","1",",","4"}],"}"}]}],"]"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Grid","[",RowBox[{"ConstantArray","[",RowBox[{RowBox[{"Dynamic","[","var","]"}],",",RowBox[
+{"{",RowBox[{"3",",","10"}],"}"}]}],"]"}],"]"}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}],"\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{"CloudDeploy","[",RowBox[{"sliders",","," ","\"WebServices/Slider2\""}],"]"}]}]}],
+"Input",ShowGroupOpener -> "Inline",CellLabel -> "In[10]:= ",ExpressionUUID -> "ed20eb1c-a721-4a6a-a3ae-1c2f032c1e87"],Cell[
+BoxData[
+RowBox[{"Column","[",RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"Row","[",RowBox[
+{"Table","[",RowBox[{RowBox[{"Row","[",RowBox[{"{",RowBox[{RowBox[{"Slider","[",RowBox[
+{RowBox[{"Dynamic","[","var","]"}],","," ",RowBox[{"{",RowBox[{"0",",","10",",","1"}],"}"}]}],"]"}],",","\" \""}],"}"}],"]"}],",",RowBox[
+{"{",RowBox[{"x",",","1",",","4"}],"}"}]}],"]"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Grid","[",RowBox[{"ConstantArray","[",RowBox[{RowBox[{"Dynamic","[","var","]"}],",",RowBox[
+{"{",RowBox[{"3",",","10"}],"}"}]}],"]"}],"]"}]}],"\[IndentingNewLine]","}"}],"]"}]],
+"Input",CellLabel -> "In[42]:= ",ExpressionUUID -> "a186b7e3-cf21-4e31-b467-c9ec9a454e52"]},
+{1}],ExpressionUUID -> "da559af4-608a-437e-809a-f612977c4943"],Cell[
+CellGroupData[
+{Cell[
+"\<Accessibility\>","Subsubsection",ExpressionUUID -> "5b5f4fbe-1306-4064-b9be-a8d1f0bf1c10"],Cell[
+TextData[
+{"By"," ","default",StyleBox[RowBox[{","," "}]],"a"," ","cloud"," ","notebook"," ","will"," ","display"," ","in",StyleBox[
+RowBox[{" ","\[OpenCurlyDoubleQuote]"}]],"object",StyleBox[RowBox[{"\[CloseCurlyDoubleQuote]"," "}]],"form",StyleBox[
+RowBox[{"."," "}]],"This"," ","form"," ","is"," ","suitable"," ","for"," ","displaying"," ","dynamic"," ","content",StyleBox[
+RowBox[{","," "}]],"but"," ","the"," ","notebook"," ","cannot"," ","be"," ","edited",":"}],
+"Text",ExpressionUUID -> "f4c3c6e8-0cfd-4c77-97ae-1a6f3ad1b375"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Manipulate","[",RowBox[{"x",","," ",RowBox[{"{",RowBox[
+{"x",","," ","1",","," ","10"}],"}"}]}],"]"}],","," ","\"WebServices/UneditableNotebook\""}],"]"}]],
+"Input",ExpressionUUID -> "b1379c93-e1a5-42fc-a222-12fc0df68657"],Cell[
+TextData[
+{"However",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","make"," ","the"," ","notebook"," ","editable"," ","using"," ",ButtonBox[
+"CloudObjectURLType",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudObjectURLType.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudObjectURLType.html"],":"}],
+"Text",ExpressionUUID -> "81fd2b0d-30be-44b3-a6bc-000c2d3e6566"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Manipulate","[",RowBox[{"x",","," ",RowBox[{"{",RowBox[
+{"x",","," ","1",","," ","10"}],"}"}]}],"]"}],","," ","\"WebServices/EditableNotebook\"",","," ",RowBox[
+{"CloudObjectURLType","\[Rule]","\"Environment\""}]}],"]"}]],"Input",ExpressionUUID -> "82d85deb-7acf-4a52-9e26-70e0177659e8"],Cell[
+TextData[
+{"You"," ","can"," ","also"," ","make"," ","a"," ","notebook"," ","auto","-","download",":"}],
+"Text",ExpressionUUID -> "afbed4cc-0975-49cb-a200-501ac5dfbdab"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Manipulate","[",RowBox[{"x",","," ",RowBox[{"{",RowBox[
+{"x",","," ","1",","," ","10"}],"}"}]}],"]"}],","," ","\"WebServices/AutoDownloadNotebook\"",","," ",RowBox[
+{"CloudObjectURLType","\[Rule]","\"Download\""}]}],"]"}]],"Input",CellLabel -> "",
+ExpressionUUID -> "22bcf1d1-64b7-48a0-8e96-ffa1fecde5b4"]},{1}],ExpressionUUID -> "e7a46651-df9f-4506-ae46-b0878273ab56"]},
+{1}],ExpressionUUID -> "89a90038-788b-4980-a9c2-fd3ed1a1c0a9"],Cell[
+CellGroupData[
+{Cell[
+"\<Permissions\>","Subsection",ExpressionUUID -> "49de3cba-8987-4617-b24e-af4b5bf96eca"],Cell[
+TextData[
+{"You"," ","can"," ","define"," ","who"," ","can"," ","access"," ","your"," ","deployed"," ","notebook"," ","and"," ","how"," ","they"," ","can"," ","interact"," ","with"," ","it"," ","using"," ","the"," ",ButtonBox[
+"Permissions",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/Permissions.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/Permissions.html"]," ","option",StyleBox[
+RowBox[{"."," "}]],"All"," ","the"," ","detailed"," ","cloud"," ","permissions"," ","options"," ","to"," ","control"," ","access"," ","are"," ","available"," ","in"," ","the"," ",ButtonBox[
+"documentation",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/guide/CloudPermissionsControl.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/guide/CloudPermissionsControl.html"],StyleBox[
+RowBox[{"."," "}]],"Let's"," ","try"," ","a"," ","few"," ","things"," ","to"," ","understand"," ","how"," ","it"," ","works","."}],
+"Text",ExpressionUUID -> "f9b438e4-a4a7-45c0-a745-42d9c1fa63a8"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Permission"," ","Types"}],"Subsubsection",ExpressionUUID -> "99038ccc-206f-4f0e-92a2-c74e15c490b1"],Cell[
+TextData[
+{"Allow"," ","only"," ","the"," ","author"," ","to"," ","access"," ","a"," ","cloud"," ","object",":"}],
+"Text",ExpressionUUID -> "be923fb7-7ecf-496e-912c-d2a7cf711ad0"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Plot","[",RowBox[{RowBox[{"Sin","[","x","]"}],",",RowBox[
+{"{",RowBox[{"x",",",RowBox[{"-","Pi"}],",","Pi"}],"}"}]}],"]"}],",","\"WebServices/SinPlot\"",","," ",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Private\""}]}],"]"}]],"Input",ShowGroupOpener -> "Inline",
+ExpressionUUID -> "952a16c9-63f4-4181-8a8a-febbf14c96a3"],Cell[
+TextData[{"Give"," ","access"," ","to"," ","anyone"," ","with"," ","a"," ","wolfram",".","com"," ","cloud"," ","user"," ","ID",":"}],
+"Text",ExpressionUUID -> "2b6f8f4f-02dc-4cf1-b1ff-4ab177759d56"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Plot","[",RowBox[{RowBox[{"Cos","[","x","]"}],",",RowBox[
+{"{",RowBox[{"x",",",RowBox[{"-","Pi"}],",","Pi"}],"}"}]}],"]"}],",","\"WebServices/CosPlot\"",","," ",RowBox[
+{"Permissions"," ","\[Rule]"," ",RowBox[{RowBox[{"<|",RowBox[{"\"CloudUserID\""," ","\[Rule]"," ","\"*@wolfram.com\""}],"|>"}],"\[Rule]","All"}]}]}],"]"}]],
+"Input",ShowGroupOpener -> "Inline",ExpressionUUID -> "533b8aa7-fcfa-4d47-a143-b8242efc27c5"],Cell[
+TextData[
+{"Give"," ","read","-","only"," ","access"," ","to"," ","one"," ","user",":"}],"Text",
+ExpressionUUID -> "7bc9f92e-5e90-4aa5-bd94-977384a66de6"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{RowBox[{"Plot","[",RowBox[{RowBox[{"Tan","[","x","]"}],",",RowBox[{"{",RowBox[{"x",",",RowBox[
+{"-","Pi"}],",","Pi"}],"}"}]}],"]"}],",","\"WebServices/TanPlot\"",",",RowBox[{"Permissions"," ","\[Rule]"," ",RowBox[
+{"\"test@wolfram.com\""," ","\[Rule]"," ",RowBox[{"{","\"Read\"","}"}]}]}]}],"]"}]],
+"Input",ShowGroupOpener -> "Inline",ExpressionUUID -> "7db5e41c-fcc6-4b61-b764-80b4859ce184"],Cell[
+TextData[
+{"Restrict"," ","access"," ","with"," ","a"," ","password"," ","with"," ",ButtonBox[
+"PermissionsKey",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/PermissionsKey.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/PermissionsKey.html"],":"}],
+"Text",ExpressionUUID -> "df4b5dd9-1cfa-4303-983a-f1cc4ed1cb73"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{RowBox[{"Delayed","[",RowBox[{"Plot","[",RowBox[{RowBox[
+{"Sinh","[","x","]"}],",",RowBox[{"{",RowBox[{"x",",",RowBox[{"-","Pi"}],",","Pi"}],"}"}]}],"]"}],"]"}],",","\"WebServices/SinhPlot\"",",",RowBox[
+{"Permissions","\[Rule]",RowBox[{"{",RowBox[{RowBox[{"PermissionsKey","[","\"123\"","]"}],"\[Rule]",RowBox[
+{"{","\"Execute\"","}"}]}],"}"}]}]}],"]"}]],"Input",ExpressionUUID -> "b9c9743e-8e89-4a21-b387-baee716a5d09"],Cell[
+TextData[
+{"Create"," ","a"," ","cloud"," ","object"," ","with"," ","complex"," ","permissions",":"}],
+"Text",ExpressionUUID -> "f4762106-a15d-4471-962f-3d3d2e5e972a"],Cell[
+BoxData[RowBox[
+{"helloWorld"," ","="," ",RowBox[{"CloudDeploy","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"Cell","[",RowBox[{"\"Hello world\"",","," ","\"Title\""}],"]"}],","," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",RowBox[
+{"(*"," ",RowBox[{"Our"," ","deployed"," ","notebook"," ","is"," ","only"," ","a"," ","Title"," ",RowBox[
+{"cell",":"," ",RowBox[{"Hello"," ","world"}]}]}]," "," ","*)"}],"\[IndentingNewLine]","\"WebServices/HelloWorld\"",","," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",RowBox[
+{"(*"," ",RowBox[{"We"," ","define"," ","the"," ","location"}]," ","*)"}],"\[IndentingNewLine]"," ",RowBox[
+{"Permissions","\[Rule]",RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{RowBox[
+{"<|",RowBox[{"\"CloudUserID\"","\[Rule]","\"*@gmail.com\""}],"|>"}],"\[Rule]","All"}],","," "," "," "," "," ",RowBox[
+{"(*",RowBox[{"Allow"," ","user"," ","with"," ","Wolfram"," ","ID"," ","that"," ","are"," ","using"," ","gmail"," ","address"," ","to"," ","do"," ","everything"," ",RowBox[
+{"(",RowBox[{RowBox[{"e",".","g","."," ","read"}]," ","and"," ","edit"}],")"}]}],"*)"}],"\[IndentingNewLine]",RowBox[
+{"\"Authenticated\"","\[Rule]","\"Read\""}],","," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",RowBox[
+{"(*",RowBox[{"Other"," ","Wolfram"," ","users"," ","only"," ","have"," ","permission"," ","to"," ","read"}]," ","*)"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"<|","\[IndentingNewLine]",RowBox[{"\"GeoLocationCountry\"","\[Rule]",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{RowBox[{"\"Disallow\"","\[Rule]",RowBox[{"{",RowBox[
+{RowBox[{"Entity","[",RowBox[{"\"Country\"",",","\"Germany\""}],"]"}],","," ",TemplateBox[
+{"\"France\"",RowBox[{"Entity","[",RowBox[{"\"Country\"",",","\"France\""}],"]"}],"\"Entity[\\\"Country\\\", \\\"France\\\"]\"","\"country\""},
+"Entity"]}],"}"}]}],",","\[IndentingNewLine]",RowBox[{"\"Allow\"","\[Rule]",RowBox[
+{"{",RowBox[{"EntityList","[",RowBox[{"FilteredEntityClass","[",RowBox[{"\"Country\"",","," ",RowBox[
+{"EntityFunction","[",RowBox[{"c",","," ",RowBox[{RowBox[{"c","[","\"Continent\"","]"}],"===",TemplateBox[
+{"\"Europe\"",RowBox[{"EntityClass","[",RowBox[{"\"Country\"",",","\"Europe\""}],"]"}],"\"EntityClass[\\\"Country\\\", \\\"Europe\\\"]\"","\"countries\""},
+"EntityClass"]}]}],"]"}]}],"]"}],"]"}],"}"}]}]}],"\[IndentingNewLine]","|>"}]}],"\[IndentingNewLine]","|>"}],"\[Rule]","\"Execute\""}]}]," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",RowBox[
+{"(*",RowBox[{RowBox[{"Users"," ","in"," ","Europe"}],",",RowBox[{"except"," ","German"," ","and"," ","France"," ","can"," ","Execute"," ","cells"}]}],"*)"}],"\[IndentingNewLine]","}"}]}]}],"]"}]}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "80470322-ae3d-4fef-a138-eeaf5ed240c4"],Cell[
+TextData[
+{"You"," ","can"," ","check"," ","the"," ","permissions"," ","to"," ","your"," ","deployed"," ","notebook",":"}],
+"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "a43c39ad-d600-4cec-be03-401f40f18972"],Cell[
+BoxData[
+RowBox[{"Options","[",RowBox[{"helloWorld",","," ","Permissions"}],"]"}]],"Input",
+CellGroupingRules -> {"GroupTogetherGrouping",10001.`},CellLabel -> "In[18]:= ",ExpressionUUID -> "0b296963-2b1f-4966-8fb2-5e33d1a7eba9"],Cell[
+TextData[
+{"In"," ","case",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","check"," ","your"," ",ButtonBox[
+RowBox[{"cloud"," ","user"," ","ID"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://reference.wolfram.com/language/ref/$CloudUserID.html"],None},ButtonNote -> "https://reference.wolfram.com/language/ref/$CloudUserID.html"]," ","and"," ",ButtonBox[
+RowBox[{"country"," ","of"," ","location"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://reference.wolfram.com/language/ref/$GeoLocationCountry.html"],None},ButtonNote -> "https://reference.wolfram.com/language/ref/$GeoLocationCountry.html"],":"}],
+"Text",ExpressionUUID -> "a006f573-5664-4f50-b613-d0cf1a653bff"],Cell[
+BoxData[{"$CloudUserID","\n","$GeoLocationCountry"}],
+"Input",CellLabel -> "In[21]:= ",ExpressionUUID -> "61ba033b-115d-4441-b6d1-4c810e15fca7"]},
+{1}],ExpressionUUID -> "22dd63c3-53f4-487b-881a-b22997f30006"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Permission"," ","Groups"}],"Subsubsection",ExpressionUUID -> "a7431ffd-0444-41b9-a5c2-7798f824ae71"],Cell[
+TextData[
+{"You"," ","can"," ","define"," ","a"," ","permissions"," ","group"," ","with"," ",ButtonBox[
+"CreatePermissionsGroup",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/CreatePermissionsGroup.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/CreatePermissionsGroup.html"],":"}],
+"Text",ExpressionUUID -> "de1db2a9-d186-4203-b54d-ff6cf8880aed"],Cell[
+BoxData[RowBox[
+{RowBox[{"myPermissionsGroup"," ","="," ",RowBox[{"CreatePermissionsGroup","[","\"MyGroup\"","]"}]}],";"}]],
+"Input",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+CellLabel -> "In[36]:= ",ExpressionUUID -> "087458a1-1a55-4ecc-b2f6-496e6fc4023a"],Cell[
+TextData[
+{"Add"," ","members"," ","to"," ","the"," ","group"," ","with"," ",ButtonBox["AddUsers",
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/AddUsers.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/AddUsers.html"],":"}],"Text",
+CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "2510abc9-cb86-4c86-823f-9cb599819a6c"],Cell[
+BoxData[
+RowBox[{RowBox[{"AddUsers","[",RowBox[{"myPermissionsGroup",","," ",RowBox[{"{",RowBox[
+{"\"boris.thurm@imd.org\"",","," ","\"test\""}],"}"}]}],"]"}],";"}]],"Input",ShowGroupOpener -> "Inline",
+CellGroupingRules -> {"GroupTogetherGrouping",10000.`},CellLabel -> "In[37]:= ",ExpressionUUID -> "f4d98952-5447-4d61-ad6a-0ea0e93a556c"],Cell[
+TextData[
+{"Check"," ","the"," ","members",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "5fa2d969-c404-4e5d-9c1e-0beac1715ff0"],Cell[
+BoxData[RowBox[{"myPermissionsGroup","[","\"Members\"","]"}]],
+"Input",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+CellLabel -> "In[38]:= ",ExpressionUUID -> "f1e096a7-f9d0-41dc-82bc-e4c6b0ccfde8"],Cell[
+TextData[
+{"Remove"," ","users"," ","with"," ",ButtonBox["RemoveUsers",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/RemoveUsers.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/RemoveUsers.html"],":"}],
+"Text",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "72434688-e04e-41f2-8f81-1ee22d964afe"],Cell[
+BoxData[
+{RowBox[{RowBox[{"RemoveUsers","[",RowBox[{"\"MyGroup\"",","," ","\"test\""}],"]"}],";"}],"\n",RowBox[
+{"myPermissionsGroup","[","\"Members\"","]"}]}],"Input",ShowGroupOpener -> "Inline",
+CellGroupingRules -> {"GroupTogetherGrouping",10000.`},CellLabel -> "In[39]:= ",ExpressionUUID -> "0ace5b41-dcd2-4d8a-aaad-3aeefd87b11a"],Cell[
+TextData[
+{"In"," ","case"," ","you"," ","can"," ","check"," ","your"," ",ButtonBox[RowBox[
+{"Wolfram"," ","ID"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/$WolframID.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/$WolframID.html"],":"}],
+"Text",ExpressionUUID -> "9ebd5c51-90e5-4c6c-8570-439aec362b4f"],Cell[
+BoxData["$WolframID"],
+"Input",CellLabel -> "In[29]:= ",ExpressionUUID -> "bc0d3c1d-09c6-4814-95b4-f702699ade93"]},
+{1}],ExpressionUUID -> "04a37682-cc87-4a47-8497-8fd2b3d1dd8a"]},{1}],ExpressionUUID -> "75ee2f49-1778-42c0-8b0f-8d1703f496fd"]},
+{1}],ExpressionUUID -> "247427bf-f4fc-4f8f-adca-0769a18177e9"],Cell[
+CellGroupData[
+{Cell[
+"\<APIs\>","Section",ExpressionUUID -> "b4ca2b28-aea6-4c8d-b767-a7bc595b21e0"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"What"," ","is"," ","an"," ","API","?"}],"Subsection",ExpressionUUID -> "af1c8bdd-ca7e-4135-b99b-0d9fcd44bc0c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"API"," ","stands"," ","for"," ",ButtonBox[RowBox[{"Application"," ","Programming"," ","Interface"}],
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://en.wikipedia.org/wiki/API"],None},
+ButtonNote -> "https://en.wikipedia.org/wiki/API"]}],"Item",ExpressionUUID -> "91cca834-9bbe-41aa-bd00-7f4f8b912f8a"],Cell[
+TextData[
+{"An"," ","API"," ","is"," ","a"," ","means"," ","for"," ","one"," ","service"," ","to"," ","request"," ","information"," ","from"," ","another"}],
+"Item",ExpressionUUID -> "c4889f2b-cfae-46e3-9e4f-adf1d9b01275"],Cell[
+TextData[{"Information"," ","is"," ","requested"," ","through"," ","an"," ","API"," ","by",StyleBox[
+RowBox[{" ","\[OpenCurlyDoubleQuote]"}]],"calling",StyleBox[RowBox[{"\[CloseCurlyDoubleQuote]"," "}]],"it"}],
+"Item",ExpressionUUID -> "c10403d0-178e-4700-a499-ad55600f4388"],Cell[
+TextData[{"Common"," ","API"," ","permissions",":"}],
+"Item",ExpressionUUID -> "6dd1edc2-ca70-4c57-87cc-36d3dfc9f121"],Cell[
+TextData[{"Public",StyleBox[
+RowBox[{" ","("}]],"available"," ","to"," ","anyone",")"}],"Subitem",ExpressionUUID -> "e0a6d674-0c76-40b3-b6f8-c4b55d5574fe"],Cell[
+TextData[
+{"Private",StyleBox[RowBox[{" ","("}]],"internal"," ","users"," ","only",")"}],"Subitem",
+ExpressionUUID -> "79158766-a6da-40de-ae62-bf130b06323d"],Cell[
+TextData[{"Partnered",StyleBox[
+RowBox[{" ","("}]],"third"," ","party",StyleBox[RowBox[{","," "}]],"but"," ","secured",StyleBox[
+RowBox[{" ","-"," "}]],"often"," ","a"," ","paid"," ","feature",")"}],"Subitem",ExpressionUUID -> "7eb2f6a2-c760-4c33-a3aa-9ada6b1f3190"]},
+Open],ExpressionUUID -> "f753ae8b-eea0-4351-9c1c-1c4b26030f73"]},{1}],ExpressionUUID -> "60f54bfd-1aa1-49d9-b1e4-9fd9d0b4e275"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Creating"," ","APIs"}],"Subsection",ExpressionUUID -> "47be7328-e92f-4d58-8b7d-9f2c4aad6f02"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Local"," ","APIs"}],"Subsubsection",ExpressionUUID -> "7c5291a4-1cc9-443d-918d-77ff3f8a3013"],Cell[
+TextData[
+{"Create"," ","a"," ","local"," ","function",StyleBox[RowBox[{"."," "}]],"We"," ","specify"," ","that"," ","our"," ","function"," ","should"," ","only"," ","accept"," ","numeric"," ","data",StyleBox[
+RowBox[{","," "}]],"and"," ","that"," ","the"," ","default"," ","value",StyleBox[
+RowBox[{" ","("}]],"i",".","e",StyleBox[RowBox[{".,"," "}]],"the"," ","value"," ","used"," ","if"," ","there"," ","is"," ","no"," ","input",StyleBox[
+RowBox[{")"," "}]],"is"," ","10",StyleBox[RowBox[{"."," "}]],"Check"," ","the"," ",ButtonBox[
+RowBox[{"Patterns"," ","tutorial"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://reference.wolfram.com/language/tutorial/Patterns.html#17673"],None},ButtonNote -> "https://reference.wolfram.com/language/tutorial/Patterns.html#17673"]," ","to"," ","get"," ","a"," ","better"," ","understanding"," ","of"," ","optional"," ","arguments"," ","in"," ","function","."}],
+"Text",ExpressionUUID -> "9db248e8-8892-4a77-8cf4-ff9d50c59088"],Cell[
+BoxData[RowBox[
+{RowBox[{RowBox[{RowBox[{"func1","[",RowBox[{"x",":",RowBox[{"_","?",RowBox[{"(","NumericQ",")"}]}],":","10"}],"]"}],":=",RowBox[
+{"x","^","2"}]}],";"}],"          ",RowBox[{"(*",RowBox[{"We"," ","specify"," ","that"," ","the"," ","function"," ","only"," ","accepts"," ","numeric"," ",RowBox[
+{"data","."," ","The"}]," ","default"," ","value"," ","is"," ","10."}],"*)"}]}]],
+"Input",CellLabel -> "In[53]:= ",ExpressionUUID -> "b90020e0-c73c-486c-905f-0cc9eb674540"],Cell[
+TextData[
+{"Let's"," ","test"," ","our"," ","function"}],"Text",ExpressionUUID -> "5cd55234-c062-4609-a59c-782cabd5dc34"],Cell[
+BoxData[
+RowBox[{RowBox[{"func1","[","]"}],"\[IndentingNewLine]",RowBox[{"func1","[","1234","]"}]}]],
+"Input",CellLabel -> "In[46]:= ",ExpressionUUID -> "8ce29dfb-fbac-4582-9a9c-d766fc3b1e77"],Cell[
+TextData[
+{"Now"," ","we"," ","can"," ","use"," ",ButtonBox["APIFunction",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/APIFunction.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/APIFunction.html"]," ","to"," ","create"," ","an"," ","API"," ","with"," ","the"," ","same"," ","properties",StyleBox[
+RowBox[{"."," "}]],"Check"," ","the"," ","syntax"," ","of"," ","APIFunction",StyleBox[
+RowBox[{":"," "}]],"we"," ","first"," ","specify"," ","the"," ","properties",StyleBox[
+RowBox[{" ","("}]],"numeric"," ","data",StyleBox[RowBox[{","," "}]],"default"," ","value",StyleBox[
+RowBox[{" ","="," "}]],"10",StyleBox[RowBox[{")"," "}]],"before"," ","defining"," ","our"," ","function",StyleBox[
+RowBox[{","," "}]],"using"," ","in"," ","this"," ","example"," ","a"," ","pure"," ","function",":"}],
+"Text",ShowGroupOpener -> "Inline",ExpressionUUID -> "11214ac6-ed4f-41f0-9381-b87ab69a134d"],Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"ClearAll","[","apiFunc1","]"}],";"}],"\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{RowBox[{"apiFunc1"," ","="," ",RowBox[{"APIFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"x\""," ","\[Rule]"," ",RowBox[{"\"Number\""," ","\[Rule]"," ","10"}]}],"}"}],","," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"Our"," ","variable"," ","should"," ","be"," ","a"," ",RowBox[
+{"number","."," ","If"}]," ","no"," ","input"}],",",RowBox[{"the"," ","default"," ","value"," ","is"," ","10."}]}],"*)"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"#x","^","2"}],"&"}]}],"\[IndentingNewLine]","]"}]}],";"}]}]],"Input",ShowGroupOpener -> "Inline",
+CellLabel -> "In[64]:= ",ExpressionUUID -> "808f9e81-7d08-44b2-84c2-097a3de58ec4"],Cell[
+TextData[
+{"Call"," ","it",":"}],"Text",ExpressionUUID -> "22e501a7-8f51-47fb-b963-26030333f6b2"],Cell[
+BoxData[
+RowBox[{RowBox[{"apiFunc1","[","]"}],"\[IndentingNewLine]",RowBox[{"apiFunc1","[",RowBox[
+{"<|",RowBox[{"\"x\""," ","\[Rule]","1234"}],"|>"}],"]"}]}]],"Input",CellLabel -> "In[50]:= ",
+ExpressionUUID -> "9d35943e-90bf-44ac-8880-3051a3114e19"]},{1}],ExpressionUUID -> "0481b7f3-263e-4be6-b76a-3050ebebdfee"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Cloud"," ","APIs"}],"Subsubsection",ExpressionUUID -> "a4ab9ba9-7737-41a1-b6de-1ddc1a274ef1"],Cell[
+TextData[
+{"Deploy"," ","the"," ","API"," ","to"," ","the"," ","cloud"," ","with"," ",ButtonBox[
+"CloudDeploy",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/CloudDeploy.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/CloudDeploy.html"],StyleBox[
+RowBox[{","," "}]],"which"," ","works"," ","as"," ","before",":"}],"Text",ShowGroupOpener -> "Inline",
+ExpressionUUID -> "f51c3bd0-8b92-403b-8f93-c0b69ba2699e"],Cell[
+BoxData[RowBox[{"apiFunc1Deployed"," ","="," ",RowBox[
+{"CloudDeploy","[","\[IndentingNewLine]",RowBox[{"apiFunc1",",","\[IndentingNewLine]","\"WebServices/API1\"",",","\[IndentingNewLine]",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"\[IndentingNewLine]","]"}]}]],
+"Input",ExpressionUUID -> "9c5ec497-f7d7-4647-9ceb-6b63b41750ef"],Cell[
+TextData[
+{"If"," ","you"," ","go"," ","to"," ","Wolfram"," ","Cloud",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","see"," ","the"," ","API"," ","you"," ","deployed"," ","in"," ","the"," ","Menu",StyleBox[
+RowBox[{","," "}]],"under",StyleBox[RowBox[{" ","\""}]],"Deployments","\".","\n","\n","You"," ","can"," ","call"," ","your"," ","deployed"," ","API"," ","with"," ",ButtonBox[
+"URLExecute",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/URLExecute.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/URLExecute.html"],":"}],
+"Text",ExpressionUUID -> "13851b44-5d3d-46ea-a9cc-38843cb00620"],Cell[
+BoxData[RowBox[
+{"URLExecute","[","apiFunc1Deployed","]"}]],"Input",ShowGroupOpener -> "Inline",CellLabel -> "In[71]:= ",
+ExpressionUUID -> "1e4ea943-57a8-48af-b5d9-1a18d33c0a37"],Cell[
+TextData[{"Edit"," ","the"," ","parameter"," ","values",":"}],
+"Text",ExpressionUUID -> "2cb806c5-f5c5-4f91-ab66-ca7c100e037c"],Cell[
+BoxData[RowBox[
+{"URLExecute","[",RowBox[{"apiFunc1Deployed",",",RowBox[{"{",RowBox[{"\"x\""," ","\[Rule]"," ","1234"}],"}"}]}],"]"}]],
+"Input",ShowGroupOpener -> "Inline",CellLabel -> "In[70]:= ",ExpressionUUID -> "3a472d3f-98e7-4912-b9e2-f04cee1ab8d8"],Cell[
+TextData[
+{"Alternatively",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","modify"," ","the"," ","parameter"," ","values"," ","of"," ","an"," ","API"," ","by"," ","adding"," ",Cell[
+BoxData[
+Cell[
+Cell[
+RowBox[{"?","param1=val1&&param2=val2&&\[Ellipsis]"}],"Input",ExpressionUUID -> "febd2f55-cd52-4bd0-94d2-f500c0f19df9"]]]]," ","to"," ","the"," ","end"," ","of"," ","the"," ","URL","."}],
+"Text",ExpressionUUID -> "3465c689-97bf-48c6-9d3c-0a548194fe1b"]},{1}],ExpressionUUID -> "864361cd-a724-4b87-8d4d-7b1e343b7558"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Limitations",StyleBox[RowBox[{":"," "}]],"authentication"," ","key"," ","and"," ","Cloud"," ","Credits"}],
+"Subsubsection",ExpressionUUID -> "18a8bcf7-1b52-4d5d-b27c-09e1650ca1a7"],Cell[
+TextData[
+{"Generally",StyleBox[RowBox[{","," "}]],"publically"," ","available"," ","APIs"," ","will"," ","require"," ","an"," ",ButtonBox[
+RowBox[{"authentication"," ","key"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://en.wikipedia.org/wiki/API_key"],None},ButtonNote -> "https://en.wikipedia.org/wiki/API_key"]," ","and"," ","may"," ","restrict"," ","the"," ","number"," ","of"," ","calls"," ","you"," ","can"," ","make"," ","within"," ","a"," ","given"," ","interval"," ","of"," ","time",StyleBox[
+RowBox[{"."," ","("}]],"The"," ",ButtonBox[RowBox[{"YouTube"," ","API"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["https://developers.google.com/youtube/v3/getting-started"],None},
+ButtonNote -> "https://developers.google.com/youtube/v3/getting-started"],StyleBox[
+RowBox[{","," "}]],"for"," ","example",StyleBox[RowBox[{","," "}]],"requires"," ","a"," ","Google"," ","account"," ","and"," ","has"," ","a"," ","daily"," ","quota"," ","of"," ","calls",".)"}],
+"Text",ExpressionUUID -> "7165da9a-0137-4c25-a710-e92577ee4d08"],Cell[
+TextData[{"Calling"," ","an"," ","API"," ","with"," ","the"," ","Wolfram"," ","Language"," ","will"," ","use"," ",ButtonBox[
+RowBox[{"Cloud"," ","Credits"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://www.wolfram.com/cloud-credits/"],None},ButtonNote -> "https://www.wolfram.com/cloud-credits/"],StyleBox[
+RowBox[{"."," ","("}]],"Functions"," ","that"," ","connect"," ","to"," ","external"," ","providers",StyleBox[
+RowBox[{","," "}]],"such"," ","as"," ",ButtonBox["WebImageSearch",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/WebImageSearch.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/WebImageSearch.html"],StyleBox[
+RowBox[{","," "}]],"use"," ",ButtonBox[RowBox[{"Service"," ","Credits"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["https://www.wolfram.com/service-credits/"],None},ButtonNote -> "https://www.wolfram.com/service-credits/"],".)"}],
+"Text",ExpressionUUID -> "56d317c8-4909-46db-9e5d-5b0c4ff958eb"],Cell[
+CellGroupData[
+{Cell[
+BoxData["$CloudCreditsAvailable"],"Input",CellLabel -> "In[73]:= ",ExpressionUUID -> "e2a35089-d9bd-4ebf-862b-25ba5b6ab645"],Cell[
+BoxData[
+"519994",StandardForm],"Output",CellLabel -> "Out[73]= ",ExpressionUUID -> "061fbf35-09db-4324-bd5f-2ba35399f107"]},
+Open],ExpressionUUID -> "dab05064-5019-4b55-a502-059d8eaf8f2b"],Cell[
+TextData[{"In"," ","Wolfram"," ","Cloud",StyleBox[
+RowBox[{","," "}]],"if"," ","you"," ","can"," ","directly"," ","go"," ","to"," ","your"," ","Usage"," ","Dashboard",StyleBox[
+RowBox[{" ","("}]],"top"," ","right",StyleBox[RowBox[{")"," "}]],"to"," ","check"," ","your"," ","available"," ","credits",StyleBox[
+RowBox[{","," "}]],"and"," ","how"," ","much"," ","credits"," ","you"," ","consumed"," ","for"," ","which"," ","task",StyleBox[
+RowBox[{"."," "}]],"Keep"," ","an"," ","eye"," ","on"," ","it",StyleBox[RowBox[{" ",";)"}]]}],
+"Text",ExpressionUUID -> "18cdd4c3-8934-4e30-b1e0-ca05e0ed6597"]},{1}],ExpressionUUID -> "813a032b-9dfc-4bb7-aa2a-26fcbbcac404"]},
+{1}],ExpressionUUID -> "60ce8b25-b6e7-4e04-8e73-31464c228d63"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Example"," ","APIs",StyleBox[RowBox[{":"," "}]],"Local"," ","Temperature"," "}],
+"Subsection",ExpressionUUID -> "d63acb12-49e7-49b9-a2c1-c87f64a33c17"],Cell[
+TextData[
+{"Create"," ","an"," ","API"," ","that"," ","gives"," ","the"," ","current"," ","temperature"," ","at"," ","a"," ","location",":"}],
+"Text",ExpressionUUID -> "aacc5cee-0485-43d8-a14f-39e7abdd2830"],Cell[
+BoxData[RowBox[
+{RowBox[{"temperatureAPI"," ","="," ",RowBox[{"APIFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"location\""," ","\[Rule]"," ",RowBox[{"\"String\""," ","\[Rule]"," ","\"Oxford\""}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"StringJoin","[","\[IndentingNewLine]",RowBox[{"\"The tempurature in \"",",","\[IndentingNewLine]",RowBox[
+{"ToString","[","#location","]"}],",","\[IndentingNewLine]","\" is \"",",","\[IndentingNewLine]",RowBox[
+{"ToString","[",RowBox[{"QuantityMagnitude","[",RowBox[{"WeatherData","[",RowBox[
+{"#location",","," ","\"Temperature\"",","," ","\"Value\""}],"]"}],"]"}],"]"}],",","\[IndentingNewLine]","\"\[Degree]C.\""}],"\[IndentingNewLine]","]"}],"&"}],",","\[IndentingNewLine]","\"JSON\""}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",ExpressionUUID -> "ad5c0947-48b9-46f4-b296-532313a3fa53"],Cell[
+TextData[
+{"Call"," ","it"," ","locally",":"}],"Text",ExpressionUUID -> "80c43a11-b4f3-4706-bda3-89b1a0ae35ee"],Cell[
+BoxData[
+RowBox[{"temperatureAPI","[","]"}]],"Input",ExpressionUUID -> "f4535186-7db0-436e-8337-3c0d3b5f94bf"],Cell[
+BoxData[
+RowBox[{"temperatureAPI","[",RowBox[{"<|",RowBox[{"\"location\""," ","\[Rule]"," ","\"London\""}],"|>"}],"]"}]],
+"Input",CellChangeTimes -> {{3873533455.3089094`,3873533455.67729`}},ExpressionUUID -> "c79a96c6-7d10-4548-b812-336457dfd92b"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "857e4e68-e004-49e9-b665-4063845c0512"],Cell[
+BoxData[
+RowBox[{"temperatureAPIDeployed"," ","="," ",RowBox[{"CloudDeploy","[",RowBox[{"temperatureAPI",","," ","\"WebServices/TemperatureAPI\"",","," ",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"]"}]}]],"Input",ExpressionUUID -> "807c30c7-c4d3-4f70-882e-6b0303d87ec7"],Cell[
+TextData[
+{"Call"," ","it",":"}],"Text",ExpressionUUID -> "25d0efc3-2fb8-4ab9-b9bf-0c2f0b3f05c2"],Cell[
+BoxData[
+RowBox[{"URLExecute","[",RowBox[{"URLBuild","[",RowBox[{"temperatureAPIDeployed",","," ",RowBox[
+{"{",RowBox[{"\"location\""," ","\[Rule]"," ","\"Tokyo\""}],"}"}]}],"]"}],"]"}]],
+"Input",CellLabel -> "",ExpressionUUID -> "b0a5cdb2-5a07-4b19-ba25-413ef6ba3311"],Cell[
+TextData[
+{"Recreate"," ","the"," ","API"," ","with"," ","HTML"," ","formatting",StyleBox[RowBox[
+{" ","("}]],"note"," ","that"," ","it"," ","will"," ","no"," ","longer"," ","display"," ","properly"," ","on"," ","desktop",StyleBox[
+RowBox[{")"," "}]],"and"," ","deploy"," ","it",":"}],"Text",ExpressionUUID -> "781e32bc-de73-4f64-95d9-be10a5793f9b"],Cell[
+BoxData[
+{RowBox[{RowBox[{"htmlTemperatureAPI"," ","="," ",RowBox[{"APIFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"location\""," ","\[Rule]"," ",RowBox[{"\"String\""," ","\[Rule]"," ","\"Oxford\""}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"ExportForm","[","\[IndentingNewLine]",RowBox[{RowBox[{"StringJoin","[","\[IndentingNewLine]",RowBox[
+{"\"<p style='font-size:24px;color:#ff6c00'>\"",",","\[IndentingNewLine]","\"The temperature in \"",",","\[IndentingNewLine]",RowBox[
+{"ToString","@","#location"}],",","\[IndentingNewLine]","\" is \"",",","\[IndentingNewLine]",RowBox[
+{"ToString","@",RowBox[{"QuantityMagnitude","[",RowBox[{"WeatherData","[",RowBox[
+{"#location",","," ","\"Temperature\"",","," ","\"Value\""}],"]"}],"]"}]}],",","\[IndentingNewLine]","\"\[Degree]C.\"",",","\[IndentingNewLine]","\"</p>\""}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]","\"HTML\""}],"\[IndentingNewLine]","]"}],"&"}],",","\[IndentingNewLine]","\"JSON\""}],"\[IndentingNewLine]","]"}]}],";"}],"\n",RowBox[
+{"\[IndentingNewLine]",RowBox[{"CloudDeploy","[",RowBox[{"htmlTemperatureAPI",","," ","\"WebServices/HTMLTemperatureAPI\"",","," ",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"]"}]}]}],"Input",ExpressionUUID -> "1e21dba9-a886-4d37-b4b2-a204744f0410"]},
+{1}],ExpressionUUID -> "2368d957-52d1-4b80-9e6d-add0cd811247"]},{1}],ExpressionUUID -> "9a395abe-3a84-42d9-9bcf-58beb38304e3"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Web"," ","Forms"}],"Section",ExpressionUUID -> "a8373984-b0e5-4b81-9017-d91ce939b37e"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Static"," ","Form"}],"Subsection",ExpressionUUID -> "37037e7a-b5fe-4e79-b19a-353a683fd24b"],Cell[
+TextData[
+{"Create"," ","a"," ","form"," ","with"," ",ButtonBox["FormFunction",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/FormFunction.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/FormFunction.html"],":"}],
+"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "ffd200a2-6963-404a-84e3-0187c19ffa71"],Cell[
+BoxData[
+StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"Short"," ",RowBox[{"version",":"}]}]," ","*)"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"staticForm1"," ","="," ",RowBox[{"FormFunction","[",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"colour\"",","," ","\"What is your favourite colour?\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{RowBox[{"{",RowBox[{"\"Red\"",","," ","\"Orange\"",","," ","\"Yellow\"",","," ","\"Green\"",","," ","\"Blue\"",","," ","\"Indigo\"",","," ","\"Violet\""}],"}"}],"\[Rule]","\"Red\""}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}]}]]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "06d3caf1-2bf0-4f5a-8528-803c707a7cbe"],Cell[
+BoxData[
+StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"Long"," ",RowBox[{"version",":"}]}]," ","*)"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"staticForm2"," ","="," ",RowBox[{"FormFunction","[",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"colour\"",","," ","\"What is your favourite colour?\""}],"}"}],"\[Rule]",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{RowBox[{"\"Interpreter\""," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"\"Red\"",","," ","\"Orange\"",","," ","\"Yellow\"",","," ","\"Green\"",","," ","\"Blue\"",","," ","\"Indigo\"",","," ","\"Violet\""}],"}"}]}],",","\[IndentingNewLine]",RowBox[
+{"\"Input\""," ","\[Rule]"," ","None"}],",","\[IndentingNewLine]",RowBox[{"\"Hint\""," ","\[Rule]"," ","\"Pick a colour from the list\""}],","," ","\[IndentingNewLine]",RowBox[
+{"\"Default\""," ","\[Rule]"," ","\"Green\""}]}],"\[IndentingNewLine]","|>"}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}]}]]],
+"Input",ExpressionUUID -> "813f3c61-4920-4612-bb4a-6634818dec82"],Cell[
+TextData[
+{"Display"," ","a"," ","form"," ","locally",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "9fd884e0-da42-453f-a3a3-a77886e1e3ba"],Cell[
+BoxData[RowBox[{"staticForm2","[","]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "bdfbd852-f8ab-4643-a9a0-38b20fe88178"],Cell[
+TextData[
+{"Fill"," ","it"," ","out"," ","programmatically",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "673d393e-8be2-462d-bc4b-c557deaff82c"],Cell[
+BoxData[RowBox[{"staticForm2","[",RowBox[
+{"<|",RowBox[{"\"colour\""," ","\[Rule]"," ","\"Orange\""}],"|>"}],"]"}]],"Input",
+CellLabel -> "",ExpressionUUID -> "dbee136b-7e14-4d31-9b5f-882cfce1a453"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "6de11198-3b10-4eeb-a53d-a8a506707261"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{"staticForm2",","," ","\"WebServices/StaticForm2\"",","," ",RowBox[{"Permissions","\[Rule]","\"Public\""}]}],"]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},CellLabel -> "",ExpressionUUID -> "0d7f59a1-ae1e-4382-a24b-8d9f268893ab"]},
+{1}],ExpressionUUID -> "245a1ba0-343e-4403-a67e-21427300b4ed"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Dynamic"," ","Forms"}],"Subsection",ExpressionUUID -> "52e48540-1c96-4f35-a26c-c4e0d530d2cd"],Cell[
+TextData[
+{"Forms"," ","support"," ",ButtonBox["templating",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/guide/WorkingWithTemplates.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/guide/WorkingWithTemplates.html"],StyleBox[
+RowBox[{","," "}]],"where"," ","content"," ","only"," ","displays"," ","when"," ","input"," ","is"," ","provided",":"}],
+"Text",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "f156b362-ca75-4b1c-8e59-c7993f6ad056"],Cell[
+BoxData[
+RowBox[{RowBox[{"dynamicForm"," ","="," ",RowBox[{"FormFunction","[",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"{",RowBox[{"\"state\"",","," ","\"Pick a US state\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{"\"Interpreter\""," ","\[Rule]"," ",RowBox[{"EntityList","[",TemplateBox[
+{"\"all US states with District of Columbia\"",RowBox[{"EntityClass","[",RowBox[{"\"AdministrativeDivision\"",",","\"AllUSStatesPlusDC\""}],"]"}],"\"EntityClass[\\\"AdministrativeDivision\\\", \\\"AllUSStatesPlusDC\\\"]\"","\"administrative divisions\""},
+"EntityClass"],"]"}]}],"\[IndentingNewLine]","|>"}]}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"county\"",","," ","\"Select a county\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{RowBox[{"TemplateSlot","[","\"state\"","]"}],"[","\"Subdivisions\"","]"}]}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "540ed846-e9da-452c-b604-9c39f34b015b"],Cell[
+TextData[
+{"Display"," ","the"," ","form"," ","locally",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "2fa099ce-e10f-40d5-a018-a8a89f2fad29"],Cell[
+BoxData[RowBox[{"dynamicForm","[","]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "a9bf9f6d-daa3-4f1a-8ce6-676136221116"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+ExpressionUUID -> "fce1c167-3e09-4592-bfc7-b6673bf83b93"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{"dynamicForm",","," ","\"WebServices/DynamicForm\"",","," ",RowBox[{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},ExpressionUUID -> "af795549-4a7e-4251-bbdf-83805d44e2fc"]},
+{1}],ExpressionUUID -> "8b36a5fe-8c9f-48fc-84d7-ace5a39962b8"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Multi","-","Page"," ","Forms"}],"Subsection",ExpressionUUID -> "514b501f-84d4-4f96-b708-2d7f70bd026d"],Cell[
+TextData[
+{"Previous"," ","inputs"," ","can"," ","be"," ","referenced"," ","as"," ",ButtonBox[
+"slots",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/Slot.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/Slot.html"]," ","to"," ","create"," ","multiple"," ","pages",":"}],
+"Text",ExpressionUUID -> "c4e902b4-8ec0-4139-9996-f3b8cabd465b"],Cell[
+BoxData[RowBox[
+{RowBox[{"multiForm"," ","="," ",RowBox[{"FormFunction","[",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"{",RowBox[{"\"rooms\""," ",",","\"No. of rooms\""}],"}"}]," ","\[Rule]"," ","\"Integer\""}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"Function","[","\[IndentingNewLine]",RowBox[{"Table","[","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"{",RowBox[{RowBox[{"\"room\""," ","<>"," ",RowBox[{"ToString","[","i","]"}]}],","," ",RowBox[
+{"\"No. of guests in the room\""," ","<>"," ",RowBox[{"ToString","[","i","]"}]}]}],"}"}]," ","\[Rule]"," ","\"Integer\""}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{"i",","," ","#rooms"}],"}"}]}],"\[IndentingNewLine]","]"}],"\[IndentingNewLine]","]"}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "7b15e053-cdf3-4365-a217-f4a682cfb870"],Cell[
+TextData[
+{"Display"," ","the"," ","form"," ","locally",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "6d4716d4-c509-4920-800b-b0f7874ee7b0"],Cell[
+BoxData[RowBox[{"multiForm","[","]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "c0324087-2a82-4877-81f4-583bad911096"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "baac6c51-1648-4db3-93eb-32cf20415318"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{"multiForm",","," ","\"WebServices/MultiPageForm\"",","," ",RowBox[{"Permissions","\[Rule]","\"Public\""}]}],"]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "1d131041-9489-436e-94d5-246734d67d9a"]},
+{1}],ExpressionUUID -> "ec00e123-07f2-4887-9186-48f3924fd18c"],Cell[
+CellGroupData[
+{Cell[
+"\<Output\>","Subsection",ExpressionUUID -> "9e35d83d-1cfe-4bb3-b7bf-6b497f14d5e7"],Cell[
+TextData[
+{"The"," ","default"," ","output"," ","of"," ","a"," ","form"," ","is"," ","an"," ",ButtonBox[
+"association",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/Association.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/Association.html"],StyleBox[
+RowBox[{"."," "}]],"Use"," ","a"," ",ButtonBox[RowBox[{"pure"," ","function"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/Function.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/Function.html"]," ","to"," ","modify"," ","it",":"}],
+"Text",ExpressionUUID -> "dea92ed7-0750-44d6-ae21-3651794f4595"],Cell[
+BoxData[RowBox[
+{RowBox[{"colourForm"," ","="," ",RowBox[{"FormFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"{",RowBox[{"\"colours\"",","," ","\"Colours\""}],"}"}],"\[Rule]",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{RowBox[{"\"Interpreter\""," ","\[Rule]"," ",RowBox[
+{"Restricted","[",RowBox[{RowBox[{"DelimitedSequence","[",RowBox[{"\"Color\"",","," ","\",\""}],"]"}],","," ",RowBox[
+{"{",RowBox[{"3",","," ","Infinity"}],"}"}]}],"]"}]}],",","\[IndentingNewLine]",RowBox[
+{"\"Hint\""," ","\[Rule]"," ","\"Enter a list of three or more colours\""}],","," ","\[IndentingNewLine]",RowBox[
+{"\"Default\""," ","\[Rule]"," ",RowBox[{"{",RowBox[{"\"Red\"",","," ","\"Green\"",","," ","\"Blue\""}],"}"}]}]}],"\[IndentingNewLine]","|>"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"With","[","\[IndentingNewLine]",RowBox[{RowBox[{"{",RowBox[{RowBox[{"n"," ","="," ",RowBox[
+{"Length","[","#colours","]"}]}],","," ",RowBox[{"cols"," ","="," ","#colours"}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"Graphics","[","\[IndentingNewLine]",RowBox[{"Polygon","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"Table","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"1","+",RowBox[{"Sin","[",RowBox[
+{"i","*","2","*",RowBox[{"Pi","/","n"}]}],"]"}]}],","," ",RowBox[{"1","+",RowBox[
+{"Cos","[",RowBox[{"i","*","2","*",RowBox[{"Pi","/","n"}]}],"]"}]}]}],"}"}],","," ",RowBox[
+{"{",RowBox[{"i",","," ","n"}],"}"}]}],"]"}],",","\[IndentingNewLine]",RowBox[{"VertexColors"," ","\[Rule]"," ","cols"}]}],"\[IndentingNewLine]","]"}],"\[IndentingNewLine]","]"}]}],"\[IndentingNewLine]","]"}],"&"}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",ExpressionUUID -> "62798756-95bc-4d2f-89b9-9b9954b8d89e"],Cell[
+TextData[
+{"Display"," ","the"," ","form"," ","locally",":"}],"Text",ExpressionUUID -> "424fd335-63e7-4912-9008-a5c55ba87b98"],Cell[
+BoxData[
+RowBox[{"colourForm","[","]"}]],"Input",ExpressionUUID -> "a23937fb-70e0-45cf-b1c5-4537e037ae26"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
+ExpressionUUID -> "44f92f0e-a21a-45f6-b494-be54eaa12b39"],Cell[
+BoxData[RowBox[{"CloudDeploy","[",RowBox[
+{"colourForm",","," ","\"WebServices/colourForm\"",","," ",RowBox[{"Permissions","\[Rule]","\"Public\""}]}],"]"}]],
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "59d7d96a-d6b2-4f62-9303-a9f49b336a28"]},
+{1}],ExpressionUUID -> "056c8973-8e82-46f2-862d-329e5cc18f1e"],Cell[
+CellGroupData[
+{Cell[
+"\<Appearance\>","Subsection",ExpressionUUID -> "af64d283-caaf-4ab1-a076-4b2e75df1221"],Cell[
+TextData[
+{"Change"," ","the"," ","appearance"," ","of"," ","a"," ","form"," ","with"," ","the"," ",ButtonBox[
+"AppearanceRules",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/AppearanceRules.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/AppearanceRules.html"]," ","and"," ",ButtonBox[
+"PageTheme",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/PageTheme.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/PageTheme.html"],StyleBox[
+RowBox[{" ","("}]],"cloud"," ","only",StyleBox[RowBox[{")"," "}]],"options",":"}],
+"Text",ExpressionUUID -> "aceb50cf-9de7-44d2-a849-eb587edd2076"],Cell[
+BoxData[RowBox[
+{RowBox[{"shoppingForm"," ","="," ",RowBox[{"FormFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{RowBox[{"{",RowBox[{"\"fruit\"",","," ","\"Fruit\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{RowBox[{"\"Interpreter\""," ","\[Rule]"," ",RowBox[
+{"AnySubset","[",RowBox[{"{",RowBox[{"\"Apple\"",","," ","\"Orange\"",","," ","\"Pear\"",","," ","\"Grapes\"",","," ","\"Melon\"",","," ","\"Cherries\""}],"}"}],"]"}]}],",","\[IndentingNewLine]",RowBox[
+{"\"Control\""," ","\[Rule]"," ","ListPicker"}],",","\[IndentingNewLine]",RowBox[
+{"\"Help\""," ","\[Rule]"," ","\"Hold Cmd or Shift to select more than one item\""}]}],"\[IndentingNewLine]","|>"}]}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"veg\"",","," ","\"Vegetables\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{"<|","\[IndentingNewLine]",RowBox[{RowBox[{"\"Interpreter\""," ","\[Rule]"," ",RowBox[
+{"AnySubset","[",RowBox[{"{",RowBox[{"\"Carrot\"",","," ","\"Pepper\"",","," ","\"Broccoli\"",","," ","\"Cucumber\"",","," ","\"Tomato\"",","," ","\"Asparagus\"",","," ","\"Cabbage\"",","," ","\"Mushroom\""}],"}"}],"]"}]}],",","\[IndentingNewLine]",RowBox[
+{"\"Control\""," ","\[Rule]"," ","ListPicker"}],",","\[IndentingNewLine]",RowBox[
+{"\"Help\""," ","\[Rule]"," ","\"Hold Cmd or Shift to select more than one item\""}]}],"\[IndentingNewLine]","|>"}]}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]","Identity",",","\[IndentingNewLine]",RowBox[
+{"AppearanceRules"," ","\[Rule]"," ",RowBox[{"<|","\[IndentingNewLine]",RowBox[{RowBox[
+{"\"Title\""," ","\[Rule]"," ","\"Shopping list\""}],",","\[IndentingNewLine]",RowBox[
+{"\"Description\""," ","\[Rule]"," ","\"Choose items to go on your shopping list\""}],",","\[IndentingNewLine]",RowBox[
+{"\"ItemLayout\""," ","\[Rule]"," ","\"Vertical\""}],",","\[IndentingNewLine]",RowBox[
+{"\"SubmitLabel\""," ","\[Rule]"," ","\"Create list\""}],",","\[IndentingNewLine]",RowBox[
+{"\"CancelLabel\""," ","\[Rule]"," ","\"Cancel\""}],",","\[IndentingNewLine]",RowBox[
+{"\"RequiredFieldIndicator\""," ","\[Rule]"," ","False"}]}],"\[IndentingNewLine]","|>"}]}],",","\[IndentingNewLine]",RowBox[
+{"PageTheme"," ","\[Rule]"," ","\"Blue\""}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",ExpressionUUID -> "e8446dee-0a85-4076-827d-e03d993b4be4"],Cell[
+TextData[
+{"Display"," ","the"," ","form"," ","locally",":"}],"Text",ExpressionUUID -> "e1543eb6-8ec3-403a-992c-7df5d32e9cfb"],Cell[
+BoxData[
+RowBox[{"shoppingForm","[","]"}]],"Input",ExpressionUUID -> "9a8898ef-b00e-4216-90b9-475250159c56"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "616a0603-9222-4dd5-8da4-8f6ceafc904b"],Cell[
+BoxData[
+RowBox[{"CloudDeploy","[",RowBox[{"shoppingForm",","," ","\"WebServices/ShoppingForm\"",","," ",RowBox[
+{"Permissions","\[Rule]","\"Public\""}]}],"]"}]],"Input",ExpressionUUID -> "4c5de61d-0156-495c-a008-7f81c24ae423"],Cell[
+BoxData[
+""],"EndOfSlide",ExpressionUUID -> "1de75f67-b516-4769-b8e4-67e5f8c1ddaf"]},{1}],
+ExpressionUUID -> "ec051be2-df60-4307-b0db-c40e2b654f0b"],Cell[
+CellGroupData[{Cell[
+TextData[
+{"Example",StyleBox[RowBox[{":"," "}]],"Weather"," ","Data"}],"Subsection",ExpressionUUID -> "e5a9acd0-05b3-45a1-aea4-77dbc1ed3a91"],Cell[
+TextData[
+{"Create"," ","a"," ","form"," ","that"," ","gives"," ","the"," ","current"," ","weather"," ","at"," ","a"," ","location",StyleBox[
+RowBox[{":"," "}]]}],"Text",ExpressionUUID -> "636957f2-b169-42e3-a9d2-0932814d17e8"],Cell[
+BoxData[
+RowBox[{RowBox[{"weatherForm"," ","="," ",RowBox[{"FormPage","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"\"location\"",","," ","\"Location\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{"Interpreter","[","\"City\"","]"}]}],"}"}],",","\[IndentingNewLine]",RowBox[{RowBox[
+{"Grid","[","\[IndentingNewLine]",RowBox[{RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{"#location",",","\[IndentingNewLine]",RowBox[
+{"ReplaceAll","[","\[IndentingNewLine]",RowBox[{RowBox[{"Grid","[","\[IndentingNewLine]",RowBox[
+{"{","\[IndentingNewLine]",RowBox[{RowBox[{"{",RowBox[{"\"Temperature\"",","," ",RowBox[
+{"WeatherData","[",RowBox[{"#location",","," ","\"Temperature\""}],"]"}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{"\"Precipitation\"",","," ",RowBox[{"WeatherData","[",RowBox[{"#location",","," ","\"TotalPrecipitation\""}],"]"}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{"\"Wind speed\"",","," ",RowBox[{"WeatherData","[",RowBox[{"#location",","," ","\"WindSpeed\""}],"]"}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{"\"Cloud cover\"",","," ",RowBox[{"WeatherData","[",RowBox[{"#location",","," ","\"CloudCoverFraction\""}],"]"}]}],"}"}]}],"\[IndentingNewLine]","}"}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"Missing","[","___","]"}]," ","\[Rule]"," ","\"-\""}]}],"\[IndentingNewLine]","]"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{RowBox[{"\"Last date loaded: \""," ","<>"," ",RowBox[{"DateString","[","Now","]"}]}],","," ","SpanFromLeft"}],"}"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"Frame"," ","\[Rule]"," ","All"}],",","\[IndentingNewLine]",RowBox[{"BaseStyle"," ","\[Rule]"," ","\"Text\""}]}],"\[IndentingNewLine]","]"}],"&"}],",","\[IndentingNewLine]",RowBox[
+{"AppearanceRules"," ","\[Rule]"," ",RowBox[{"<|","\[IndentingNewLine]",RowBox[{RowBox[
+{"\"Title\""," ","\[Rule]"," ","\"Weather Data\""}],",","\[IndentingNewLine]",RowBox[
+{"\"Description\""," ","\[Rule]"," ","\"Enter a town or city in the field below to find the local weather.\""}]}],"\[IndentingNewLine]","|>"}]}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",ExpressionUUID -> "a4684894-c1d0-48b7-8fc9-8d2c857f2a18"],Cell[
+TextData[
+{"Display"," ","it"," ","locally",":"}],"Text",ExpressionUUID -> "53538ca8-4520-4e31-a310-6a48cbcb11d5"],Cell[
+BoxData[
+RowBox[{"weatherForm","[","]"}]],"Input",CellLabel -> "",ExpressionUUID -> "6240a077-8903-4d24-9e08-8ecada7869ac"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "3ea3d0d3-5e65-4565-b6cb-197f9bfd6f3b"],Cell[
+BoxData[
+RowBox[{"CloudDeploy","[",RowBox[{"weatherForm",","," ","\"WebServices/WeatherForm\""}],"]"}]],
+"Input",ExpressionUUID -> "6f438ece-e58d-41cd-ada0-410cd6533ba4"]},{1}],ExpressionUUID -> "6ff00a30-f3ca-4bb7-a4bb-60e682037a44"]},
+{1}],ExpressionUUID -> "9337f2f5-352c-45e6-bdbf-be4d4f803ee7"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Cloud"," ","Storage"}],"Section",ExpressionUUID -> "047452c8-99fc-4602-b456-dbe01c7553f3"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Cloud"," ","Objects"}],"Subsection",ExpressionUUID -> "1d0eee45-a40b-4dc3-93db-9a83c2a872e3"],Cell[
+TextData[
+{"Files"," ","on"," ","the"," ","Wolfram"," ","Cloud"," ","are"," ","represented"," ","with"," ",ButtonBox[
+"CloudObject",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudObject.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudObject.html"],":"}],
+"Text",ExpressionUUID -> "c2d9d2d0-ff05-4f48-aeae-b9b1aca6652d"],Cell[
+BoxData[RowBox[
+{"myObject"," ","="," ",RowBox[{"CloudObject","[",RowBox[{"\"TestObject\"",","," ","\"WebServices\""}],"]"}]}]],
+"Input",ExpressionUUID -> "2df9f4af-9709-4030-9f93-f0708569d265"],Cell[
+TextData[
+{"This"," ","is"," ","a"," ","reference"," ","only",StyleBox[RowBox[{";"," "}]],"the"," ","object"," ","doesn\[CloseCurlyQuote]t"," ","exist"," ","on"," ","the"," ","cloud"," ","yet",":"}],
+"Text",ExpressionUUID -> "eaa207e4-e4a4-4e10-b812-dc557757b0eb"],Cell[
+BoxData[RowBox[
+{"URLRead","[","myObject","]"}]],"Input",ExpressionUUID -> "36276811-d06a-441b-8df4-fe9bf5b1b456"],Cell[
+TextData[
+{"Add"," ","content"," ","to"," ","the"," ","object"," ","with"," ",ButtonBox["CloudPut",
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudPut.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudPut.html"],":"}],"Text",
+ExpressionUUID -> "81e08f55-67f5-4494-910a-91c601e30c3a"],Cell[
+BoxData[RowBox[{"CloudPut","[",RowBox[
+{"\"Hello\"",","," ","myObject"}],"]"}]],"Input",ExpressionUUID -> "d23833cd-b3a4-43ed-b285-407d6a572c65"],Cell[
+BoxData[
+RowBox[{"URLRead","[","myObject","]"}]],"Input",ExpressionUUID -> "058b595c-b604-4fde-a67e-63a252c68994"],Cell[
+TextData[
+{"Use"," ",ButtonBox["CloudGet",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"http://reference.wolfram.com/language/ref/CloudGet.html"],None},ButtonNote -> "http://reference.wolfram.com/language/ref/CloudGet.html"]," ","to"," ","evaluate"," ","a"," ","cloud"," ","object"," ","and"," ","return"," ","the"," ","last"," ","output",":"}],
+"Text",ExpressionUUID -> "cc2f31c0-1615-4351-b85b-f543379135af"],Cell[
+BoxData[RowBox[
+{"CloudGet","[","myObject","]"}]],"Input",ExpressionUUID -> "1b4f70bb-0088-45f4-89e8-cfb8672f368b"],Cell[
+TextData[
+{"CloudPut"," ","will"," ","overwrite"," ","existing"," ","content",":"}],"Text",
+ExpressionUUID -> "f9933bb0-b6fd-4f6a-b6b2-34f847d65bd5"],Cell[
+BoxData[RowBox[{RowBox[
+{RowBox[{"CloudPut","[",RowBox[{"\"Good bye\"",","," ","myObject"}],"]"}],";"}],"\[IndentingNewLine]",RowBox[
+{"ReadList","[","myObject","]"}]}]],"Input",ExpressionUUID -> "db9b45ad-4f9d-410c-bfac-34807240c8dc"],Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"PutAppend","[",RowBox[{"\"Hello again\"",","," ","myObject"}],"]"}],";"}],"\[IndentingNewLine]",RowBox[
+{"ReadList","[","myObject","]"}]}]],"Input",ExpressionUUID -> "7f97b7c8-7880-47cf-ad3f-7bc42e98ad7a"],Cell[
+TextData[
+{"Use"," ",ButtonBox["DeleteObject",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"http://reference.wolfram.com/language/ref/DeleteObject.html"],None},ButtonNote -> "http://reference.wolfram.com/language/ref/DeleteObject.html"]," ","to"," ","remove"," ","a"," ","cloud"," ","object",":"}],
+"Text",ExpressionUUID -> "d64fc621-60ef-48e1-82cf-eaa2634ae9cd"],Cell[
+BoxData[RowBox[
+{"DeleteObject","[","myObject","]"}]],"Input",ExpressionUUID -> "7c41ab39-ffe1-401b-999d-2239b7776f78"],Cell[
+BoxData[
+RowBox[{"URLRead","[","myObject","]"}]],"Input",ExpressionUUID -> "c4f9ab11-7d60-427f-a9fe-656e1f699b00"]},
+{1}],ExpressionUUID -> "1fa746f8-9227-4710-9aba-82e07fcf5566"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Cloud"," ","Symbols"}],"Subsection",ExpressionUUID -> "04a63db0-6571-49a8-bd96-9e775ecc99e9"],Cell[
+TextData[
+{"Symbols"," ","can"," ","be"," ","stored"," ","on"," ","the"," ","cloud"," ","with"," ",ButtonBox[
+"CloudSymbol",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudSymbol.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudSymbol.html"],":"}],
+"Text",ExpressionUUID -> "51312df3-7417-40e3-8bbf-9b56c3804a0e"],Cell[
+BoxData[RowBox[
+{RowBox[{RowBox[{"CloudSymbol","[","\"x\"","]"}]," ","="," ","10"}],";"}]],"Input",
+ExpressionUUID -> "df079430-0464-4c55-a2cc-c9fc6121c0ae"],Cell[
+TextData[{"They"," ","are"," ","stored"," ","in"," ","the"," ",ButtonBox[
+RowBox[{"$","CloudSymbolBase"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"http://reference.wolfram.com/language/ref/$CloudSymbolBase.html"],None},ButtonNote -> "http://reference.wolfram.com/language/ref/$CloudSymbolBase.html"]," ","directory",":"}],
+"Text",ExpressionUUID -> "6bebb14c-fb82-4510-8317-66a0b6c7f564"],Cell[
+BoxData["$CloudSymbolBase"],
+"Input",ExpressionUUID -> "9278070c-954a-41f8-9133-ea0499d0b230"],Cell[
+TextData[
+{"To"," ","retrieve"," ","a"," ","cloud"," ","symbol",StyleBox[RowBox[{","," "}]],"just"," ","run"," ","it"," ","again"," ","or"," ","find"," ","it"," ","in"," ","the"," ","directory",":"}],
+"Text",ExpressionUUID -> "8bd397ea-77eb-4838-8348-63a29be50b41"],Cell[
+BoxData[RowBox[
+{"CloudSymbol","[","\"x\"","]"}]],"Input",ExpressionUUID -> "0fc2c3a9-7adf-4bbf-9f08-b712b0a66d3e"],Cell[
+BoxData[
+RowBox[{"CloudGet","[",RowBox[{"FileNameJoin","[",RowBox[{"{",RowBox[{"$CloudSymbolBase",",","\"x\""}],"}"}],"]"}],"]"}]],
+"Input",ExpressionUUID -> "4c07cd57-ee23-4d65-a0d4-be93afea207b"],Cell[
+TextData[
+{"Cloud"," ","symbols"," ","can"," ","be"," ","delayed","\[LongDash]","although"," ","they"," ","cannot"," ","represent"," ","fully"," ","fledged"," ","functions",":"}],
+"Text",ExpressionUUID -> "b31abfb4-1cae-4cb8-a2b9-ed946c850fbc"],Cell[
+BoxData[RowBox[
+{RowBox[{RowBox[{"CloudSymbol","[","\"now\"","]"}]," ",":="," ","Now"}],";"}]],"Input",
+ExpressionUUID -> "d6b4647f-2472-49a0-a752-d48769c14e43"],Cell[
+BoxData[RowBox[{"CloudSymbol","[","\"now\"","]"}]],
+"Input",ExpressionUUID -> "e6961773-f848-4229-bf0e-4d41c34ab18b"],Cell[
+TextData[
+{"Evaluate"," ","pure"," ","functions"," ","with"," ",ButtonBox["CloudFunction",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudFunction.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CloudFunction.html"],":"}],
+"Text",ExpressionUUID -> "7f2b74e2-dd7a-4970-8572-b7c7defd68da"],Cell[
+BoxData[RowBox[
+{RowBox[{"function"," ","="," ",RowBox[{"CloudPut","[",RowBox[{RowBox[{"Function","[",RowBox[
+{"#1","+","#2"}],"]"}],","," ","\"WebServices/Function\""}],"]"}]}],";"}]],"Input",
+ExpressionUUID -> "95ed64f2-4244-456c-b375-33f277149fd9"],Cell[
+BoxData[RowBox[{RowBox[
+{"CloudFunction","[","function","]"}],"[",RowBox[{"2",",","3"}],"]"}]],"Input",ExpressionUUID -> "8d008781-f8c2-424f-a7f4-ce7beac33542"]},
+{1}],ExpressionUUID -> "5d80b650-2fb1-4add-bbe4-662f2a40b688"],Cell[
+CellGroupData[
+{Cell[
+"\<Databins\>","Subsection",ExpressionUUID -> "5604beea-7db3-4432-8a42-d759e636004a"],Cell[
+TextData[
+{"Data"," ","can"," ","be"," ","stored"," ","online"," ","in"," ","a"," ",ButtonBox[
+"Databin",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/Databin.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/Databin.html"]," ","on"," ","the"," ",ButtonBox[
+RowBox[{"Wolfram"," ","Data"," ","Drop"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL[
+"https://datadrop.wolframcloud.com/"],None},ButtonNote -> "https://datadrop.wolframcloud.com/"],".","\n","Use"," ",ButtonBox[
+"CreateDatabin",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CreateDatabin.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/CreateDatabin.html"]," ","to"," ","set"," ","up"," ","a"," ","new"," ","databin",":"}],
+"Text",ExpressionUUID -> "200ecaf5-4069-497a-ab83-b45520840beb"],Cell[
+BoxData[RowBox[
+{"myDatabin"," ","="," ",RowBox[{"CreateDatabin","[",RowBox[{"<|",RowBox[{"\"Name\""," ","\[Rule]"," ","\"My databin\""}],"|>"}],"]"}]}]],
+"Input",ExpressionUUID -> "594f7f5d-441b-4c9a-b3a2-58d1e48bf55b"],Cell[
+TextData[
+{"Get"," ","information"," ","about"," ","the"," ","databin",":"}],"Text",ExpressionUUID -> "90e53ee1-9f99-4190-b8e9-04ef91b63af4"],Cell[
+BoxData[
+RowBox[{"Information","[","myDatabin","]"}]],"Input",ExpressionUUID -> "9dda1eca-3774-4158-89cc-26da7d6da2b5"],Cell[
+TextData[
+{"Get"," ","a"," ","link"," ","to"," ","the"," ","databin",":"}],"Text",ExpressionUUID -> "d4bbf32e-dd1e-4f49-ac6c-785aa3ca3440"],Cell[
+BoxData[
+RowBox[{"myDatabin","[","\"ShortURL\"","]"}]],"Input",ExpressionUUID -> "cdb05b3b-d204-455a-af7c-edef68d79c85"],Cell[
+TextData[
+{"Add"," ","entries"," ","to"," ","the"," ","databin"," ","with"," ",ButtonBox["DatabinAdd",
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/DatabinAdd.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/DatabinAdd.html"],":"}],
+"Text",ExpressionUUID -> "ff62b9e6-eced-4732-9cf6-edf29e45fe55"],Cell[
+BoxData[RowBox[
+{"DatabinAdd","[",RowBox[{"myDatabin",","," ",RowBox[{"<|",RowBox[{"\"Edward\""," ","\[Rule]"," ",RowBox[
+{"<|",RowBox[{"\"Content\""," ","\[Rule]"," ",RowBox[{"{",RowBox[{"1",","," ","2",","," ","3"}],"}"}]}],"|>"}]}],"|>"}]}],"]"}]],
+"Input",ExpressionUUID -> "55539251-cc25-4f70-926f-19bb59b364aa"],Cell[
+TextData[
+{"Add"," ","entries"," ","in"," ","bulk"," ","with"," ",ButtonBox["DatabinUpload",
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/DatabinAdd.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/ref/DatabinAdd.html"],":"}],
+"Text",ExpressionUUID -> "6f9d82ff-6a9c-48aa-ae1b-44c712d3b4d4"],Cell[
+BoxData[RowBox[
+{"DatabinUpload","[","\[IndentingNewLine]",RowBox[{"myDatabin",",","\[IndentingNewLine]",RowBox[
+{"{","\[IndentingNewLine]",RowBox[{RowBox[{"<|",RowBox[{"\"Adam\""," ","\[Rule]"," ",RowBox[
+{"<|",RowBox[{"\"Content\""," ","\[Rule]"," ",RowBox[{"{",RowBox[{"5",","," ","2",","," ","7"}],"}"}]}],"|>"}]}],"|>"}],",","\[IndentingNewLine]",RowBox[
+{"<|",RowBox[{"\"Brian\""," ","\[Rule]"," ",RowBox[{"<|",RowBox[{"\"Content\""," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"4",","," ","6",","," ","3"}],"}"}]}],"|>"}]}],"|>"}],",","\[IndentingNewLine]",RowBox[
+{"<|",RowBox[{"\"Clare\""," ","\[Rule]"," ",RowBox[{"<|",RowBox[{"\"Content\""," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"1",","," ","9",","," ","8"}],"}"}]}],"|>"}]}],"|>"}]}],"\[IndentingNewLine]","}"}]}],"\[IndentingNewLine]","]"}]],
+"Input",ExpressionUUID -> "7a089310-b663-4c06-8677-545b379c5312"],Cell[
+TextData[
+{"Get"," ","entries"," ","from"," ","the"," ","databin",":"}],"Text",ExpressionUUID -> "674bcd7b-40e8-43f7-b9d8-1109a4362c2d"],Cell[
+BoxData[
+RowBox[{"myDatabin","[","\"Entries\"","]"}]],"Input",ExpressionUUID -> "650239f8-4d6a-44f1-99f7-f177dabb4292"],Cell[
+TextData[
+{"Get"," ","entries"," ","with"," ","metadata",":"}],"Text",ExpressionUUID -> "bff21d5f-bf9b-420c-8913-8b42f02ed784"],Cell[
+BoxData[
+RowBox[{"myDatabin","[","\"FullEntries\"","]"}]],"Input",ExpressionUUID -> "5fd69b78-0c73-475b-9a11-d39bb661e9a8"],Cell[
+TextData[
+{"Remove"," ","the"," ","databin"," ","with"," ","DeleteObject",":"}],"Text",ExpressionUUID -> "5a895fab-3134-4421-a11b-5ca4f36a7ba6"],Cell[
+BoxData[
+RowBox[{"DeleteObject","[","myDatabin","]"}]],"Input",ExpressionUUID -> "1bbde63c-308b-4f76-ac62-7a316d7c382f"]},
+{1}],ExpressionUUID -> "e4eeeec8-a5b1-45d6-8c98-948b0c699fa0"]},{1}],ExpressionUUID -> "3d112435-8607-41a9-aeea-1fd008a1aa9d"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Building"," ","an"," ","App"}],"Section",ExpressionUUID -> "17ecdb77-e87f-43c4-8e86-cd57063d92cc"],Cell[
+CellGroupData[
+{Cell[
+"\<API\>","Subsection",ExpressionUUID -> "3985acb3-9632-4b6c-b964-636402e9ed4c"],Cell[
+TextData[
+{"Create"," ","an"," ","API"," ","that"," ","plots"," ","a"," ","peptide"," ","sequence",":"}],
+"Text",ExpressionUUID -> "4b2800a3-7831-4848-9af5-b7500e356697"],Cell[
+BoxData[RowBox[
+{RowBox[{"peptideSequenceAPI"," ","="," ",RowBox[{"APIFunction","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"sequence\""," ","\[Rule]"," ",RowBox[{"\"String\""," ","\[Rule]"," ","\"AAA\""}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"HTTPRedirect","[","\[IndentingNewLine]",RowBox[{"CloudExport","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"MoleculePlot","[","\[IndentingNewLine]",RowBox[{RowBox[{"BioSequence","[",RowBox[
+{"\"Peptide\"",","," ","#sequence"}],"]"}],",","\[IndentingNewLine]",RowBox[{"PlotTheme"," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"\"HeavyAtom\"",","," ","\"Monochrome\""}],"}"}]}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]","\"PNG\"",",","\[IndentingNewLine]",RowBox[
+{"CloudObject","[",RowBox[{RowBox[{"CloudObjectURLType"," ","\[Rule]"," ","\"Download\""}],","," ",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"]"}]}],"\[IndentingNewLine]","]"}],"\[IndentingNewLine]","]"}],"&"}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",ExpressionUUID -> "302ab28b-921e-4807-b880-6e75b61e8c33"],Cell[
+BoxData[RowBox[
+{RowBox[{RowBox[{"peptideSequenceAPIDeployed"," ","="," ",RowBox[{"CloudDeploy","[","\[IndentingNewLine]",RowBox[
+{"peptideSequenceAPI",",","\[IndentingNewLine]","\"WebServices/peptideSequenceAPI\"",",","\[IndentingNewLine]",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"\[IndentingNewLine]","]"}]}],";"}]," "}]],
+"Input",ExpressionUUID -> "0a12912a-7a03-4846-b0b1-4604ff7120bd"],Cell[
+TextData[
+{"Test"," ","the"," ","API",":"}],"Text",ExpressionUUID -> "0a922c15-07e1-44fd-9935-a4723648875a"],Cell[
+BoxData[
+RowBox[{"URLExecute","[",RowBox[{"peptideSequenceAPIDeployed",","," ",RowBox[{"{",RowBox[
+{"\"sequence\""," ","\[Rule]"," ","\"LIGHT\""}],"}"}]}],"]"}]],"Input",ShowGroupOpener -> "Inline",
+ExpressionUUID -> "d5ac2546-fdab-4dfc-8af7-2b74abc618d7"]},{1}],ExpressionUUID -> "86d92db2-dc8b-4bb8-8509-77648b7b3f8f"],Cell[
+CellGroupData[
+{Cell[
+"\<Databin\>","Subsection",ExpressionUUID -> "3bda7019-fc69-4f61-8c7d-b1496b6cd1d8"],Cell[
+TextData[
+{"Set"," ","up"," ","a"," ","databin",":"}],"Text",ExpressionUUID -> "c22b47ac-446e-421b-b125-82a5e01b94bc"],Cell[
+BoxData[
+{RowBox[{RowBox[{"feedbackDatabin"," ","="," ",RowBox[{"Once","[",RowBox[{"CreateDatabin","[",RowBox[
+{"<|",RowBox[{"\"Name\""," ","\[Rule]"," ","\"Feedback\""}],"|>"}],"]"}],"]"}]}],";"}],"\n",RowBox[
+{"feedbackDatabin","[","\"ShortURL\"","]"}]}],"Input",ExpressionUUID -> "cddd1fe8-a8cc-44d1-923b-9bd1272ed5a7"]},
+{1}],ExpressionUUID -> "bfe6d834-1f77-46e8-b739-07468eeccbed"],Cell[
+CellGroupData[
+{Cell[
+"\<Form\>","Subsection",ExpressionUUID -> "3ed3d125-86f2-46c0-8b2f-3bf9a63fd763"],Cell[
+TextData[
+{"Set"," ","up"," ","a"," ","user"," ","feedback"," ","form"," ","where"," ","the"," ","responses"," ","are"," ","added"," ","to"," ","the"," ","databin",":"}],
+"Text",ExpressionUUID -> "eb263447-391f-4f2f-b9df-c7b2f30b7c1b"],Cell[
+BoxData[{RowBox[
+{RowBox[{RowBox[{"Clear","[","feedbackForm","]"}],";"}],"\[IndentingNewLine]"}],"\n",RowBox[
+{RowBox[{"feedbackForm"," ","="," ",RowBox[{"Module","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","bugFormSubmissionAction","}"}],"\[IndentingNewLine]",",","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{RowBox[{"bugFormSubmissionAction","[","bugDatabin_Databin","]"}],"[","bugFormAssoc_Association","]"}]," ",":="," ",RowBox[
+{"Module","[","\[IndentingNewLine]",RowBox[{RowBox[{"{","feedback","}"}],","," ","\[IndentingNewLine]",RowBox[
+{"(","\[IndentingNewLine]",RowBox[{RowBox[{"feedback"," ","="," ","bugFormAssoc"}],";","\[IndentingNewLine]",RowBox[
+{"feedback"," ","="," ",RowBox[{"<|",RowBox[{"$RequesterWolframID"," ","\[Rule]"," ","feedback"}],"|>"}]}],";","\[IndentingNewLine]",RowBox[
+{"DatabinAdd","[",RowBox[{"bugDatabin",","," ","feedback"}],"]"}]}],"\[IndentingNewLine]",")"}]}],"\[IndentingNewLine]","]"}]}],";","\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{"FormFunction","[","\[IndentingNewLine]",RowBox[{RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"{",RowBox[{"\"Name\"",","," ","\"Your name\""}],"}"}]," ","\[Rule]"," ","\"String\""}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"ReportType\"",","," ","\"Report Type\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{RowBox[{"{",RowBox[{"\"Improvement\"",","," ","\"Bug\"",","," ","\"Feedback\""}],"}"}]," ","\[Rule]"," ","\"Improvement\""}]}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"Description\"",","," ","\"Description\""}],"}"}]," ","\[Rule]"," ","\"TextArea\""}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"(","\[IndentingNewLine]",RowBox[{RowBox[{RowBox[{"bugFormSubmissionAction","[","feedbackDatabin","]"}],"[","#","]"}],";","\[IndentingNewLine]",RowBox[
+{"Style","[",RowBox[{"\"Your feedback has been submitted. Thank you.\"",","," ","\"Text\""}],"]"}]}],"\[IndentingNewLine]",")"}],"&"}]}],"\[IndentingNewLine]","]"}]}]}],"\[IndentingNewLine]","]"}]}],";"}]}],
+"Input",ExpressionUUID -> "ab6c2145-804f-440e-a6da-7a3650744e6d"],Cell[
+TextData[
+{"Deploy"," ","the"," ","form"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "2cd94521-272f-4f75-8748-502b7d79b3c0"],Cell[
+BoxData[
+RowBox[{"feedbackFormDeployed"," ","="," ",RowBox[{"CloudDeploy","[",RowBox[{"feedbackForm",","," ","\"WebServices/FeedbackForm\"",","," ",RowBox[
+{"Permissions","\[Rule]","\"Public\""}]}],"]"}]}]],"Input",CellLabel -> "",ExpressionUUID -> "d3d9e758-0c39-4cc9-849f-70b0b3ff0dfa"]},
+{1}],ExpressionUUID -> "659f5788-9898-4515-8fa4-ad78dd52efa8"],Cell[
+CellGroupData[
+{Cell[
+"\<Dashboard\>","Subsection",ExpressionUUID -> "51eaf613-7158-4eb1-b91b-0549d6364e5d"],Cell[
+TextData[
+{"Create"," ","a"," ","dashboard",":"}],"Text",ExpressionUUID -> "8109e658-2e9b-4677-8563-264486a88cb3"],Cell[
+BoxData[
+RowBox[{"DynamicModule","[","\[IndentingNewLine]",RowBox[{RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"aminoAcids"," ","="," ",RowBox[{"Sort","[",RowBox[{"\[LeftAssociation]","\[IndentingNewLine]",RowBox[
+{RowBox[{TemplateBox[{"\"L-alanine\"",RowBox[{"Entity","[",RowBox[{"\"Chemical\"",",","\"LAlanine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LAlanine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"A\""}],",",RowBox[{TemplateBox[{"\"L-arginine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LArginine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LArginine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"R\""}],",",RowBox[{TemplateBox[{"\"L-asparagine\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LAsparagine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LAsparagine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"N\""}],",",RowBox[{TemplateBox[{"\"L-aspartic acid\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LAsparticAcid\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LAsparticAcid\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"D\""}],",",RowBox[{TemplateBox[{"\"L-cysteine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LCysteine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LCysteine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"C\""}],",",RowBox[{TemplateBox[{"\"L-glutamine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LGlutamine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LGlutamine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"Q\""}],",",RowBox[{TemplateBox[{"\"L-glutamic acid\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LGlutamicAcid\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LGlutamicAcid\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"E\""}],",",RowBox[{TemplateBox[{"\"glycine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"Glycine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"Glycine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"G\""}],",",RowBox[{TemplateBox[{"\"L-histidine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LHistidine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LHistidine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"H\""}],",",RowBox[{TemplateBox[{"\"L-isoleucine\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LIsoleucine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LIsoleucine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"I\""}],",",RowBox[{TemplateBox[{"\"L-leucine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LLeucine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LLeucine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"L\""}],",",RowBox[{TemplateBox[{"\"L-lysine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LLysine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LLysine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"K\""}],",",RowBox[{TemplateBox[{"\"L-methionine\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LMethionine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LMethionine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"M\""}],",",RowBox[{TemplateBox[{"\"L-phenylalanine\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LPhenylalanine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LPhenylalanine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"F\""}],",",RowBox[{TemplateBox[{"\"L-proline\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LProline\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LProline\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"P\""}],",",RowBox[{TemplateBox[{"\"L-serine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LSerine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LSerine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"S\""}],",",RowBox[{TemplateBox[{"\"L-threonine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LThreonine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LThreonine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"T\""}],",",RowBox[{TemplateBox[{"\"L-tryptophan\"",RowBox[
+{"Entity","[",RowBox[{"\"Chemical\"",",","\"LTryptophan\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LTryptophan\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"W\""}],",",RowBox[{TemplateBox[{"\"L-tyrosine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LTyrosine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LTyrosine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"Y\""}],",",RowBox[{TemplateBox[{"\"L-valine\"",RowBox[{"Entity","[",RowBox[
+{"\"Chemical\"",",","\"LValine\""}],"]"}],"\"Entity[\\\"Chemical\\\", \\\"LValine\\\"]\"","\"chemical\""},
+"Entity"],"\[Rule]","\"V\""}]}],"\[IndentingNewLine]","\[RightAssociation]"}],"]"}]}],",","\[IndentingNewLine]",RowBox[
+{"rawSequence"," ","="," ",RowBox[{"{","}"}]}],",","\[IndentingNewLine]","aminoAcidButtonFunction",",","\[IndentingNewLine]",RowBox[
+{"output"," ","="," ",RowBox[{"Style","[",RowBox[{"\"\[LongDash]\"",","," ","Italic",","," ","Gray"}],"]"}]}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"aminoAcidButtonFunction","[",RowBox[{"aminoAcid_Entity",","," ","symbol_String"}],"]"}]," ",":="," ",RowBox[
+{"MouseAppearance","[","\[IndentingNewLine]",RowBox[{RowBox[{"Button","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"Show","[","\[IndentingNewLine]",RowBox[{RowBox[{"RemoveBackground","[",RowBox[
+{RowBox[{"Rasterize","[",RowBox[{RowBox[{"EntityValue","[",RowBox[{"aminoAcid",",","\"ColorStructureDiagram\""}],"]"}],","," ",RowBox[
+{"ImageSize"," ","\[Rule]"," ",RowBox[{"{",RowBox[{"100",","," ","100"}],"}"}]}]}],"]"}],","," ","White"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Graphics","[",RowBox[{"Style","[",RowBox[{RowBox[{"Text","[",RowBox[{"symbol",","," ",RowBox[
+{"{",RowBox[{"50",","," ","50"}],"}"}]}],"]"}],","," ","Gray",","," ","50",","," ",RowBox[
+{"Opacity","[","0.3","]"}]}],"]"}],"]"}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{"AppendTo","[",RowBox[{"rawSequence",",",RowBox[{"aminoAcids","[","aminoAcid","]"}]}],"]"}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]","\"LinkHand\""}],"\[IndentingNewLine]","]"}]}],";","\[IndentingNewLine]",RowBox[
+{"Deploy","[","\[IndentingNewLine]",RowBox[{"Column","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{"Framed","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"Grid","[","\[IndentingNewLine]",RowBox[{RowBox[{"Partition","[",RowBox[
+{RowBox[{"KeyValueMap","[",RowBox[{"aminoAcidButtonFunction",","," ","aminoAcids"}],"]"}],","," ","5"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Dividers","\[Rule]","Center"}],",","\[IndentingNewLine]",RowBox[{"ItemSize","\[Rule]","All"}],",","\[IndentingNewLine]",RowBox[
+{"Spacings","\[Rule]","1"}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{"RoundingRadius"," ","\[Rule]"," ","5"}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{"Row","[","\[IndentingNewLine]",RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[
+{"Button","[","\[IndentingNewLine]",RowBox[{"\"Draw sequence\"",",","\[IndentingNewLine]",RowBox[
+{"(","\[IndentingNewLine]",RowBox[{RowBox[{"output"," ","="," ",RowBox[{"ProgressIndicator","[",RowBox[
+{"Appearance"," ","\[Rule]"," ","\"Necklace\""}],"]"}]}],";","\[IndentingNewLine]",RowBox[
+{"With","[","\[IndentingNewLine]",RowBox[{RowBox[{"{",RowBox[{"url"," ","="," ",RowBox[
+{"URLBuild","[",RowBox[{RowBox[{"{","peptideSequenceAPIDeployed","}"}],","," ",RowBox[
+{"{",RowBox[{"\"sequence\""," ","\[Rule]"," ",RowBox[{"StringJoin","[","rawSequence","]"}]}],"}"}]}],"]"}]}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"output"," ","="," ",RowBox[{"Tooltip","[",RowBox[{RowBox[{"Framed","[",RowBox[{RowBox[
+{"Hyperlink","[",RowBox[{RowBox[{"URLExecute","[","url","]"}],","," ","url"}],"]"}],","," ",RowBox[
+{"RoundingRadius"," ","\[Rule]"," ","3"}]}],"]"}],","," ","\"Click to download\""}],"]"}]}]}],"\[IndentingNewLine]","]"}]}],"\[IndentingNewLine]",")"}],",","\[IndentingNewLine]",RowBox[
+{"ImageSize"," ","\[Rule]"," ","150"}],",","\[IndentingNewLine]",RowBox[{"Method"," ","\[Rule]"," ","\"Queued\""}]}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{"Spacer","[","2","]"}],",","\[IndentingNewLine]",RowBox[{"Button","[",RowBox[{"\"Clear all\"",","," ",RowBox[
+{"(",RowBox[{RowBox[{"rawSequence","=",RowBox[{"{","}"}]}],";"," ",RowBox[{"output"," ","="," ",RowBox[
+{"Style","[",RowBox[{"\"\[LongDash]\"",","," ","Italic",","," ","Gray"}],"]"}]}]}],")"}],","," ",RowBox[
+{"ImageSize"," ","\[Rule]"," ","100"}]}],"]"}],",","\[IndentingNewLine]",RowBox[{"Spacer","[","40","]"}],",","\[IndentingNewLine]",RowBox[
+{"Button","[",RowBox[{"\"Submit feedback\"",","," ",RowBox[{"SystemOpen","[","feedbackFormDeployed","]"}],","," ",RowBox[
+{"ImageSize"," ","\[Rule]"," ","150"}]}],"]"}]}],"\[IndentingNewLine]","}"}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]",RowBox[
+{"Row","[",RowBox[{"{",RowBox[{"\"Current sequence:\"",","," ",RowBox[{"Spacer","[","2","]"}],","," ",RowBox[
+{"Dynamic","[",RowBox[{"StringJoin","[","rawSequence","]"}],"]"}]}],"}"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Dynamic","[","output","]"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"Spacings"," ","\[Rule]"," ","1"}],",","\[IndentingNewLine]",RowBox[{"BaseStyle"," ","\[Rule]"," ","\"Text\""}]}],"\[IndentingNewLine]","]"}],"\[IndentingNewLine]","]"}]}]}],"\[IndentingNewLine]","]"}]],
+"Input",ExpressionUUID -> "b8c749ee-e0ca-404d-8ce7-8ae3186c61da"],Cell[
+TextData[
+{"See"," ","the"," ","latest"," ","feedback",":"}],"Text",ExpressionUUID -> "ef9dcd54-5c59-425e-bc6d-b76d4eb1793a"],Cell[
+BoxData[
+RowBox[{RowBox[{"feedbackDatabin","[","\"Entries\"","]"}],"//","Dataset"}]],"Input",
+ExpressionUUID -> "a1c03d7e-96db-4056-ad73-630fec6b2f6d"]},{1}],ExpressionUUID -> "5a9b7b22-c988-4e91-a23e-4d9d710e551e"]},
+{1}],ExpressionUUID -> "45c1804f-4bae-4037-aa81-80538dafef8d"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Learn"," ","More"}],"Section",ExpressionUUID -> "6f0e8e9a-bd92-471f-88c6-fdc94a8dca0c"],Cell[
+CellGroupData[
+{Cell[
+TextData[ButtonBox[RowBox[{"Guide",":"," ","Managing"," ","Content"," ","in"," ","the"," ","Cloud"}],
+BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/guide/ManagingContentInTheCloud.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/guide/ManagingContentInTheCloud.html"]],
+"Item",ExpressionUUID -> "a5b9541d-c22b-4889-a821-0929d1c9e3d8"],Cell[
+TextData[ButtonBox[
+RowBox[{"Guide",":"," ","Cloud"," ","Functions"," ","&"," ","Deployment"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/guide/CloudFunctionsAndDeployment.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/guide/CloudFunctionsAndDeployment.html"]],
+"Item",ExpressionUUID -> "74723953-d964-4e49-be34-9e3f8acbbb55"],Cell[
+TextData[ButtonBox[
+RowBox[{"Guide",":"," ","Creating"," ","Instant"," ","APIs"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/guide/CreatingAnInstantAPI.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/guide/CreatingAnInstantAPI.html"]],
+"Item",ExpressionUUID -> "a5da0a0a-d90f-4944-b402-84738f15ecb2"],Cell[
+TextData[ButtonBox[
+RowBox[{"Guide",":"," ","Form"," ","Structure"," ","&"," ","Layout"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["https://reference.wolfram.com/language/guide/FormStructureAndLayout.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/guide/FormStructureAndLayout.html"]],
+"Item",ExpressionUUID -> "a2f7ddd1-04cc-4af7-80d5-361259867a47"],Cell[
+TextData[ButtonBox[
+RowBox[{"Workflow",":"," ","Creating"," ","Webpages"}],BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["http://reference.wolfram.com/language/workflowguide/CreatingWebpages.html"],None},
+ButtonNote -> "http://reference.wolfram.com/language/workflowguide/CreatingWebpages.html"]],
+"Item",ExpressionUUID -> "c9bf1c08-730b-450c-8807-787c2a1ccbd2"]},Open],ExpressionUUID -> "b156648d-3e90-4f2b-8448-4ab3d6612a32"]},
+{1}],ExpressionUUID -> "60c04a61-efcf-4677-ba95-cd5fb7619021"]},Open],ExpressionUUID -> "d7f02f39-b35f-4470-aafb-d4af376abb2b"]},
+Open],ExpressionUUID -> "6972d5ee-5861-42fd-9d5e-5da35cef1efb"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.1 for Wolfram Cloud 1.63.0.1 (July 14, 2022)"]
