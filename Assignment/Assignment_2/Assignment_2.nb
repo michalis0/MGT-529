@@ -1,0 +1,183 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Data"," ","Science"," ","and"," ","Machine"," ","Learning"," ","II"}],
+"Title",ExpressionUUID -> "98e3e3f9-128d-4e4c-9a86-5466abb3fc44"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Assignment"," ","2",StyleBox[RowBox[{":"," "}]],"Cluster"," ","Analysis"," ","and"," ","API"," ","of"," ","the"," ","Green"," ","Domestic"," ","Product"}],
+"Subtitle",ExpressionUUID -> "81b96c51-9575-47fd-8957-e3af20dc0ee0"],Cell[
+TextData[
+{"In"," ","this"," ","assignment",StyleBox[RowBox[{","," "}]],"you"," ","will"," ","keep"," ","on"," ","exploring"," ","the"," ","Green"," ","Domestic"," ","Product",StyleBox[
+RowBox[{","," "}]],"trying"," ","to"," ","uncover"," ","patterns"," ","behind"," ","our"," ","data",StyleBox[
+RowBox[{"."," "}]],"Can"," ","we"," ","find"," ","geographic"," ","clusters"," ","shedding"," ","light"," ","on"," ","the"," ","results"," ","we"," ","obtained"," ","in"," ","Assignment"," ","1","?\n","\n","Once you are done you have to submit your notebook here: https://moodle.epfl.ch/mod/assign/view.php?id=1220874\n","There is no quiz, so your grade will depend only on your notebook.\n","If there is need for further clarifications on the questions, after the assignment is released, we will update this file, so make sure you check the git ",StyleBox[
+"repository",IgnoreSpellCheck -> True]," for updates.\n","\tGood luck!"}],"Text",
+ExpressionUUID -> "133bac52-fcc8-475f-87c1-1bf9093120ff"],Cell[
+CellGroupData[{Cell[
+TextData[
+{"Clustering"," ","Analysis"}],"Section",ExpressionUUID -> "61bdd978-2bd2-4f81-a9a1-530b8205f46a"],Cell[
+TextData[
+{"Import"," ","as"," ","a"," ","dataset"," ","the"," ","CSV"," ","file",StyleBox[
+RowBox[{":"," ","\""}]],"GrDP_results",".","csv","\".","\n","You"," ","can"," ","directly"," ","Import"," ","from"," ","the"," ","GitHub"," ","link",StyleBox[
+RowBox[{":"," "}]],"\n","\"","https://raw.githubusercontent.com/michalis0/MGT-529/main/Assignment/Assignment_2/GrDP_results.csv\""}],
+"Text",CellFrame -> 2,FontSlant -> Plain,Background -> RGBColor[0.8941176470588236`,
+0.8941176470588236`,0.8941176470588236`],ExpressionUUID -> "4c5651bb-c39b-494b-ac6d-d72c9dc94311"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"1",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","Create"," ","a"," ","scatter"," ","plot"," ","of"," ","the"," ","log"," ","of"," ","external"," ","costs"," ","and"," ","the"," ","log"," ","of"," ","GDP",StyleBox[
+RowBox[{" ","("}]],"considering"," ","all"," ","countries"," ","and"," ","years",StyleBox[
+RowBox[{")."," "," "," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "c625e0e8-bc25-4930-a1f6-9de4b759f050"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"2",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","Find"," ","clusters"," ","in"," ","our"," ","observations"," ","and"," ","visualize"," ","the"," ","results"," ","in"," ","a"," ","scatter"," ","plot",".","\n","I"," ","recommend"," ","using"," ","the"," ","log"," ","of"," ","external"," ","costs"," ","and"," ","log"," ","of"," ","GDP"," ","as"," ","variables",StyleBox[
+RowBox[{","," "}]],"but"," ","feel"," ","free"," ","to"," ","use"," ","other"," ","variables",StyleBox[
+RowBox[{","," "}]],"and"," ","even"," ","compute"," ","new"," ","ones",StyleBox[RowBox[
+{" ","("}]],"i",".","e",StyleBox[RowBox[{".,"," "}]],"GDP"," ","per"," ","capita",").","\n","Feel"," ","free"," ","to"," ","explore"," ","different"," ","methods",StyleBox[
+RowBox[{","," "}]],"number"," ","of"," ","clusters",StyleBox[RowBox[{","," "}]],"and"," ","other"," ","options",StyleBox[
+RowBox[{"."," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["2",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "84ecb492-76e4-431f-8bcd-ef20f14d0763"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"3",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","Find"," ","the"," ","cluster"," ","in"," ","which"," ","your"," ","observations"," ","lie",StyleBox[
+RowBox[{" ","("}]],"i",".","e",StyleBox[RowBox[{","," "}]],"clustering"," ","components",StyleBox[
+RowBox[{")."," "}]],"\n","Create"," ","a"," ","new"," ","column"," ","in"," ","your"," ","original"," ","dataset",StyleBox[
+RowBox[{","," "}]],"called",StyleBox[RowBox[{" ","\""}]],"ClusterID",StyleBox[RowBox[
+{"\""," "}]],"with"," ","the"," ","clustering"," ","components",StyleBox[RowBox[{"."," "}]],"\n","You"," ","should"," ","use"," ","the"," ","same"," ","variables",StyleBox[
+RowBox[{","," "}]],"method",StyleBox[RowBox[{","," "}]],"number"," ","of"," ","clusters",StyleBox[
+RowBox[{","," "}]],"etc",StyleBox[RowBox[{"."," "}]],"than"," ","in"," ","Question"," ","2",StyleBox[
+RowBox[{"."," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["2",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "3df53c28-3d31-4d56-ac0b-bde4c82f7f20"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"4",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","1",StyleBox[RowBox[{")"," "}]],"Extract"," ","a"," ","list"," ","of"," ","the"," ","countries"," ","belonging"," ","to"," ","your"," ","first"," ","cluster"," ","in"," ","2000",StyleBox[
+RowBox[{"."," "}]],"\n","2",StyleBox[RowBox[{")"," "}]],"Extract"," ","a"," ","list"," ","of"," ","the"," ","countries"," ","belonging"," ","to"," ","your"," ","first"," ","cluster"," ","in"," ","2019",StyleBox[
+RowBox[{"."," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "1b7dcb01-ebb0-4fa3-8086-53401a09f77b"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"5",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","Find"," ","the"," ","evolution"," ","of"," ","Cluster"," ","ID"," ","for"," ","the"," ","country"," ","of"," ","your"," ","choice",StyleBox[
+RowBox[{" ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "7b9e78f1-b502-4db6-9375-3fb36d4f210e"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"6",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","For"," ","each"," ","cluster",StyleBox[RowBox[{","," "}]],"calculate"," ","the"," ","mean"," ","of"," ","the"," ","variables"," ","you"," ","used"," ","for"," ","your"," ","cluster"," ","analysis",".","\n","For"," ","example",StyleBox[
+RowBox[{","," "}]],"if"," ","you"," ","used"," ","the"," ","log"," ","of"," ","external"," ","costs"," ","and"," ","log"," ","of"," ","GDP",StyleBox[
+RowBox[{","," "}]],"you"," ","should"," ","calculate",StyleBox[RowBox[{","," "}]],"for"," ","each"," ","cluster",StyleBox[
+RowBox[{","," "}]],"the"," ","mean"," ","of"," ","the"," ","log"," ","of"," ","external"," ","costs"," ","and"," ","the"," ","mean"," ","of"," ","the"," ","log"," ","of"," ","GDP",StyleBox[
+RowBox[{"."," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],"]"}],"Text",CellFrame -> 2,
+Background -> RGBColor[0.7490196078431373`,0.792156862745098`,0.9215686274509803`],
+ExpressionUUID -> "421d9741-3c00-459a-b258-c9d2a34f9f87"],Cell[
+TextData[{StyleBox[
+"Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox["7",FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[" ",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold]}]],"\n","Create"," ","a"," ",ButtonBox["Grid",BaseStyle -> "HyperlinkActionNew",
+ButtonData -> {URL["https://reference.wolfram.com/language/ref/Grid.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/Grid.html"]," ","of"," ","maps"," ","showing"," ","your"," ","clusters"," ","in"," ","2000",StyleBox[
+RowBox[{","," "}]],"in"," ","2010",StyleBox[RowBox[{","," "}]],"and"," ","in"," ","2019",StyleBox[
+RowBox[{" "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["2",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "1e9a70ce-cf28-4903-8e6d-c513d4a248fe"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"8",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[
+" ",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold]}]],"\n","Deploy"," ","the"," ","result"," ","of"," ","Question"," ","7"," ","to"," ","the"," ","cloud",StyleBox[
+RowBox[{"."," "}]],"Set"," ","the"," ","permissions"," ","to"," ","public",StyleBox[
+RowBox[{"."," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "0f8801d5-4328-438a-9dd7-0fcd5b46f62e"]},Open],
+ExpressionUUID -> "ecca9a8a-c2e1-4679-b133-34e3a58478ca"],Cell[
+CellGroupData[{Cell[
+TextData[
+{"GrDP"," ","classifier"," ","API"}],"Section",ExpressionUUID -> "056e7cee-43eb-4f0d-93eb-de6c6f012c99"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"9",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[
+" ",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold]}]],"\n","Create"," ","a",StyleBox[
+RowBox[{" ","("}]],"cluster",StyleBox[RowBox[{")"," "}]],"classifier"," ","function",".","\n","Display"," ","Information"," ","about"," ","your"," ","classifier"," ","function",".","\n","You"," ","do"," ","not"," ","need"," ","to"," ","use"," ","the"," ","same"," ","variables",StyleBox[
+RowBox[{","," "}]],"method",StyleBox[RowBox[{","," "}]],"number"," ","of"," ","clusters",StyleBox[
+RowBox[{","," "}]],"etc",StyleBox[RowBox[{"."," "}]],"than"," ","in"," ","Question"," ","2",StyleBox[
+RowBox[{"."," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["2",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "f0e5b3fc-5bbb-46ab-a958-af7695df8612"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"10",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[
+" ",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold]}]],"\n","Create"," ","a"," ","local"," ","API"," ","function"," ","using"," ","your"," ","classifier",".","\n","For"," ","instance",StyleBox[
+RowBox[{","," "}]],"if"," ","you"," ","used"," ","the"," ","log"," ","of"," ","external"," ","cost"," ","and"," ","log"," ","of"," ","GDP"," ","as"," ","variables"," ","to"," ","create"," ","your"," ","classifier",StyleBox[
+RowBox[{","," "}]],"the"," ","API"," ","function"," ","should"," ","use"," ","as"," ","argument"," ","2"," ","numbers",StyleBox[
+RowBox[{" ","("}]],"log"," ","of"," ","external"," ","cost",StyleBox[RowBox[{","," "}]],"log"," ","of"," ","GDP",StyleBox[
+RowBox[{")"," "}]],"and"," ","returns"," ","the"," ","cluster"," ","number",StyleBox[
+RowBox[{"."," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["2",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "0ca83dab-ea5e-4c9b-8a00-4922d6183211"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"11",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[
+" ",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold]}]],"\n","Deploy"," ","your"," ","API"," ","to"," ","the"," ","cloud",StyleBox[
+RowBox[{","," "}]],"setting"," ","the"," ","permissions"," ","to"," ","public",StyleBox[
+RowBox[{" "," "," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox["1",FontWeight -> Bold],StyleBox[
+" ",FontWeight -> Bold],StyleBox["point",FontWeight -> Bold],StyleBox["]",FontWeight -> Bold]}],
+"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,0.792156862745098`,
+0.9215686274509803`],ExpressionUUID -> "0f81e321-7ed4-40ad-8b3a-66daddd2a4ff"]},Open],
+ExpressionUUID -> "7452d47c-8418-4a8f-b561-05c5e08d7f7b"],Cell[
+CellGroupData[{Cell[
+TextData[
+{"[","Advanced",StyleBox[RowBox[{"]"," "}]],"GrDP"," ","information"," ","API"}],
+"Section",ExpressionUUID -> "9cee19fc-cc1a-4538-9d88-2c72421b1322"],Cell[
+TextData[
+{StyleBox["Question",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox[
+"12",FontWeight -> Bold],StyleBox[RowBox[{StyleBox[":",FontWeight -> Bold]," ",StyleBox[
+" ",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold]}]],"\n","Create"," ","a"," ","local"," ","API"," ","that"," ","takes"," ","as"," ","input"," ","the"," ","name"," ","of"," ","a"," ","country",StyleBox[
+RowBox[{" ","("}]],"as"," ","a"," ","string",StyleBox[RowBox[{"),"," "}]],"and"," ","return"," ","as"," ","output",":","\n",StyleBox[
+RowBox[{"-"," "}]],"If"," ","the"," ","country"," ","belongs"," ","to"," ","our"," ","sample",StyleBox[
+RowBox[{":"," "}]],"a"," ","dataset"," ","containing"," ","the"," ","year",StyleBox[
+RowBox[{","," "}]],"population",StyleBox[RowBox[{","," "}]],"GDP",StyleBox[RowBox[
+{","," "}]],"external"," ","cost",StyleBox[RowBox[{","," "}]],"share"," ","of"," ","external"," ","cost",StyleBox[
+RowBox[{","," "}]],"and"," ","GrDP"," ","per"," ","capita"," ","of"," ","our"," ","country",".","\n",StyleBox[
+RowBox[{"-"," "}]],"Else"," ","a"," ","string",StyleBox[RowBox[{":"," ","\""}]],"GrDP"," ","data"," ","is"," ","only"," ","available"," ","for"," ","the"," ","following"," ","country",StyleBox[
+RowBox[{":"," ","{"}]],"Belgium",StyleBox[RowBox[{","," "}]],"Bulgaria",StyleBox[
+RowBox[{","," "}]],"Czechia",StyleBox[RowBox[{","," "}]],"Denmark",StyleBox[RowBox[
+{","," "}]],"Germany",StyleBox[RowBox[{","," "}]],"Estonia",StyleBox[RowBox[{","," "}]],"Ireland",StyleBox[
+RowBox[{","," "}]],"Greece",StyleBox[RowBox[{","," "}]],"Spain",StyleBox[RowBox[{","," "}]],"France",StyleBox[
+RowBox[{","," "}]],"Croatia",StyleBox[RowBox[{","," "}]],"Italy",StyleBox[RowBox[
+{","," "}]],"Cyprus",StyleBox[RowBox[{","," "}]],"Latvia",StyleBox[RowBox[{","," "}]],"Lithuania",StyleBox[
+RowBox[{","," "}]],"Luxembourg",StyleBox[RowBox[{","," "}]],"Hungary",StyleBox[RowBox[
+{","," "}]],"Malta",StyleBox[RowBox[{","," "}]],"Netherlands",StyleBox[RowBox[{","," "}]],"Austria",StyleBox[
+RowBox[{","," "}]],"Poland",StyleBox[RowBox[{","," "}]],"Portugal",StyleBox[RowBox[
+{","," "}]],"Romania",StyleBox[RowBox[{","," "}]],"Slovenia",StyleBox[RowBox[{","," "," "}]],"Slovakia",StyleBox[
+RowBox[{","," "}]],"Finland",StyleBox[RowBox[{","," "}]],"Sweden",StyleBox[RowBox[
+{","," "}]],"Norway",StyleBox[RowBox[{","," "}]],"Switzerland",StyleBox[RowBox[{","," "}]],"United"," ","Kingdom",StyleBox[
+RowBox[{"}\"","\[NonBreakingSpace]"," ",StyleBox["[",FontWeight -> Bold]}]],StyleBox[
+"2",FontWeight -> Bold],StyleBox[" ",FontWeight -> Bold],StyleBox["points",FontWeight -> Bold],"]","\n","Tips",StyleBox[
+RowBox[{":"," "}]],"You"," ","can"," ","use"," ","the"," ","functions",ButtonBox[
+RowBox[{" ","If"}],BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/If.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/If.html"]," ","to"," ","create"," ","conditional"," ","statement"," ","and"," ",ButtonBox[
+"MemberQ",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["https://reference.wolfram.com/language/ref/MemberQ.html"],None},
+ButtonNote -> "https://reference.wolfram.com/language/ref/MemberQ.html"]," ","to"," ","check"," ","if"," ","an"," ","element"," ","belongs"," ","to"," ","a"," ","list",StyleBox[
+".",FontWeight -> Bold]}],"Text",CellFrame -> 2,Background -> RGBColor[0.7490196078431373`,
+0.792156862745098`,0.9215686274509803`],ExpressionUUID -> "6c7b2b6f-0799-4edc-ad9a-6658d4220e70"]},
+Open],ExpressionUUID -> "bfa9ad18-36f4-456c-95d4-c4ba183fdf9e"]},Open],ExpressionUUID -> "56d84a42-c027-4858-83e4-910b473c85e9"]},
+Open],ExpressionUUID -> "5aa42db5-1cce-4886-8e6a-ead466117295"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.1 for Wolfram Cloud 1.63.0.1 (July 14, 2022)",Magnification -> 1,
+TaggingRules -> {"TryRealOnly" -> False}]

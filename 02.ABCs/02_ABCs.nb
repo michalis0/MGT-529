@@ -46,10 +46,10 @@ RowBox[{","," "}]],"and"," ",StyleBox[StyleBox["False",FontSize -> 13],FontFamil
 "Text",ExpressionUUID -> "8d8cfb32-74bb-4c7d-9efb-98558f6392e5"],Cell[
 CellGroupData[
 {Cell[
-BoxData["$CloudConnected"],"Input",CellLabel -> "In[4]:= ",ExpressionUUID -> "3d63f2e7-0c25-47d1-82ce-ca363c07f80a"],Cell[
+BoxData["$CloudConnected"],"Input",CellLabel -> "In[45]:= ",ExpressionUUID -> "3d63f2e7-0c25-47d1-82ce-ca363c07f80a"],Cell[
 BoxData[
-"True",StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "f65a1e3c-14a1-4d2f-bf3b-54abd3bab729"]},
-Open],ExpressionUUID -> "30c79dd8-d1e8-43a5-bbf6-8d9984830a80"],Cell[
+"True",StandardForm],"Output",CellLabel -> "Out[45]= ",ExpressionUUID -> "5667cccb-3978-4c55-a39b-672bae25e69b"]},
+Open],ExpressionUUID -> "f178ff0a-9610-494a-ad65-71c0bc0b7e1f"],Cell[
 TextData[{"Disconnect"," ","from"," ","the"," ","cloud"," ","with"," ",ButtonBox[
 "CloudDisconnect",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/CloudDisconnect.html"],None},
 ButtonNote -> "http://reference.wolfram.com/language/ref/CloudDisconnect.html"],":"}],
@@ -83,10 +83,16 @@ RowBox[{"."," "}]],"Here"," ","we"," ","deploy"," ","our"," ","randomly","-","ge
 RowBox[{" ","\""}]],"WebServices",StyleBox[RowBox[{"\","," "}]],"and"," ","we"," ","call"," ","our"," ","file",StyleBox[
 RowBox[{" ","\""}]],"RandomImage","\":"}],"Text",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
 ExpressionUUID -> "ff881a0a-a127-4384-b92b-208eaf167a7e"],Cell[
-BoxData[RowBox[{"CloudDeploy","[",RowBox[
-{RowBox[{"RandomImage","[","]"}],","," ","\"WebServices/RandomImage\""}],"]"}]],"Input",
-ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
-ExpressionUUID -> "180fabd4-04a6-4155-8935-f0a27d4bdff3"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"CloudDeploy","[",RowBox[{RowBox[{"RandomImage","[","]"}],","," ","\"WebServices/RandomImage\""}],"]"}]],
+"Input",ShowGroupOpener -> "Inline",CellGroupingRules -> {"GroupTogetherGrouping",10000.`},
+CellLabel -> "In[46]:= ",ExpressionUUID -> "180fabd4-04a6-4155-8935-f0a27d4bdff3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"CloudObject","[",TemplateBox[{"\"https://www.wolframcloud.com/obj/boris.thurm/WebServices/RandomImage\"","https://www.wolframcloud.com/obj/boris.thurm/WebServices/RandomImage"},
+"HyperlinkURL"],"]"}],CloudObject["https://www.wolframcloud.com/obj/boris.thurm/WebServices/RandomImage"],
+SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[46]= ",ExpressionUUID -> "c806dba8-2a91-4400-8792-51f8e3bef337"]},
+Open],ExpressionUUID -> "1417320c-1a16-4a24-8345-fd4cc46578dc"],Cell[
 TextData[{"You"," ","can"," ","choose"," ","who"," ","has"," ","access"," ","with"," ","the"," ",ButtonBox[
 "Permissions",BaseStyle -> "HyperlinkActionNew",ButtonData -> {URL["http://reference.wolfram.com/language/ref/Permissions.html"],None},
 ButtonNote -> "http://reference.wolfram.com/language/ref/Permissions.html"]," ","option",StyleBox[
@@ -201,7 +207,7 @@ BoxData[RowBox[
 {"x",","," ","1",","," ","10"}],"}"}]}],"]"}],","," ","\"WebServices/AutoDownloadNotebook\"",","," ",RowBox[
 {"CloudObjectURLType","\[Rule]","\"Download\""}]}],"]"}]],"Input",CellLabel -> "",
 ExpressionUUID -> "22bcf1d1-64b7-48a0-8e96-ffa1fecde5b4"]},{1}],ExpressionUUID -> "e7a46651-df9f-4506-ae46-b0878273ab56"]},
-{1}],ExpressionUUID -> "89a90038-788b-4980-a9c2-fd3ed1a1c0a9"],Cell[
+Open],ExpressionUUID -> "89a90038-788b-4980-a9c2-fd3ed1a1c0a9"],Cell[
 CellGroupData[
 {Cell[
 "\<Permissions\>","Subsection",ExpressionUUID -> "49de3cba-8987-4617-b24e-af4b5bf96eca"],Cell[
@@ -406,13 +412,19 @@ RowBox[{RowBox[{RowBox[{"ClearAll","[","apiFunc1","]"}],";"}],"\[IndentingNewLin
 {"(*"," ",RowBox[{RowBox[{"Our"," ","variable"," ","should"," ","be"," ","a"," ",RowBox[
 {"number","."," ","If"}]," ","no"," ","input"}],",",RowBox[{"the"," ","default"," ","value"," ","is"," ","10."}]}],"*)"}],"\[IndentingNewLine]",RowBox[
 {RowBox[{"#x","^","2"}],"&"}]}],"\[IndentingNewLine]","]"}]}],";"}]}]],"Input",ShowGroupOpener -> "Inline",
-CellLabel -> "In[64]:= ",ExpressionUUID -> "808f9e81-7d08-44b2-84c2-097a3de58ec4"],Cell[
+CellLabel -> "In[47]:= ",ExpressionUUID -> "808f9e81-7d08-44b2-84c2-097a3de58ec4"],Cell[
 TextData[
 {"Call"," ","it",":"}],"Text",ExpressionUUID -> "22e501a7-8f51-47fb-b963-26030333f6b2"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"apiFunc1","[","]"}],"\[IndentingNewLine]",RowBox[
+{"apiFunc1","[",RowBox[{"<|",RowBox[{"\"x\""," ","\[Rule]","1234"}],"|>"}],"]"}]}]],
+"Input",CellLabel -> "In[49]:= ",ExpressionUUID -> "9d35943e-90bf-44ac-8880-3051a3114e19"],Cell[
 BoxData[
-RowBox[{RowBox[{"apiFunc1","[","]"}],"\[IndentingNewLine]",RowBox[{"apiFunc1","[",RowBox[
-{"<|",RowBox[{"\"x\""," ","\[Rule]","1234"}],"|>"}],"]"}]}]],"Input",CellLabel -> "In[50]:= ",
-ExpressionUUID -> "9d35943e-90bf-44ac-8880-3051a3114e19"]},{1}],ExpressionUUID -> "0481b7f3-263e-4be6-b76a-3050ebebdfee"],Cell[
+"100",StandardForm],"Output",CellLabel -> "Out[49]= ",ExpressionUUID -> "f978ef9f-de07-4fe4-b9e5-8daa835a0a15"],Cell[
+BoxData[
+"1522756",StandardForm],"Output",CellLabel -> "Out[50]= ",ExpressionUUID -> "c6fa65a8-c3ae-4efa-90d5-d4b269374835"]},
+Open],ExpressionUUID -> "d0dcdbbc-351b-4c6d-ba7c-8ca29122c144"]},{1}],ExpressionUUID -> "0481b7f3-263e-4be6-b76a-3050ebebdfee"],Cell[
 CellGroupData[
 {Cell[
 TextData[{"Cloud"," ","APIs"}],"Subsubsection",ExpressionUUID -> "a4ab9ba9-7737-41a1-b6de-1ddc1a274ef1"],Cell[
@@ -425,7 +437,7 @@ ExpressionUUID -> "f51c3bd0-8b92-403b-8f93-c0b69ba2699e"],Cell[
 BoxData[RowBox[{"apiFunc1Deployed"," ","="," ",RowBox[
 {"CloudDeploy","[","\[IndentingNewLine]",RowBox[{"apiFunc1",",","\[IndentingNewLine]","\"WebServices/API1\"",",","\[IndentingNewLine]",RowBox[
 {"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"\[IndentingNewLine]","]"}]}]],
-"Input",ExpressionUUID -> "9c5ec497-f7d7-4647-9ceb-6b63b41750ef"],Cell[
+"Input",CellLabel -> "In[51]:= ",ExpressionUUID -> "9c5ec497-f7d7-4647-9ceb-6b63b41750ef"],Cell[
 TextData[
 {"If"," ","you"," ","go"," ","to"," ","Wolfram"," ","Cloud",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","see"," ","the"," ","API"," ","you"," ","deployed"," ","in"," ","the"," ","Menu",StyleBox[
 RowBox[{","," "}]],"under",StyleBox[RowBox[{" ","\""}]],"Deployments","\".","\n","\n","You"," ","can"," ","call"," ","your"," ","deployed"," ","API"," ","with"," ",ButtonBox[
@@ -439,13 +451,14 @@ TextData[{"Edit"," ","the"," ","parameter"," ","values",":"}],
 "Text",ExpressionUUID -> "2cb806c5-f5c5-4f91-ab66-ca7c100e037c"],Cell[
 BoxData[RowBox[
 {"URLExecute","[",RowBox[{"apiFunc1Deployed",",",RowBox[{"{",RowBox[{"\"x\""," ","\[Rule]"," ","1234"}],"}"}]}],"]"}]],
-"Input",ShowGroupOpener -> "Inline",CellLabel -> "In[70]:= ",ExpressionUUID -> "3a472d3f-98e7-4912-b9e2-f04cee1ab8d8"],Cell[
+"Input",ShowGroupOpener -> "Inline",CellLabel -> "In[52]:= ",ExpressionUUID -> "3a472d3f-98e7-4912-b9e2-f04cee1ab8d8"],Cell[
 TextData[
 {"Alternatively",StyleBox[RowBox[{","," "}]],"you"," ","can"," ","modify"," ","the"," ","parameter"," ","values"," ","of"," ","an"," ","API"," ","by"," ","adding"," ",Cell[
 BoxData[
 Cell[
 Cell[
-RowBox[{"?","param1=val1&&param2=val2&&\[Ellipsis]"}],"Input",ExpressionUUID -> "febd2f55-cd52-4bd0-94d2-f500c0f19df9"]]]]," ","to"," ","the"," ","end"," ","of"," ","the"," ","URL","."}],
+RowBox[{"?","param1=val1&&param2=val2&&\[Ellipsis]"}],"Input",ExpressionUUID -> "febd2f55-cd52-4bd0-94d2-f500c0f19df9"],
+ExpressionUUID -> "9df70d49-3e3d-4970-8fdb-e2b82176a514"]],ExpressionUUID -> "b33749d3-1ed6-44e6-866d-54ba0f8da849"]," ","to"," ","the"," ","end"," ","of"," ","the"," ","URL","."}],
 "Text",ExpressionUUID -> "3465c689-97bf-48c6-9d3c-0a548194fe1b"]},{1}],ExpressionUUID -> "864361cd-a724-4b87-8d4d-7b1e343b7558"],Cell[
 CellGroupData[
 {Cell[
@@ -472,10 +485,10 @@ ButtonData -> {URL["https://www.wolfram.com/service-credits/"],None},ButtonNote 
 "Text",ExpressionUUID -> "56d317c8-4909-46db-9e5d-5b0c4ff958eb"],Cell[
 CellGroupData[
 {Cell[
-BoxData["$CloudCreditsAvailable"],"Input",CellLabel -> "In[73]:= ",ExpressionUUID -> "e2a35089-d9bd-4ebf-862b-25ba5b6ab645"],Cell[
+BoxData["$CloudCreditsAvailable"],"Input",CellLabel -> "In[53]:= ",ExpressionUUID -> "e2a35089-d9bd-4ebf-862b-25ba5b6ab645"],Cell[
 BoxData[
-"519994",StandardForm],"Output",CellLabel -> "Out[73]= ",ExpressionUUID -> "061fbf35-09db-4324-bd5f-2ba35399f107"]},
-Open],ExpressionUUID -> "dab05064-5019-4b55-a502-059d8eaf8f2b"],Cell[
+"519992",StandardForm],"Output",CellLabel -> "Out[53]= ",ExpressionUUID -> "0043aff5-85a4-477e-992d-c5f1c74d2300"]},
+Open],ExpressionUUID -> "5e60a5b6-8206-466d-8348-429f1743eb6d"],Cell[
 TextData[{"In"," ","Wolfram"," ","Cloud",StyleBox[
 RowBox[{","," "}]],"if"," ","you"," ","can"," ","directly"," ","go"," ","to"," ","your"," ","Usage"," ","Dashboard",StyleBox[
 RowBox[{" ","("}]],"top"," ","right",StyleBox[RowBox[{")"," "}]],"to"," ","check"," ","your"," ","available"," ","credits",StyleBox[
@@ -485,8 +498,11 @@ RowBox[{"."," "}]],"Keep"," ","an"," ","eye"," ","on"," ","it",StyleBox[RowBox[{
 {1}],ExpressionUUID -> "60ce8b25-b6e7-4e04-8e73-31464c228d63"],Cell[
 CellGroupData[
 {Cell[
+TextData[{"Example"," ","APIs"}],"Subsection",ExpressionUUID -> "a2574ac1-8c3d-445d-99c7-325639e5bd5b"],Cell[
+CellGroupData[
+{Cell[
 TextData[{"Example"," ","APIs",StyleBox[RowBox[{":"," "}]],"Local"," ","Temperature"," "}],
-"Subsection",ExpressionUUID -> "d63acb12-49e7-49b9-a2c1-c87f64a33c17"],Cell[
+"Subsubsection",ExpressionUUID -> "d63acb12-49e7-49b9-a2c1-c87f64a33c17"],Cell[
 TextData[
 {"Create"," ","an"," ","API"," ","that"," ","gives"," ","the"," ","current"," ","temperature"," ","at"," ","a"," ","location",":"}],
 "Text",ExpressionUUID -> "aacc5cee-0485-43d8-a14f-39e7abdd2830"],Cell[
@@ -530,7 +546,915 @@ BoxData[
 {"#location",","," ","\"Temperature\"",","," ","\"Value\""}],"]"}],"]"}]}],",","\[IndentingNewLine]","\"\[Degree]C.\"",",","\[IndentingNewLine]","\"</p>\""}],"\[IndentingNewLine]","]"}],",","\[IndentingNewLine]","\"HTML\""}],"\[IndentingNewLine]","]"}],"&"}],",","\[IndentingNewLine]","\"JSON\""}],"\[IndentingNewLine]","]"}]}],";"}],"\n",RowBox[
 {"\[IndentingNewLine]",RowBox[{"CloudDeploy","[",RowBox[{"htmlTemperatureAPI",","," ","\"WebServices/HTMLTemperatureAPI\"",","," ",RowBox[
 {"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"]"}]}]}],"Input",ExpressionUUID -> "1e21dba9-a886-4d37-b4b2-a204744f0410"]},
-{1}],ExpressionUUID -> "2368d957-52d1-4b80-9e6d-add0cd811247"]},{1}],ExpressionUUID -> "9a395abe-3a84-42d9-9bcf-58beb38304e3"],Cell[
+{1}],ExpressionUUID -> "2368d957-52d1-4b80-9e6d-add0cd811247"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Example"," ","APIs",StyleBox[RowBox[{":"," "}]],"Titanic"," ","Classifier"}],
+"Subsubsection",ExpressionUUID -> "568a3272-f325-4e6b-9055-8966c7b39cb0"],Cell[
+TextData[
+{"We"," ","will"," ","create"," ","an"," ","API"," ","that"," ","informs"," ","about"," ","the"," ","probability"," ","of"," ","surviving"," ","depending"," ","on"," ","the"," ","passenger"," ","class",StyleBox[
+RowBox[{","," "}]],"age",StyleBox[RowBox[{","," "}]],"and"," ","gender","."}],"Text",
+ExpressionUUID -> "da58caa5-7951-4011-a694-f05ecf5735a3"],Cell[
+TextData[{"Let's"," ","get"," ","some"," ","data"," ","on"," ","the"," ",StyleBox[
+"Titanic",FontSlant -> "Italic"],":"}],"Text",ExpressionUUID -> "deb77dea-0b72-4e7f-9dde-b42a93843fa1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"titanicData"," ","="," ",RowBox[{"Import","[",RowBox[
+{"\"MGT-529_ML II/data/titanic.csv\"",",",RowBox[{"{",RowBox[{"\"CSV\"",","," ","\"Dataset\""}],"}"}],",",RowBox[
+{"\"HeaderLines\"","\[Rule]","1"}]}],"]"}]}],";"}],"\n",RowBox[{"RandomSample","[",RowBox[
+{"titanicData",","," ","3"}],"]"}]}],"Input",CellLabel -> "In[243]:= ",ExpressionUUID -> "4072218a-52ac-423a-aa4f-78cbb39f2be3"],Cell[
+BoxData[
+TagBox[TagBox[DynamicModuleBox[{Set[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+Association["InitialData" -> {Association["Class" -> "3rd","Age" -> 22,"Gender" -> "female",
+"Outcome" -> "survived"],Association["Class" -> "1st","Age" -> 26,"Gender" -> "female",
+"Outcome" -> "survived"],Association["Class" -> "1st","Age" -> "","Gender" -> "male",
+"Outcome" -> "died"]},"AllowEmbedding" -> True,"InitialShape" -> TypeSystem`PackageScope`HeaderShape[
+Association[{All,"Class"} -> 1,{All,"Age"} -> 1,{All,"Gender"} -> 1,{All,"Outcome"} -> 1],
+TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`ColumnShape[TypeSystem`PackageScope`Limited[
+TypeSystem`PackageScope`RowShape[Association["Class" -> TypeSystem`PackageScope`AtomShape[
+33.6`],"Age" -> TypeSystem`PackageScope`UnknownShape[False],"Gender" -> TypeSystem`PackageScope`AtomShape[
+67.2`],"Outcome" -> TypeSystem`PackageScope`AtomShape[89.60000000000001`]]],DirectedInfinity[
+1],4,{All}]],3,DirectedInfinity[1],{}]],"InitialType" -> TypeSystem`Vector[TypeSystem`Struct[
+{"Class","Age","Gender","Outcome"},{TypeSystem`Atom[String],TypeSystem`AnyType,TypeSystem`Atom[
+String],TypeSystem`Atom[String]}],3],"Meta" -> Association[],"RowTarget" -> 20,"ColumnTarget" -> 10,
+"Shape" -> TypeSystem`PackageScope`HeaderShape[Association[{All,"Class"} -> 1,{All,"Age"} -> 1,
+{All,"Gender"} -> 1,{All,"Outcome"} -> 1],TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`ColumnShape[
+TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`RowShape[Association["Class" -> TypeSystem`PackageScope`AtomShape[
+33.6`],"Age" -> TypeSystem`PackageScope`UnknownShape[False],"Gender" -> TypeSystem`PackageScope`AtomShape[
+67.2`],"Outcome" -> TypeSystem`PackageScope`AtomShape[89.60000000000001`]]],DirectedInfinity[
+1],4,{All}]],3,DirectedInfinity[1],{}]],"Type" -> TypeSystem`Vector[TypeSystem`Struct[
+{"Class","Age","Gender","Outcome"},{TypeSystem`Atom[String],TypeSystem`AnyType,TypeSystem`Atom[
+String],TypeSystem`Atom[String]}],3],"Path" -> {},"DisplayedRowCount" -> 3,"DisplayedColumnCount" -> 4,
+"DataRowCount" -> 3,"DataColumnCount" -> 4,"SortPaths" -> {},"SortDirections" -> {},
+"HiddenItemsMap" -> Null,"UpdateType" -> 1]],TypeSystem`NestedGrid`PackagePrivate`$outputID$$,Set[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,{}],Set[TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+1],Set[TypeSystem`NestedGrid`PackagePrivate`$hPos$$,1],Set[TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+DynamicModule[{Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,Deploy[Style[
+Grid[{{Item[Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["Class",Style["Class",
+FontColor -> RGBColor[0.27450980392156865`,0.5372549019607843`,0.792156862745098`]]],
+"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"Class"},1]]],Row[{Row[{Style["All",GrayLevel[0.6`]]}],Row[{Style[" \:203a ",
+RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style["Class",
+GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95`],Alignment -> {Left,Baseline}],Item[Pane[Tooltip[EventHandler[MouseAppearance[
+Mouseover["Age",Style["Age",FontColor -> RGBColor[0.27450980392156865`,0.5372549019607843`,
+0.792156862745098`]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"Age"},1]]],Row[{Row[{Style["All",GrayLevel[0.6`]]}],Row[{Style[" \:203a ",RGBColor[
+0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style["Age",GrayLevel[
+0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],ImageSize -> {{1,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95`],Alignment -> {Left,Baseline}],Item[
+Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["Gender",Style["Gender",FontColor -> RGBColor[
+0.27450980392156865`,0.5372549019607843`,0.792156862745098`]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{All,"Gender"},1]]],Row[{Row[
+{Style["All",GrayLevel[0.6`]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628`,
+0.6509803921568628`,0.6509803921568628`]],Style["Gender",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95`],Alignment -> {Left,Baseline}],Item[Pane[Tooltip[EventHandler[MouseAppearance[
+Mouseover["Outcome",Style["Outcome",FontColor -> RGBColor[0.27450980392156865`,0.5372549019607843`,
+0.792156862745098`]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"Outcome"},1]]],Row[{Row[{Style["All",GrayLevel[0.6`]]}],Row[{Style[" \:203a ",
+RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style["Outcome",
+GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95`],Alignment -> {Left,Baseline}]},{Item[Pane[Annotation[Tooltip["3rd",Row[{Row[
+{Style[RawBoxes["1"],GrayLevel[0.6`]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628`,
+0.6509803921568628`,0.6509803921568628`]],Style["Class",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1,Key["Class"]},"Item",False],
+"Mouse"],ImageSize -> {{33.6`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["22"],Row[{Row[{Style[RawBoxes["1"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Age",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1,Key["Age"]},"Item",False],"Mouse"],
+ImageSize -> {{34,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["female",Row[{Row[{Style[RawBoxes["1"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Gender",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1,Key["Gender"]},"Item",False],
+"Mouse"],ImageSize -> {{67.2`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["survived",Row[{Row[{Style[RawBoxes["1"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Outcome",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1,Key["Outcome"]},"Item",False],
+"Mouse"],ImageSize -> {{89.60000000000001`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}]},{Item[Pane[Annotation[Tooltip["1st",Row[{Row[{Style[
+RawBoxes["2"],GrayLevel[0.6`]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628`,
+0.6509803921568628`,0.6509803921568628`]],Style["Class",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2,Key["Class"]},"Item",False],
+"Mouse"],ImageSize -> {{33.6`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["26"],Row[{Row[{Style[RawBoxes["2"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Age",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2,Key["Age"]},"Item",False],"Mouse"],
+ImageSize -> {{34,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["female",Row[{Row[{Style[RawBoxes["2"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Gender",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2,Key["Gender"]},"Item",False],
+"Mouse"],ImageSize -> {{67.2`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["survived",Row[{Row[{Style[RawBoxes["2"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Outcome",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2,Key["Outcome"]},"Item",False],
+"Mouse"],ImageSize -> {{89.60000000000001`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}]},{Item[Pane[Annotation[Tooltip["1st",Row[{Row[{Style[
+RawBoxes["3"],GrayLevel[0.6`]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628`,
+0.6509803921568628`,0.6509803921568628`]],Style["Class",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3,Key["Class"]},"Item",False],
+"Mouse"],ImageSize -> {{33.6`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["",Row[{Row[{Style[RawBoxes["3"],GrayLevel[0.6`]]}],Row[{Style[
+" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Age",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3,Key["Age"]},"Item",False],"Mouse"],
+ImageSize -> {{0.`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["male",Row[{Row[{Style[RawBoxes["3"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Gender",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3,Key["Gender"]},"Item",False],
+"Mouse"],ImageSize -> {{67.2`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip["died",Row[{Row[{Style[RawBoxes["3"],GrayLevel[0.6`]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628`,0.6509803921568628`,0.6509803921568628`]],Style[
+"Outcome",GrayLevel[0.6`]]}]},BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 10.5`}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3,Key["Outcome"]},"Item",False],
+"Mouse"],ImageSize -> {{89.60000000000001`,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}]}},BaseStyle -> {ContextMenu -> Dynamic[CompoundExpression[
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,Which[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],
+{},SameQ[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger],
+TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,True,CompoundExpression[Set[
+TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger,TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],
+Set[TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,Block[{Set[TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos,
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]},
+With[{Set[TypeSystem`NestedGrid`PackagePrivate`lastPath$,TypeSystem`NestedGrid`PackagePrivate`$lastPath],Set[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,TypeSystem`NestedGrid`PackagePrivate`$lastPathType],Set[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader],Set[
+TypeSystem`NestedGrid`PackagePrivate`headerHidden$,And[MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType,
+Alternatives["RowHeader","ColumnHeader"]],TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`allHidden$,TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`anyHidden$,TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`sortDirection$,TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$[
+"SortPaths"],TypeSystem`NestedGrid`PackagePrivate`$state$$["SortDirections"]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`haveData$,Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$]]]],Set[TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$,
+Not[FreeQ[TypeSystem`NestedGrid`PackagePrivate`$lastPath,Keys]]]},Join[{If[Or[Not[
+TypeSystem`NestedGrid`PackagePrivate`haveData$],Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$],
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$],Nothing,MenuItem[StringJoin["Show ",
+Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,
+"RowHeader"],"Row",Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],
+"Column",True,""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+TypeSystem`NestedGrid`PackagePrivate`lastPath$,"remove"]],MenuEvaluator -> Automatic]],If[
+Or[Not[TypeSystem`NestedGrid`PackagePrivate`haveData$],TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$],
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$,And[TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+TypeSystem`NestedGrid`PackagePrivate`headerHidden$]],Nothing,MenuItem[StringJoin[
+"Hide ",Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",
+Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"RowHeader"],"Row",Equal[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],"Column",True,
+""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"add"]],MenuEvaluator -> Automatic]],Delimiter},If[And[TypeSystem`NestedGrid`PackagePrivate`haveData$,
+MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,Alternatives["ColumnHeader",
+"KeyDummy"]],TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]],
+{If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Ascending"],MenuItem[
+"Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`lastPath$,"Ascending"]],MenuEvaluator -> Automatic],
+Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Descending"],
+MenuItem["Reverse Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"Descending"]],MenuEvaluator -> Automatic],Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,
+None],MenuItem["Unsort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+None]],MenuEvaluator -> Automatic],Nothing],Delimiter},{}],{MenuItem["Copy Position to Clipboard",
+KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],If[TypeSystem`NestedGrid`PackagePrivate`haveData$,MenuItem[
+"Copy Data to Clipboard",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],Nothing],Delimiter,MenuItem["Paste Position in New Cell",
+KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic],If[TypeSystem`NestedGrid`PackagePrivate`haveData$,MenuItem[
+"Paste Data in New Cell",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic],Nothing]}]]]]]]]],FontFamily -> "Source Sans Pro",FontSize -> 14,FontWeight -> Plain},
+Dividers -> All,FrameStyle -> GrayLevel[0.7490196078431373`],Spacings -> {0,0},Alignment -> Left,
+BaseStyle -> {FontFamily -> "Source Sans Pro",FontSize -> 14,FontWeight -> Plain}],
+LineBreakWithin -> False,ContextMenu -> {},NumberMarks -> False,ShowAutoStyles -> False]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`initialQ,True]},Dynamic[TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,CompoundExpression[If[Not[TypeSystem`NestedGrid`PackagePrivate`initialQ],
+Module[{Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,$Failed],Set[TypeSystem`NestedGrid`PackagePrivate`tmpData$,
+TypeSystem`NestedGrid`PackagePrivate`datasetData[TypeSystem`NestedGrid`PackagePrivate`$state$$]]},
+CompoundExpression[Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,If[FailureQ[
+TypeSystem`NestedGrid`PackagePrivate`tmpData$],TypeSystem`NestedGrid`PackagePrivate`renderedGrid,
+TypeSystem`NestedGrid`PackagePrivate`renderGrid[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`tmpData$]]],If[Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Null]]],Set[TypeSystem`NestedGrid`PackagePrivate`initialQ,False],TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,If[FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid],
+TypeSystem`SparseGrid[TypeSystem`H["(data no longer present)"]],TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]],
+RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]],
+RuleDelayed[DynamicModuleValues,{}]]],Set[TypeSystem`NestedGrid`PackagePrivate`$topBar$$,
+Dynamic[TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[TypeSystem`PackageScope`SubViewPathbar[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$path$$}]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$,Style[Framed[Dynamic[Replace[TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$,
+{TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null,Blank[]] -> "",RuleDelayed[
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Pattern[TypeSystem`NestedGrid`PackagePrivate`path$,
+Blank[]],Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$,Blank[]],Pattern[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Blank[]]],CompoundExpression[Increment[
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPath,
+TypeSystem`NestedGrid`PackagePrivate`path$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathType,
+TypeSystem`NestedGrid`PackagePrivate`pathType$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader,
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],
+TypeSystem`NestedGrid`PackagePrivate`makePathTrail[TypeSystem`NestedGrid`PackagePrivate`path$,
+TypeSystem`NestedGrid`PackagePrivate`makePathElements]]],RuleDelayed[Null,Spacer[
+10]],RuleDelayed[Blank[],Spacer[10]]}],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}]],
+FrameStyle -> None,ImageMargins -> 0,FrameMargins -> 0,Alignment -> Top,ImageSize -> {Automatic,15}],
+FontSize -> 1]],Set[TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$,Null]},
+DynamicWrapperBox[DynamicBox[ToBoxes[Dataset`DatasetContent[2,"Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$],
+"Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$],"State" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$],
+"VPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$],"HPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$],
+"TopBar" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$],"BottomBar" -> Hold[
+TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$],"OutputID" -> Hold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]],StandardForm],RuleDelayed[TrackedSymbols,
+{TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$}]],
+Set[TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$,MouseAnnotation[]]],RuleDelayed[
+Initialization,Set[TypeSystem`NestedGrid`PackagePrivate`$outputID$$,CreateUUID[]]],
+RuleDelayed[DynamicModuleValues,{}],BaseStyle -> {LineBreakWithin -> False},RuleDelayed[
+UnsavedVariables,{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],ExpressionUUID -> "232a36ee-abea-47fd-a33e-b9eda66e2d61"],
+Deploy,DefaultBaseStyle -> "Deploy"],Dataset`InterpretDataset[1],Selectable -> False,
+Editable -> False,SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[244]= ",
+ExpressionUUID -> "28faa519-2e90-4f9f-b88b-17b67365f2e2"]},Open],ExpressionUUID -> "913f603d-37e0-4972-b47e-46dfc6ee51d3"],Cell[
+TextData[
+{"Train"," ","a"," ","classifier"," ","on"," ","the"," ","data",":"}],"Text",ExpressionUUID -> "31f3bdd1-aeb1-4d83-84df-0cb4f8dbc193"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicClassifier","=",RowBox[{"Classify","[",RowBox[{"titanicData"," ","\[Rule]"," ","\"Outcome\""}],"]"}]}]],
+"Input",CellLabel -> "In[245]:= ",ExpressionUUID -> "5b38a967-fc00-4779-847e-43eb41ef438c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{TagBox["ClassifierFunction","SummaryHead"],"[",DynamicModuleBox[
+{Set[Typeset`open$$,False],Set[Typeset`embedState$$,"Ready"]},TemplateBox[{PaneSelectorBox[
+{False -> GridBox[{{PaneBox[ButtonBox[DynamicBox[FEPrivate`FrontEndResource["FEBitmaps",
+"SummaryBoxOpener"]],RuleDelayed[ButtonFunction,Set[Typeset`open$$,True]],Appearance -> None,
+BaseStyle -> {},Evaluator -> Automatic,Method -> "Preemptive"],Alignment -> {Center,Center},
+ImageSize -> Dynamic[{Automatic,Times[3.5`,Times[CurrentValue["FontCapHeight"],Power[
+AbsoluteCurrentValue[Magnification],-1]]]}]],GraphicsBox[{{PointSize[0.13`],GrayLevel[
+0.45`],PointBox[{{0.9821769431797024`,-0.440194219686987`},{1.1339776261519132`,0.8056918676854272`},{0.5279892326667741`,0.6574306661126254`},{0.022147046479890797`,1.4937877187998898`}}],GrayLevel[
+0.7`],PointBox[{{-0.9815166384819979`,0.15045697525228735`},{-0.5923526886966953`,-0.33441771553094035`},{-0.005656646679640442`,-1.462421365651345`},{-1.0734370436522753`,-1.3729645043477454`}}]},{GrayLevel[
+0.55`],AbsoluteThickness[1.5`],LineBox[{{-1.`,1.5`},{1,-1.6`}}]}},{Axes -> {False,False},AxesLabel -> {None,None},AxesOrigin -> {0,0},BaseStyle -> {FontFamily -> "Arial",AbsoluteThickness[
+1.5`]},DisplayFunction -> Identity,Frame -> {{True,True},{True,True}},FrameLabel -> {{None,None},{None,None}},FrameStyle -> Directive[
+Thickness[Tiny],GrayLevel[0.7`]],FrameTicks -> {{None,None},{None,None}},GridLines -> {None,None},LabelStyle -> {FontFamily -> "Arial"},Method -> {"ScalingFunctions" -> None},PlotRange -> {{-1.`,1},{-1.3`,1.1`}},PlotRangeClipping -> True,PlotRangePadding -> {{0.7`,0.7`},{0.7`,0.7`}},Ticks -> {None,None}},
+Axes -> False,AspectRatio -> 1,ImageSize -> Dynamic[{Automatic,Times[3.5`,Times[CurrentValue[
+"FontCapHeight"],Power[AbsoluteCurrentValue[Magnification],-1]]]}],Frame -> True,
+FrameTicks -> None,FrameStyle -> Directive[Opacity[0.5`],Thickness[Tiny],RGBColor[
+0.368417`,0.506779`,0.709798`]],Background -> GrayLevel[0.94`]],GridBox[{{RowBox[
+{TagBox["\"Input type: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[RowBox[
+{"{",RowBox[{"\"Nominal\"",",","\"Nominal\"",",","\"Nominal\""}],"}"}],"SummaryItem"]}]},{RowBox[
+{TagBox["\"Classes: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[TemplateBox[
+{",","\",\"","\"died\"","\"survived\""},"RowWithSeparators"],"SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}],True -> GridBox[
+{{PaneBox[ButtonBox[DynamicBox[FEPrivate`FrontEndResource["FEBitmaps","SummaryBoxCloser"]],
+RuleDelayed[ButtonFunction,Set[Typeset`open$$,False]],Appearance -> None,BaseStyle -> {},
+Evaluator -> Automatic,Method -> "Preemptive"],Alignment -> {Center,Center},ImageSize -> Dynamic[
+{Automatic,Times[3.5`,Times[CurrentValue["FontCapHeight"],Power[AbsoluteCurrentValue[
+Magnification],-1]]]}]],GraphicsBox[{{PointSize[0.13`],GrayLevel[0.45`],PointBox[
+{{0.9821769431797024`,-0.440194219686987`},{1.1339776261519132`,0.8056918676854272`},{0.5279892326667741`,0.6574306661126254`},{0.022147046479890797`,1.4937877187998898`}}],GrayLevel[
+0.7`],PointBox[{{-0.9815166384819979`,0.15045697525228735`},{-0.5923526886966953`,-0.33441771553094035`},{-0.005656646679640442`,-1.462421365651345`},{-1.0734370436522753`,-1.3729645043477454`}}]},{GrayLevel[
+0.55`],AbsoluteThickness[1.5`],LineBox[{{-1.`,1.5`},{1,-1.6`}}]}},{Axes -> {False,False},AxesLabel -> {None,None},AxesOrigin -> {0,0},BaseStyle -> {FontFamily -> "Arial",AbsoluteThickness[
+1.5`]},DisplayFunction -> Identity,Frame -> {{True,True},{True,True}},FrameLabel -> {{None,None},{None,None}},FrameStyle -> Directive[
+Thickness[Tiny],GrayLevel[0.7`]],FrameTicks -> {{None,None},{None,None}},GridLines -> {None,None},LabelStyle -> {FontFamily -> "Arial"},Method -> {"ScalingFunctions" -> None},PlotRange -> {{-1.`,1},{-1.3`,1.1`}},PlotRangeClipping -> True,PlotRangePadding -> {{0.7`,0.7`},{0.7`,0.7`}},Ticks -> {None,None}},
+Axes -> False,AspectRatio -> 1,ImageSize -> Dynamic[{Automatic,Times[3.5`,Times[CurrentValue[
+"FontCapHeight"],Power[AbsoluteCurrentValue[Magnification],-1]]]}],Frame -> True,
+FrameTicks -> None,FrameStyle -> Directive[Opacity[0.5`],Thickness[Tiny],RGBColor[
+0.368417`,0.506779`,0.709798`]],Background -> GrayLevel[0.94`]],GridBox[{{RowBox[
+{TagBox["\"Input type: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[RowBox[
+{"{",RowBox[{"\"Nominal\"",",","\"Nominal\"",",","\"Nominal\""}],"}"}],"SummaryItem"]}]},{RowBox[
+{TagBox["\"Classes: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[TemplateBox[
+{",","\",\"","\"died\"","\"survived\""},"RowWithSeparators"],"SummaryItem"]}]},{RowBox[
+{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox["\"LogisticRegression\"",
+"SummaryItem"]}]},{RowBox[{TagBox["\"Number of training examples: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"916","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}]},
+Dynamic[Typeset`open$$],ImageSize -> Automatic]},"SummaryPanel"],RuleDelayed[DynamicModuleValues,
+{}],ExpressionUUID -> "8e045655-453d-48cc-a7bd-cb27dee6b1bd"],"]"}],ClassifierFunction[
+Association["ExampleNumber" -> 916,"ClassNumber" -> 2,"Input" -> Association["Preprocessor" -> MachineLearning`MLProcessor[
+"ToMLDataset",Association["Input" -> Association["Class" -> Association["Type" -> "Nominal"],
+"Age" -> Association["Type" -> "Nominal"],"Gender" -> Association["Type" -> "Nominal"]],
+"Output" -> Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association[
+"Type" -> "Nominal","Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],
+"Preprocessor" -> MachineLearning`MLProcessor["Sequence",Association["Processors" -> {MachineLearning`MLProcessor[
+"FromDataset"],MachineLearning`MLProcessor["FromNamedFeatures",Association["FeatureNames" -> {"Class","Age","Gender"}]],MachineLearning`MLProcessor[
+"Transpose",Association["FeatureNumber" -> 3]],MachineLearning`MLProcessor["WrapMLDataset",
+Association["FeatureTypes" -> {"Nominal","Nominal","Nominal"},"FeatureKeys" -> {"f1","f2","f3"},
+"FeatureWeights" -> Automatic,"ExampleWeights" -> Automatic,"RawExample" -> Missing[
+"KeyAbsent","RawExample"],"StructurePreserving" -> False]]}]],"ScalarFeature" -> False,
+"Invertibility" -> "Perfect","StructurePreserving" -> False,"Missing" -> "Allowed"]],
+"Processor" -> MachineLearning`MLProcessor["Sequence",Association["Input" -> Association[
+"f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association["Type" -> "Nominal",
+"Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],"Output" -> Association[
+"(f1f2f3)" -> Association["Type" -> "NominalVector","Weight" -> 3]],"Processors" -> {MachineLearning`MLProcessor[
+"SynthesizeMissingValues",Association["Invertibility" -> "Perfect","Missing" -> "Imputed",
+"StructurePreserving" -> True,"Input" -> Association["f1" -> Association["Type" -> "Nominal",
+"Weight" -> 1],"f2" -> Association["Type" -> "Nominal","Weight" -> 1],"f3" -> Association[
+"Type" -> "Nominal","Weight" -> 1]],"Distribution" -> LearnedDistribution[Association[
+"ExampleNumber" -> 916,"Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset",
+Association["Input" -> Association["f1" -> Association["Type" -> "Nominal"],"f2" -> Association[
+"Type" -> "Nominal"],"f3" -> Association["Type" -> "Nominal"]],"Output" -> Association[
+"f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association["Type" -> "Nominal",
+"Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],"Preprocessor" -> MachineLearning`MLProcessor[
+"Identity"],"ScalarFeature" -> False,"Invertibility" -> "Perfect","StructurePreserving" -> False,
+"Missing" -> "Allowed"]],"Processor" -> MachineLearning`MLProcessor["Sequence",Association[
+"Input" -> Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association[
+"Type" -> "Nominal","Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],
+"Output" -> Association["(f1f2f3)" -> Association["Type" -> "NumericalVector","Weight" -> 3]],
+"Processors" -> {MachineLearning`MLProcessor["ToVector",Association["Invertibility" -> "Perfect",
+"Missing" -> "Allowed","StructurePreserving" -> True,"Input" -> Association["f1" -> Association[
+"Type" -> "Nominal","Weight" -> 1],"f2" -> Association["Type" -> "Nominal","Weight" -> 1],
+"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],"Output" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NominalVector","Weight" -> 3]],"Version" -> {13.1`,0},"ID" -> 1475203784826948804]],MachineLearning`MLProcessor[
+"IntegerEncodeNominalVector",Association["Invertibility" -> "Perfect","Missing" -> "Allowed",
+"StructurePreserving" -> True,"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector",
+"Weight" -> 3]],"Index" -> {Association["1st" -> 1,"2nd" -> 2,"3rd" -> 3],Association[
+0.3333` -> 1,0.75` -> 2,0.8333` -> 3,0.9167` -> 4,1 -> 5,2 -> 6,3 -> 7,4 -> 8,5 -> 9,
+6 -> 10,7 -> 11,8 -> 12,9 -> 13,10 -> 14,11 -> 15,11.5` -> 16,12 -> 17,13 -> 18,14 -> 19,
+14.5` -> 20,15 -> 21,16 -> 22,17 -> 23,18 -> 24,19 -> 25,20 -> 26,21 -> 27,22 -> 28,
+22.5` -> 29,23 -> 30,23.5` -> 31,24 -> 32,25 -> 33,26 -> 34,26.5` -> 35,27 -> 36,
+28 -> 37,28.5` -> 38,29 -> 39,30 -> 40,30.5` -> 41,31 -> 42,32 -> 43,32.5` -> 44,
+33 -> 45,34 -> 46,34.5` -> 47,35 -> 48,36 -> 49,37 -> 50,38 -> 51,39 -> 52,40 -> 53,
+40.5` -> 54,41 -> 55,42 -> 56,43 -> 57,44 -> 58,45 -> 59,45.5` -> 60,46 -> 61,47 -> 62,
+48 -> 63,49 -> 64,50 -> 65,51 -> 66,52 -> 67,53 -> 68,54 -> 69,55 -> 70,55.5` -> 71,
+56 -> 72,57 -> 73,58 -> 74,59 -> 75,60 -> 76,60.5` -> 77,61 -> 78,62 -> 79,63 -> 80,
+64 -> 81,65 -> 82,66 -> 83,67 -> 84,70 -> 85,70.5` -> 86,71 -> 87,74 -> 88,80 -> 89,
+"" -> 90],Association["female" -> 1,"male" -> 2]},"MissingCode" -> Indeterminate,
+"Version" -> {13.1`,0},"ID" -> 805960690728832372,"Output" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NominalVector","Weight" -> 3]]]],MachineLearning`MLProcessor["NumericalizeNominalVector",
+Association["Invertibility" -> "Approximate","Missing" -> "Allowed","StructurePreserving" -> True,
+"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector","Weight" -> 3,
+"SetSize" -> {3,90,2}]],"Boundaries" -> {{-0.5`,-0.16666666666666669`,0.16666666666666663`,0.5`},{-0.5`,-0.4888888888888889`,-0.4777777777777778`,-0.4666666666666667`,-0.45555555555555555`,-0.4444444444444444`,-0.43333333333333335`,-0.4222222222222222`,-0.4111111111111111`,-0.4`,-0.3888888888888889`,-0.37777777777777777`,-0.3666666666666667`,-0.35555555555555557`,-0.34444444444444444`,-0.33333333333333337`,-0.3222222222222222`,-0.3111111111111111`,-0.3`,-0.28888888888888886`,-0.2777777777777778`,-0.26666666666666666`,-0.25555555555555554`,-0.24444444444444446`,-0.23333333333333334`,-0.2222222222222222`,-0.21111111111111114`,-0.2`,-0.18888888888888888`,-0.17777777777777776`,-0.16666666666666669`,-0.15555555555555556`,-0.14444444444444443`,-0.13333333333333336`,-0.12222222222222223`,-0.1111111111111111`,-0.09999999999999998`,-0.0888888888888889`,-0.07777777777777778`,-0.06666666666666665`,-0.05555555555555558`,-0.04444444444444445`,-0.033333333333333326`,-0.0222222222222222`,-0.011111111111111127`,0.`,0.011111111111111072`,0.022222222222222254`,0.033333333333333326`,0.0444444444444444`,0.05555555555555558`,0.06666666666666665`,0.07777777777777772`,0.0888888888888889`,0.09999999999999998`,0.11111111111111116`,0.12222222222222223`,0.1333333333333333`,0.1444444444444445`,0.15555555555555556`,0.16666666666666663`,0.1777777777777778`,0.18888888888888888`,0.19999999999999996`,0.21111111111111114`,0.2222222222222222`,0.23333333333333328`,0.24444444444444446`,0.25555555555555554`,0.2666666666666667`,0.2777777777777778`,0.28888888888888886`,0.30000000000000004`,0.3111111111111111`,0.3222222222222222`,0.33333333333333337`,0.34444444444444444`,0.3555555555555555`,0.3666666666666667`,0.37777777777777777`,0.38888888888888884`,0.4`,0.4111111111111111`,0.4222222222222223`,0.43333333333333335`,0.4444444444444444`,0.4555555555555556`,0.4666666666666667`,0.47777777777777775`,0.48888888888888893`,0.5`},{-0.5`,0.`,0.5`}},
+"Version" -> {13.1`,0},"ID" -> 6831348230023982856,"Output" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NumericalVector","Weight" -> 3]]]]},"Invertibility" -> "Approximate","StructurePreserving" -> True,
+"Missing" -> "Allowed"]],"PerformanceGoal" -> "DirectTraining","BatchProcessing" -> Automatic,
+"Model" -> Association["RotationMatrix" -> {{0.7395642713005869`,0.44137708702553896`,-0.5081642998720801`},{0.09409703576042323`,-0.8153614292846681`,-0.5712543107023038`},{0.6664761334637073`,-0.37466252372463515`,0.6445444568371944`}},
+"Precisions" -> {10.861377902874183`,11.248455130760139`,14.035184090134301`},"NoisePrecision" -> None,
+"Processor" -> MachineLearning`MLProcessor["Center",Association["Invertibility" -> "Perfect",
+"Missing" -> "Allowed","StructurePreserving" -> True,"Input" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NumericalVector","Weight" -> 3]],"Mean" -> {0.09632815005895273`,0.041284644027246506`,0.07352594140080607`},
+"Output" -> Association["(f1f2f3)" -> Association["Type" -> "NumericalVector","Weight" -> 3]],
+"Version" -> {13.1`,0},"ID" -> 6482476682394254941]],"PostProcessor" -> MachineLearning`MLProcessor[
+"FirstValues",Association["Info" -> Association["Type" -> "NumericalVector","Weight" -> 3],
+"Key" -> "(f1f2f3)","Invertibility" -> "Perfect","StructurePreserving" -> False,"Missing" -> "Allowed"]],
+"Method" -> "Multinormal","Options" -> Association["CovarianceType" -> Association[
+"Value" -> "Full","Options" -> Association[]],"IntrinsicDimension" -> Association[
+"Value" -> 3,"Options" -> Association[]]]],"TrainingInformation" -> Association["Configurations" -> Dataset[
+Association[Association["Value" -> "Multinormal","Options" -> Association["CovarianceType" -> Association[
+"Value" -> "Full"],"IntrinsicDimension" -> Association["Value" -> "Heuristic"]],"NaiveImputer" -> MachineLearning`MLProcessor[
+"ImputeMissing",Association["Invertibility" -> "Perfect","Missing" -> "Imputed","StructurePreserving" -> True,
+"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NumericalVector","Weight" -> 3]],
+"Mean" -> {0.09632815005895262`,0.04128464402724655`,0.07352594140080589`},"StandardDeviation" -> {0.2933867816228704`,0.2883901542648874`,0.2880542877113995`},
+"Method" -> "NaiveSampler","VectorLength" -> 3,"Output" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NumericalVector","Weight" -> 3]],"Type" -> "NumericalVector","Version" -> {13.1`,0},
+"ID" -> 7798900057002081546]],"EMIterations" -> 1] -> Association[]],TypeSystem`Assoc[
+TypeSystem`Struct[{"Value","Options","NaiveImputer","EMIterations"},{TypeSystem`Atom[
+String],TypeSystem`Assoc[TypeSystem`Atom[String],TypeSystem`Struct[{"Value"},{TypeSystem`Atom[
+String]}],2],TypeSystem`AnyType,TypeSystem`Atom[Integer]}],TypeSystem`Assoc[TypeSystem`UnknownType,
+TypeSystem`UnknownType,TypeSystem`AnyLength],1],Association[]],"BestModelInformation" -> Dataset[
+Association["Configuration" -> {"Multinormal","CovarianceType" -> "Full","IntrinsicDimension" -> "Heuristic"},
+"ModelUtility" -> Missing[]],TypeSystem`Struct[{"Configuration","ModelUtility"},{TypeSystem`Tuple[
+{TypeSystem`Atom[String],TypeSystem`AnyType,TypeSystem`AnyType}],TypeSystem`UnknownType}],
+Association[]]],"NaiveImputer" -> MachineLearning`MLProcessor["ImputeMissing",Association[
+"Invertibility" -> "Perfect","Missing" -> "Imputed","StructurePreserving" -> True,
+"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NumericalVector","Weight" -> 3]],
+"Mean" -> {0.09632815005895262`,0.04128464402724655`,0.07352594140080589`},"StandardDeviation" -> {0.2933867816228704`,0.2883901542648874`,0.2880542877113995`},
+"Method" -> "NaiveSampler","VectorLength" -> 3,"Output" -> Association["(f1f2f3)" -> Association[
+"Type" -> "NumericalVector","Weight" -> 3]],"Type" -> "NumericalVector","Version" -> {13.1`,0},
+"ID" -> 7798900057002081546]],"InputDimension" -> 0,"OutputDimension" -> 3,"Log" -> Association[
+"Example" -> MachineLearning`MLDataset[Association["f1" -> Association["Type" -> "Nominal",
+"Weight" -> 1,"Values" -> {"1st"},"ID" -> 7453478256874281711],"f2" -> Association[
+"Type" -> "Nominal","Weight" -> 1,"Values" -> {31},"ID" -> 9138240744379437000],"f3" -> Association[
+"Type" -> "Nominal","Weight" -> 1,"Values" -> {"female"},"ID" -> 4823998046899962003]],
+Association["ExampleNumber" -> 1,"ExampleWeights" -> 1,"LogDensityRatios" -> 0,"RawExample" -> False]],
+"TrainingTime" -> 0.091932`,"MaxTrainingMemory" -> 508328,"DataMemory" -> 105376,
+"FunctionMemory" -> 63600,"LanguageVersion" -> {13.1`,0},"Date" -> DateObject[{2022,10,8,12,39,5.936658`7.526117018532764},
+"Instant","Gregorian",-5.`],"ProcessorCount" -> 2,"ProcessorType" -> "x86-64","OperatingSystem" -> "Unix",
+"SystemWordLength" -> 64,"Evaluations" -> {}],"LogPDFDistribution" -> MachineLearning`TailedQuantileDistribution[
+Association["Quantiles" -> {-2.5906618209306034`,-2.5906618209306034`,-2.4443790915812635`,-2.3999731070746697`,-2.391542739525056`,-2.2991543930324867`,-2.2956044575228214`,-2.237029880635138`,-2.08371920840314`,-2.048468618464881`,-1.865806826925979`},
+"LeftBoundary" -> -2.4443790915812635`,"LeftScale" -> 0.07314136467466992`,"LeftTailNorm" -> 0.2`]],
+"Entropy" -> Around[6.796902043228814`,0.20358008299116784`],"EntropySampleSize" -> 10]],
+"Output" -> Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association[
+"Type" -> "Nominal","Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],
+"EvaluationStrategy" -> "ModeFinding","Version" -> {13.1`,0},"ID" -> 967176822927612644]],MachineLearning`MLProcessor[
+"ToVector",Association["Invertibility" -> "Perfect","Missing" -> "Allowed","StructurePreserving" -> True,
+"Input" -> Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1],"f2" -> Association[
+"Type" -> "Nominal","Weight" -> 1],"f3" -> Association["Type" -> "Nominal","Weight" -> 1]],
+"Output" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector","Weight" -> 3]],
+"Version" -> {13.1`,0},"ID" -> 1783680118875305151]],MachineLearning`MLProcessor[
+"IntegerEncodeNominalVector",Association["Invertibility" -> "Perfect","Missing" -> "Allowed",
+"StructurePreserving" -> True,"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector",
+"Weight" -> 3]],"Index" -> {Association["1st" -> 1,"2nd" -> 2,"3rd" -> 3],Association[
+0.3333` -> 1,0.75` -> 2,0.8333` -> 3,0.9167` -> 4,1 -> 5,2 -> 6,3 -> 7,4 -> 8,5 -> 9,
+6 -> 10,7 -> 11,8 -> 12,9 -> 13,10 -> 14,11 -> 15,11.5` -> 16,12 -> 17,13 -> 18,14 -> 19,
+14.5` -> 20,15 -> 21,16 -> 22,17 -> 23,18 -> 24,19 -> 25,20 -> 26,21 -> 27,22 -> 28,
+22.5` -> 29,23 -> 30,23.5` -> 31,24 -> 32,25 -> 33,26 -> 34,26.5` -> 35,27 -> 36,
+28 -> 37,28.5` -> 38,29 -> 39,30 -> 40,30.5` -> 41,31 -> 42,32 -> 43,32.5` -> 44,
+33 -> 45,34 -> 46,34.5` -> 47,35 -> 48,36 -> 49,37 -> 50,38 -> 51,39 -> 52,40 -> 53,
+40.5` -> 54,41 -> 55,42 -> 56,43 -> 57,44 -> 58,45 -> 59,45.5` -> 60,46 -> 61,47 -> 62,
+48 -> 63,49 -> 64,50 -> 65,51 -> 66,52 -> 67,53 -> 68,54 -> 69,55 -> 70,55.5` -> 71,
+56 -> 72,57 -> 73,58 -> 74,59 -> 75,60 -> 76,60.5` -> 77,61 -> 78,62 -> 79,63 -> 80,
+64 -> 81,65 -> 82,66 -> 83,67 -> 84,70 -> 85,70.5` -> 86,71 -> 87,74 -> 88,80 -> 89,
+"" -> 90],Association["female" -> 1,"male" -> 2]},"MissingCode" -> 0,"Version" -> {13.1`,0},
+"ID" -> 1772334295895809188,"Output" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector",
+"Weight" -> 3]]]]},"Invertibility" -> "Perfect","StructurePreserving" -> True,"Missing" -> "Imputed"]]],
+"Output" -> Association["Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset",
+Association["Input" -> Association["f1" -> Association["Type" -> "Nominal"]],"Output" -> Association[
+"f1" -> Association["Type" -> "Nominal","Weight" -> 1]],"Preprocessor" -> MachineLearning`MLProcessor[
+"Sequence",Association["Processors" -> {MachineLearning`MLProcessor["List"],MachineLearning`MLProcessor[
+"WrapMLDataset",Association["FeatureTypes" -> {"Nominal"},"FeatureKeys" -> {"f1"},
+"FeatureWeights" -> Automatic,"ExampleWeights" -> Automatic,"RawExample" -> Missing[
+"KeyAbsent","RawExample"],"StructurePreserving" -> False]]}]],"ScalarFeature" -> True,
+"Invertibility" -> "Perfect","StructurePreserving" -> False,"Missing" -> "Allowed"]],
+"Processor" -> MachineLearning`MLProcessor["Sequence",Association["Input" -> Association[
+"f1" -> Association["Type" -> "Nominal","Weight" -> 1]],"Output" -> Association["f1" -> Association[
+"Type" -> "Nominal","Weight" -> 1]],"Processors" -> {MachineLearning`MLProcessor[
+"ToVector",Association["Invertibility" -> "Perfect","Missing" -> "Allowed","StructurePreserving" -> True,
+"Input" -> Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1]],"Output" -> Association[
+"f1" -> Association["Type" -> "NominalVector","Weight" -> 1]],"Version" -> {13.1`,0},
+"ID" -> 4840604436159386362]],MachineLearning`MLProcessor["IntegerEncodeNominalVector",
+Association["Invertibility" -> "Perfect","Missing" -> "Allowed","StructurePreserving" -> True,
+"Input" -> Association["f1" -> Association["Type" -> "NominalVector","Weight" -> 1]],
+"Index" -> {Association["died" -> 1,"survived" -> 2]},"MissingCode" -> 0,"Version" -> {13.1`,0},
+"ID" -> 8361458276478038540,"Output" -> Association["f1" -> Association["Type" -> "NominalVector",
+"Weight" -> 1]]]],MachineLearning`MLProcessor["FromVector",Association["Invertibility" -> "Perfect",
+"Missing" -> "Allowed","StructurePreserving" -> True,"Input" -> Association["f1" -> Association[
+"Type" -> "NominalVector","Weight" -> 1,"SetSize" -> {2}]],"Output" -> Association[
+"f1" -> Association["Type" -> "Nominal","Weight" -> 1]],"Version" -> {13.1`,0},"ID" -> 3972604269906377310]],MachineLearning`MLProcessor[
+"FirstValues",Association["Info" -> Association["Type" -> "Nominal","Weight" -> 1,
+"SetSize" -> 2],"Key" -> "f1","Invertibility" -> "Perfect","StructurePreserving" -> False,
+"Missing" -> "Allowed"]]},"Invertibility" -> "Perfect","StructurePreserving" -> False,
+"Missing" -> "Allowed"]],"ProbabilityPostprocessor" -> Identity,"Name" -> "class",
+"Marginal" -> Association["died" -> 0.6176470588235294`,"survived" -> 0.3823529411764706`]],
+"LabelSplitter" -> MachineLearning`MLProcessor["FeatureLabelSplit",Association["Processor" -> MachineLearning`MLProcessor[
+"KeyIndexSplit",Association["Index" -> "Outcome","Order" -> {"Class","Age","Gender","Outcome"}]],
+"PreferLabeled" -> True,"KeepLabelsFormat" -> False]],"RecalibrationFunction" -> None,
+"ImputationStrategy" -> Automatic,"Prior" -> Automatic,"Utility" -> SparseArray[Automatic,
+{2,3},0.`,{1,{{0,1,2},{{2},{3}}},{1.`,1.`}}],"Threshold" -> 0,"TieBreaker" -> RandomChoice,
+"PerformanceGoal" -> Automatic,"BatchProcessing" -> Automatic,"Model" -> Association[
+"LogProbabilitiesFunction" -> LinearLayer[Association["Type" -> "Linear","Arrays" -> Association[
+"Weights" -> RawArray["Real32",{{-0.10654536634683609`,1.2368693351745605`,0.9023252129554749`,-0.06819844990968704`,-0.567062497138977`,-0.7825794219970703`,0.11816895753145218`,0.009483808651566505`,0.24260558187961578`,0.037889014929533005`,0.0011449034791439772`,0.959898829460144`,-2.275944709777832`}}],
+"Biases" -> RawArray["Real32",{3.1356217861175537`}]],"Parameters" -> Association[
+"OutputDimensions" -> {1},"$OutputSize" -> 1,"$InputSize" -> 13,"$InputDimensions" -> {13}],
+"Inputs" -> Association["Input" -> NeuralNetworks`TensorT[{13},NeuralNetworks`AtomT]],
+"Outputs" -> Association["Output" -> NeuralNetworks`TensorT[{1},NeuralNetworks`RealT]]],
+Association["Version" -> "13.1.2","Unstable" -> False]],"Processor" -> MachineLearning`MLProcessor[
+"Sequence",Association["Input" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector",
+"Weight" -> 3,"SetSize" -> {3,90,2}]],"Output" -> Association["(f1f2f3)" -> Association[
+"Weight" -> 3,"Type" -> "NumericalVector"]],"Processors" -> {MachineLearning`MLProcessor[
+"EmbedNominalVector",Association["Invertibility" -> "Impossible","Missing" -> "Imputed",
+"StructurePreserving" -> True,"Input" -> Association["(f1f2f3)" -> Association["Type" -> "NominalVector",
+"Weight" -> 3,"SetSize" -> {3,90,2}]],"Index" -> {Association[1 -> 1,2 -> 2,3 -> 3],Association[
+1 -> 1,2 -> 2,3 -> 3,4 -> 4,5 -> 5,6 -> 6,7 -> 7,8 -> 8,9 -> 9,10 -> 10,11 -> 11,
+12 -> 12,13 -> 13,14 -> 14,15 -> 15,16 -> 16,17 -> 17,18 -> 18,19 -> 19,20 -> 20,
+21 -> 21,22 -> 22,23 -> 23,24 -> 24,25 -> 25,26 -> 26,27 -> 27,28 -> 28,29 -> 29,
+30 -> 30,31 -> 31,32 -> 32,33 -> 33,34 -> 34,35 -> 35,36 -> 36,37 -> 37,38 -> 38,
+39 -> 39,40 -> 40,41 -> 41,42 -> 42,43 -> 43,44 -> 44,45 -> 45,46 -> 46,47 -> 47,
+48 -> 48,49 -> 49,50 -> 50,51 -> 51,52 -> 52,53 -> 53,54 -> 54,55 -> 55,56 -> 56,
+57 -> 57,58 -> 58,59 -> 59,60 -> 60,61 -> 61,62 -> 62,63 -> 63,64 -> 64,65 -> 65,
+66 -> 66,67 -> 67,68 -> 68,69 -> 69,70 -> 70,71 -> 71,72 -> 72,73 -> 73,74 -> 74,
+75 -> 75,76 -> 76,77 -> 77,78 -> 78,79 -> 79,80 -> 80,81 -> 81,82 -> 82,83 -> 83,
+84 -> 84,85 -> 85,86 -> 86,87 -> 87,88 -> 88,89 -> 89,90 -> 90],Association[1 -> 1,
+2 -> 2]},"Output" -> Association["(f1f2f3)" -> Association["Weight" -> 3,"Type" -> "NumericalVector"]],
+"EmbeddingVectors" -> {RawArray["Real32",{{0.`,0.`,0.`},{-0.5273984670639038`,-0.15432728826999664`,-0.3316039443016052`},{-0.12462006509304047`,0.03536298871040344`,0.5185959935188293`},{0.18527460098266602`,0.8396864533424377`,0.29430946707725525`}}],RawArray[
+"Real32",{{0.`,0.`,0.`,0.`,0.`,0.`,0.`,0.`},{0.727308988571167`,0.7211713194847107`,0.7793378829956055`,-0.0790536180138588`,0.3989293575286865`,-0.138398677110672`,-0.07963060587644577`,0.2640458345413208`},{0.37364211678504944`,0.7676238417625427`,-0.03909473866224289`,-0.338896244764328`,0.13072215020656586`,-0.20637285709381104`,0.6051796078681946`,0.3698892891407013`},{-0.18047744035720825`,0.2807469964027405`,-0.02943372167646885`,-0.13303904235363007`,0.031237930059432983`,-0.5402097105979919`,0.2725343108177185`,0.07772892713546753`},{-0.39699873328208923`,0.21847902238368988`,-0.04733642190694809`,0.012479093857109547`,-0.39054858684539795`,-0.156080961227417`,0.33192047476768494`,0.37133267521858215`},{-0.7338447570800781`,-0.46371352672576904`,0.41900351643562317`,-0.06968086957931519`,0.6697545051574707`,0.98802250623703`,-0.10542693734169006`,-0.11381406337022781`},{-0.019402455538511276`,-0.31783297657966614`,0.06016557291150093`,1.1694531440734863`,0.2913028299808502`,-0.11818810552358627`,0.21630245447158813`,-0.13086596131324768`},{-0.04918716475367546`,0.36876246333122253`,0.27907440066337585`,0.40869492292404175`,-0.6702621579170227`,0.23659665882587433`,0.17405720055103302`,-0.43538835644721985`},{-0.20735609531402588`,0.36203017830848694`,-0.2489311844110489`,-0.2323915660381317`,0.026743993163108826`,-0.2065836638212204`,-0.32524093985557556`,-0.0852024182677269`},{-0.003968099597841501`,-0.19265449047088623`,-0.3106074333190918`,0.05200405418872833`,0.009081810712814331`,0.05236692354083061`,-0.862684428691864`,0.2501463294029236`},{-0.40378594398498535`,0.5476596355438232`,0.22763124108314514`,-0.3103230595588684`,-0.34896719455718994`,0.6303128600120544`,-0.16086357831954956`,0.45268961787223816`},{0.427399218082428`,0.14236338436603546`,-0.121259406208992`,0.2800188362598419`,0.1300451159477234`,-0.45378658175468445`,0.3272632956504822`,0.39596354961395264`},{0.18871992826461792`,0.018535781651735306`,-0.11481600254774094`,0.2391095608472824`,0.5600557923316956`,0.4375009834766388`,0.190808966755867`,0.5119102001190186`},{0.6037870645523071`,-0.4550108313560486`,-0.38801923394203186`,0.4335196912288666`,-0.34237605333328247`,-0.2225629836320877`,0.40327537059783936`,0.02922895923256874`},{-0.4121167063713074`,-1.0444519519805908`,0.015343109145760536`,0.3607651889324188`,0.2895428240299225`,0.06052078306674957`,0.14283572137355804`,0.10266681015491486`},{0.034424811601638794`,0.11077510565519333`,0.3196270763874054`,-0.03246914967894554`,0.47687163949012756`,-0.030673475936055183`,-0.2170216143131256`,0.2702598571777344`},{-0.514633297920227`,0.016704939305782318`,0.4536188542842865`,0.21039815247058868`,-0.8376553654670715`,0.021309318020939827`,-0.08031579852104187`,0.09405557066202164`},{0.4304405152797699`,0.2191060334444046`,0.15523509681224823`,-0.48817071318626404`,0.015133562497794628`,0.053191158920526505`,-0.20262445509433746`,-0.2159775048494339`},{0.05842939391732216`,0.2949228286743164`,0.2914850115776062`,-0.010164867155253887`,-0.41381385922431946`,0.0037018954753875732`,0.33458393812179565`,-0.3427988290786743`},{0.19464752078056335`,-0.48080822825431824`,0.27936115860939026`,-0.41427040100097656`,-0.28716155886650085`,0.053988806903362274`,-0.03440694510936737`,-0.07620641589164734`},{-0.5129730105400085`,0.08928284794092178`,-0.0996958538889885`,-0.5062441229820251`,0.25456592440605164`,0.23172850906848907`,-0.08478748053312302`,-0.1850399225950241`},{0.2832200527191162`,-0.032858382910490036`,-0.2101377695798874`,-0.04921284317970276`,0.33895036578178406`,-0.19312423467636108`,-0.2065058946609497`,-0.2826002836227417`},{-0.349393755197525`,0.17656700313091278`,0.26519787311553955`,0.20533189177513123`,-0.011583461426198483`,0.06163100525736809`,0.42894285917282104`,-1.2193641662597656`},{0.07252252846956253`,0.6302676200866699`,0.44423750042915344`,-0.08779342472553253`,-0.5412932634353638`,0.9703388810157776`,0.4015643298625946`,0.031207270920276642`},{0.04732511192560196`,-0.10241004079580307`,-0.06299639493227005`,0.18600521981716156`,0.3623431324958801`,0.08662410080432892`,-0.23561716079711914`,0.1287938505411148`},{0.1347944736480713`,-0.2631412744522095`,-0.5074547529220581`,0.6430909037590027`,0.007601441349834204`,0.14294879138469696`,0.08944111317396164`,-0.2654586732387543`},{0.2574852705001831`,-0.3378587067127228`,0.7259849905967712`,0.394387423992157`,-0.24480322003364563`,0.3891860544681549`,-0.021144751459360123`,0.0014491233741864562`},{0.023677635937929153`,0.2630796730518341`,0.008783165365457535`,0.07623251527547836`,-0.026764636859297752`,-0.032233890146017075`,0.6278175711631775`,-0.6140289306640625`},{0.21478267014026642`,0.6115889549255371`,0.011025730520486832`,-0.24867746233940125`,0.26205793023109436`,-0.23593564331531525`,-1.1507353337947279`*^-4,0.29247868061065674`},{-0.34871819615364075`,0.062413349747657776`,-0.3559218645095825`,0.5155489444732666`,-0.219452366232872`,0.6114323735237122`,0.7480490803718567`,0.07501307874917984`},{-0.6927309036254883`,-0.010473687201738358`,0.05652657896280289`,-0.33510085940361023`,-0.4831344485282898`,-0.3908984363079071`,0.11024526506662369`,-0.12862177193164825`},{0.06738895177841187`,0.20729276537895203`,-0.13330420851707458`,-0.1598133146762848`,-0.3900051414966583`,0.5865182280540466`,-0.26451361179351807`,0.2404923141002655`},{0.022816535085439682`,-0.022568242624402046`,-0.13147799670696259`,-0.116898313164711`,0.019458096474409103`,0.03716367855668068`,-0.5613492131233215`,-0.07862473279237747`},{0.03274821490049362`,0.3474176824092865`,0.8281488418579102`,0.3386141061782837`,-0.04699721187353134`,0.5972605347633362`,-0.4308971166610718`,0.1989729106426239`},{0.3809014856815338`,0.32186341285705566`,0.27442917227745056`,-0.42892760038375854`,-0.6650926470756531`,-0.4254051148891449`,2.0720768588944338`*^-5,0.1491696536540985`},{-0.20873840153217316`,0.2866145074367523`,0.013691462576389313`,-0.14633828401565552`,1.019896388053894`,0.004417803138494492`,-0.17514872550964355`,-0.25955525040626526`},{-0.12253560870885849`,0.22658105194568634`,0.7651156187057495`,0.048367224633693695`,0.3301284909248352`,0.3440302610397339`,0.09198817610740662`,-0.10928110033273697`},{-0.28302833437919617`,0.4647746682167053`,-0.17308790981769562`,0.17858226597309113`,0.35785508155822754`,-0.3592304289340973`,-0.262267529964447`,0.011262185871601105`},{0.02088920585811138`,-0.020639054477214813`,-0.024651069194078445`,-0.6203365325927734`,0.6418821215629578`,0.1814853996038437`,0.1308826506137848`,0.06324086338281631`},{0.15297405421733856`,0.20897088944911957`,0.017123980447649956`,-0.15130238234996796`,-0.7042515277862549`,-0.9304220676422119`,-0.3118426501750946`,0.38528192043304443`},{0.3404637277126312`,0.2946580648422241`,-0.3237570524215698`,0.4962965250015259`,-0.24250657856464386`,-0.5459902882575989`,-0.07088517397642136`,-0.07058365643024445`},{-0.22104530036449432`,-0.2376776784658432`,0.37926799058914185`,-0.1506805568933487`,-0.5719090104103088`,0.6279987096786499`,-0.5166605710983276`,0.25511598587036133`},{1.303544282913208`,0.16607517004013062`,0.2613910436630249`,0.3233306407928467`,0.02429761365056038`,0.3922795355319977`,0.09135912358760834`,-0.1404608190059662`},{-0.31870511174201965`,0.34756946563720703`,-0.09401926398277283`,-0.26704463362693787`,-0.16160252690315247`,-0.07292517274618149`,-0.18373839557170868`,-0.32751667499542236`},{-0.13552817702293396`,-0.3985413610935211`,-0.4378874599933624`,0.5157935619354248`,0.03220488503575325`,-0.24342815577983856`,-0.09039544314146042`,0.18751081824302673`},{-0.10248415172100067`,-0.0571100227534771`,-0.4692598283290863`,0.09375649690628052`,-0.21267589926719666`,-0.8300259709358215`,-0.1285431683063507`,0.6763100624084473`},{0.4891858994960785`,0.25082945823669434`,-0.3276318609714508`,-0.2741914689540863`,0.08219512552022934`,0.4747943878173828`,0.15778043866157532`,-0.17068584263324738`},{-0.3023684620857239`,-0.6983042359352112`,0.5542081594467163`,0.2649078369140625`,0.47571924328804016`,0.18472951650619507`,0.031850967556238174`,-0.446003258228302`},{0.18977947533130646`,-0.08541779965162277`,-0.33937036991119385`,-0.39845749735832214`,0.32818713784217834`,0.07468828558921814`,-0.06367316842079163`,0.09773172438144684`},{-0.03343822807073593`,0.3135262429714203`,-0.18227392435073853`,0.5105209350585938`,-0.4467885494232178`,0.30263739824295044`,-0.2657906115055084`,-0.06294558197259903`},{-0.4406881034374237`,-0.1195124089717865`,0.6399664282798767`,0.025358883664011955`,-0.3491249680519104`,0.20338137447834015`,-0.22059141099452972`,-0.7524343729019165`},{-0.6276841759681702`,0.25636959075927734`,-0.43431779742240906`,-0.24342595040798187`,0.3512662947177887`,0.0021262590307742357`,-0.3862546384334564`,-0.07642101496458054`},{0.16331921517848969`,-0.30859822034835815`,-0.1319694221019745`,0.23544657230377197`,0.5554946660995483`,0.27445217967033386`,0.6458981037139893`,-0.06755995750427246`},{0.10456380248069763`,0.6798234581947327`,0.11964140087366104`,-0.6107524633407593`,0.22266541421413422`,0.9040194749832153`,-0.08548157662153244`,-0.35230696201324463`},{-0.2739451825618744`,0.1630304604768753`,-0.037753526121377945`,-0.3301658630371094`,-0.5566362142562866`,0.2935256361961365`,0.1292944699525833`,-0.6010986566543579`},{-0.04500521346926689`,-0.02125157229602337`,-0.05999664589762688`,-0.3151644468307495`,-0.34692686796188354`,0.4495830237865448`,0.06486078351736069`,0.04542097821831703`},{0.07608912885189056`,0.21494299173355103`,0.5549243092536926`,0.09747545421123505`,-0.06456349045038223`,0.17151513695716858`,-0.07471112161874771`,-0.5346012711524963`},{-0.2737739384174347`,0.2857961654663086`,-0.20053355395793915`,0.22380083799362183`,-0.1342373639345169`,0.8109894394874573`,0.3114538788795471`,0.4336238503456116`},{0.3256480395793915`,-0.30126065015792847`,0.16935060918331146`,0.7105473875999451`,-0.16433176398277283`,-0.08786047995090485`,-0.10181877762079239`,-0.13720323145389557`},{-0.04872788116335869`,0.24246428906917572`,0.15711992979049683`,0.09688951075077057`,0.09096873551607132`,-0.3401414155960083`,-0.20753906667232513`,-0.5161021947860718`},{-0.31606969237327576`,0.4512708783149719`,-0.3348490595817566`,0.07677413523197174`,0.2322510927915573`,0.2416224181652069`,-0.36770713329315186`,-0.3481975197792053`},{0.008894301019608974`,0.07688910514116287`,-0.025119813159108162`,-0.059832848608493805`,0.39062735438346863`,-0.21297509968280792`,-0.48924633860588074`,0.2809649407863617`},{0.5274699926376343`,0.2709450423717499`,-0.15808899700641632`,0.37235039472579956`,-0.43543416261672974`,-0.05205374211072922`,-0.41700735688209534`,-0.07884614169597626`},{-0.0011197517160326242`,0.3106037974357605`,-0.27839744091033936`,-0.06983020156621933`,-0.33917236328125`,0.23117949068546295`,-0.1480962336063385`,-0.29628774523735046`},{0.31897392868995667`,0.5972210168838501`,0.2857188582420349`,0.24236349761486053`,-0.0628371387720108`,-0.3010827600955963`,0.30031463503837585`,0.1975846141576767`},{-0.2507023513317108`,0.25243544578552246`,0.12899072468280792`,0.17475207149982452`,0.24326342344284058`,-0.22235874831676483`,0.08501482754945755`,-0.5587968826293945`},{0.6087964177131653`,-0.11511367559432983`,0.08610499650239944`,-0.38995543122291565`,-0.11677861958742142`,-0.007914270274341106`,0.22784054279327393`,-0.08338244259357452`},{0.058195773512125015`,-0.8522645235061646`,0.4964199960231781`,-0.26505061984062195`,0.2334345281124115`,0.23208647966384888`,0.05868271738290787`,0.25393882393836975`},{-0.15189526975154877`,0.20640601217746735`,-0.6035559773445129`,0.15344153344631195`,-0.25094112753868103`,0.02293982170522213`,0.06552702188491821`,0.07696089893579483`},{0.4068760275840759`,0.5259402394294739`,-0.31262829899787903`,0.020125621929764748`,-0.23532050848007202`,0.10443086922168732`,0.5905863046646118`,-0.19131618738174438`},{-0.5686336159706116`,-0.3245043456554413`,-0.09633270651102066`,0.4918616712093353`,-0.7122114300727844`,-0.1022997498512268`,-0.36314600706100464`,-0.42114347219467163`},{0.11264878511428833`,-0.33055397868156433`,-0.37835338711738586`,-0.442452073097229`,0.20638331770896912`,-0.2844565510749817`,0.6316452026367188`,-0.6491369605064392`},{-0.015685878694057465`,-0.0543242022395134`,-0.5599080920219421`,0.06537973880767822`,-0.09251081198453903`,-0.219661682844162`,0.5530723929405212`,-0.37764647603034973`},{-0.5418606996536255`,-0.5551895499229431`,-0.4640519917011261`,0.08155395090579987`,-0.0901658833026886`,0.4533155560493469`,0.3673504590988159`,0.5394071936607361`},{-0.2618187963962555`,-0.33864977955818176`,0.2124827355146408`,-0.4125328063964844`,-0.2934882938861847`,-0.11056005954742432`,-0.5974234342575073`,-0.4622027277946472`},{-0.1751619428396225`,-0.41973012685775757`,0.19196702539920807`,0.12562429904937744`,-0.04111309349536896`,-0.3935585916042328`,0.5783079266548157`,0.002496725181117654`},{0.2826545834541321`,-0.4422307312488556`,0.25799962878227234`,-0.44543275237083435`,-0.637901246547699`,-0.2336135357618332`,0.2431049644947052`,0.7823032736778259`},{-0.5705484747886658`,0.34148529171943665`,-0.038220763206481934`,-0.45922455191612244`,-0.28176629543304443`,-0.0986412838101387`,0.11996720731258392`,0.5954448580741882`},{-0.01028467621654272`,-0.03785417601466179`,-0.36096543073654175`,-0.12027658522129059`,0.24008809030056`,0.939759373664856`,0.4330243766307831`,-0.43175646662712097`},{-0.5314776301383972`,0.3469422161579132`,-0.13289287686347961`,0.5758885741233826`,0.21926894783973694`,0.2827216386795044`,-0.1909983903169632`,0.09243372827768326`},{0.08306426554918289`,-0.13726425170898438`,-0.08201394230127335`,0.03042256273329258`,-0.162073016166687`,-0.20147329568862915`,0.56472247838974`,0.5450037717819214`},{-0.6156323552131653`,0.5955802202224731`,-0.5931878685951233`,1.1200169324874878`,0.13567835092544556`,-0.14872115850448608`,0.11109453439712524`,0.49367716908454895`},{0.46704280376434326`,-0.13764455914497375`,-0.6311532855033875`,-0.0742734894156456`,0.11027128249406815`,0.3998397886753082`,0.3270147442817688`,-0.17692799866199493`},{0.4563905894756317`,0.04056261479854584`,-0.1016298457980156`,-0.4651942253112793`,-0.25539207458496094`,0.16423256695270538`,-0.09396031498908997`,0.17918631434440613`},{-0.5315300226211548`,-0.7129398584365845`,-0.014272012747824192`,0.21996615827083588`,-0.3824264705181122`,-0.12031906098127365`,0.1378336101770401`,0.6670402884483337`},{-0.14385230839252472`,-0.4947137236595154`,0.3200381100177765`,-0.034046873450279236`,-0.18880273401737213`,0.31365323066711426`,-0.1516258865594864`,-0.1055045872926712`},{0.19236259162425995`,0.29705342650413513`,0.2774846851825714`,-0.032579049468040466`,-0.7130634784698486`,0.6202693581581116`,0.30245813727378845`,-0.006564084906131029`},{-0.031252045184373856`,0.19918519258499146`,-0.4924794137477875`,-0.5012640357017517`,-0.02080336958169937`,-0.08317115902900696`,0.009547142311930656`,0.41755491495132446`},{0.01238575391471386`,0.1602635681629181`,-0.7586063742637634`,-0.5784090757369995`,0.051686689257621765`,0.29510441422462463`,-0.23472818732261658`,-0.4387468993663788`},{0.49286195635795593`,0.04077902063727379`,0.38324883580207825`,0.1597265750169754`,-0.4673584997653961`,0.18113292753696442`,-0.6777185797691345`,-0.37022310495376587`},{0.3613797426223755`,-0.2047407478094101`,-0.14901432394981384`,-0.10316373407840729`,0.3797226548194885`,0.034961994737386703`,0.06825705617666245`,-0.12447923421859741`}}],RawArray[
+"Real32",{{0.`,0.`},{-0.3356236219406128`,1.9847397804260254`},{-0.08939150720834732`,0.9447248578071594`}}]},
+"Version" -> {13.1`,0},"ID" -> 4411796083238191156]],MachineLearning`MLProcessor[
+"FirstValues",Association["Info" -> Association["Weight" -> 3,"Type" -> "NumericalVector"],
+"Key" -> "(f1f2f3)","Invertibility" -> "Perfect","StructurePreserving" -> False,"Missing" -> "Allowed"]]},
+"Invertibility" -> "Impossible","StructurePreserving" -> False,"Missing" -> "Imputed"]],
+"Calibrator" -> None,"Method" -> "LogisticRegression","PostProcessor" -> MachineLearning`MLProcessor[
+"Identity"],"Options" -> Association["L1Regularization" -> Association["Value" -> 0,
+"Options" -> Association[]],"L2Regularization" -> Association["Value" -> 0.01`,"Options" -> Association[]],
+"OptimizationMethod" -> Association["Value" -> "LBFGS","Options" -> Association[]],
+MaxIterations -> Association["Value" -> 30,"Options" -> Association[]]]],"TrainingInformation" -> Association[
+"Reporting" -> None,"TrainingFunction" -> Classify,"EMIterations" -> Missing["KeyAbsent",
+"EMIterations"],"ProcessorEntropyShift" -> 0,"PreprocessingTime" -> 0.223404`5.800635938293359,
+"LossName" -> "MeanCrossEntropy","BestModelInformation" -> Dataset[Association["MeanCrossEntropy" -> Around[
+0.557826672909693`,0.055199031534170995`],"Accuracy" -> Around[0.7604935898121971`,
+0.03445637041166784`],"EvaluationTime" -> 3.70814035707944`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 25536,"ModelUtility" -> -0.12904132305133198`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 135128,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.557826672909693`,0.039031609512742385`]},"AccuracyHistory" -> {Around[
+0.7604935898121971`,0.02436433317316584`]},"Configuration" -> {"LogisticRegression","L1Regularization" -> 0,"L2Regularization" -> 0.01`,"OptimizationMethod" -> Automatic,MaxIterations -> 30},
+"FinalTrainingSize" -> 916],TypeSystem`Struct[{"MeanCrossEntropy","Accuracy","EvaluationTime","TestSize","ModelMemory","ModelUtility","TrainingSize","TrainingTime","TrainingMemory","ExperimentCount","MeanCrossEntropyHistory","AccuracyHistory","Configuration","FinalTrainingSize"},
+{TypeSystem`AnyType,TypeSystem`AnyType,TypeSystem`Atom[Real],TypeSystem`Atom[Integer],TypeSystem`Atom[
+Integer],TypeSystem`Atom[Real],TypeSystem`Atom[Integer],TypeSystem`Atom[Real],TypeSystem`Atom[
+Integer],TypeSystem`Atom[Integer],TypeSystem`Vector[TypeSystem`AnyType,1],TypeSystem`Vector[
+TypeSystem`AnyType,1],TypeSystem`Tuple[{TypeSystem`Atom[String],TypeSystem`AnyType,TypeSystem`AnyType,TypeSystem`AnyType,TypeSystem`AnyType}],TypeSystem`Atom[
+Integer]}],Association[]],"Configurations" -> Dataset[Association[Association["Value" -> "GradientBoostedTrees",
+"Options" -> Association["BoostingMethod" -> Association["Value" -> "Gradient"],MaxTrainingRounds -> Association[
+"Value" -> 50],"LeavesNumber" -> Association["Value" -> 110],"LearningRate" -> Association[
+"Value" -> 0.1`],ValidationSet -> Association["Value" -> Automatic],"MaxBinNumber" -> Association[
+"Value" -> 255],"ThreadNumber" -> Association["Value" -> 2],"MaxDepth" -> Association[
+"Value" -> 6],"LeafSize" -> Association["Value" -> 15],"FeatureFraction" -> Association[
+"Value" -> 1],"BaggingFraction" -> Association["Value" -> 1],"BaggingFrequency" -> Association[
+"Value" -> 0],"MinGainToSplit" -> Association["Value" -> 0],"L1Regularization" -> Association[
+"Value" -> 0],"L2Regularization" -> Association["Value" -> 0],"LossFunction" -> Association[
+"Value" -> Automatic]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+0.7984145457904019`,0.06048220968192039`],"Accuracy" -> Around[0.5001402820845321`,
+0.07053382818600773`],"EvaluationTime" -> 7.943282347242814`*^-5,"TestSize" -> 100,
+"ModelMemory" -> 26504,"ModelUtility" -> -0.4830605441138802`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.01995262314968879`,"TrainingMemory" -> 104224,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7984145457904019`,0.042767380607232564`]},
+"AccuracyHistory" -> {Around[0.5001402820845321`,0.049874948213372905`]}],Association[
+"MeanCrossEntropy" -> Around[0.6985785688978887`,0.1271940867216429`],"Accuracy" -> Around[
+0.6783581038667109`,0.06589360739529562`],"EvaluationTime" -> 7.943282347242814`*^-5,
+"TestSize" -> 100,"ModelMemory" -> 123920,"ModelUtility" -> -0.3702139528969255`,
+"TrainingSize" -> 40,"TrainingTime" -> 0.03981071705534971`,"TrainingMemory" -> 322640,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.6985785688978887`,0.08993980124770348`]},
+"AccuracyHistory" -> {Around[0.6783581038667109`,0.04659381662605757`]}],Association[
+"MeanCrossEntropy" -> Around[0.7304943429914895`,0.16325662240073233`],"Accuracy" -> Around[
+0.7575660246587903`,0.06045531026990132`],"EvaluationTime" -> 1.`*^-4,"TestSize" -> 100,
+"ModelMemory" -> 136136,"ModelUtility" -> -0.4228478581049614`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.05011872336272722`,"TrainingMemory" -> 506616,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7304943429914895`,0.11543986477316943`]},"AccuracyHistory" -> {Around[
+0.7575660246587903`,0.04274835985058395`]}],Association["MeanCrossEntropy" -> Around[
+0.6487994437180402`,0.09567164391373205`],"Accuracy" -> Around[0.7555620459852006`,
+0.044622968973371105`],"EvaluationTime" -> 9.805072320897713`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 160280,"ModelUtility" -> -0.28958867346931105`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.07943282347242814`,"TrainingMemory" -> 987232,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6487994437180402`,0.06765006817866462`]},"AccuracyHistory" -> {Around[
+0.7555620459852006`,0.03155320395774762`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 9.805072320897713`*^-5,"MeanCrossEntropy" -> Around[0.6487994437180402`,
+0.09567164391373205`],"ModelMemory" -> 160280,"TrainingMemory" -> 987232,"TrainingTime" -> 0.11921656080418289`],
+"Index" -> 1],Association["Value" -> "NaiveBayes","Options" -> Association["SmoothingParameter" -> Association[
+"Value" -> 0.2`]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+1.0764560882439436`,0.1900863442180993`],"Accuracy" -> Around[0.7112426570121545`,
+0.04503331726470613`],"EvaluationTime" -> 3.571674682851674`*^-5,"TestSize" -> 200,
+"ModelMemory" -> 13640,"ModelUtility" -> -0.8015324664213287`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.007943282347242814`,"TrainingMemory" -> 77264,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[1.0764560882439436`,0.1344113430075783`]},"AccuracyHistory" -> {Around[
+0.7112426570121545`,0.03184336401719893`]}],Association["MeanCrossEntropy" -> Around[
+0.950930760088713`,0.14156952729867886`],"Accuracy" -> Around[0.6644064772645375`,
+0.0470369843287307`],"EvaluationTime" -> 3.571674682851674`*^-5,"TestSize" -> 200,
+"ModelMemory" -> 16488,"ModelUtility" -> -0.6721768294271285`,"TrainingSize" -> 40,
+"TrainingTime" -> 0.00630957344480193`,"TrainingMemory" -> 54736,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.950930760088713`,0.10010477276226988`]},"AccuracyHistory" -> {Around[
+0.6644064772645375`,0.03326017058541084`]}],Association["MeanCrossEntropy" -> Around[
+1.2046022308267907`,0.17928033784375946`],"Accuracy" -> Around[0.6620504020257219`,
+0.04692500128604116`],"EvaluationTime" -> 3.571674682851674`*^-5,"TestSize" -> 200,
+"ModelMemory" -> 20456,"ModelUtility" -> -0.9086316083172618`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.007943282347242814`,"TrainingMemory" -> 77440,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[1.2046022308267907`,0.12677034262273754`]},"AccuracyHistory" -> {Around[
+0.6620504020257219`,0.03318098661654716`]}],Association["MeanCrossEntropy" -> Around[
+0.8501014445246827`,0.1263226327993281`],"Accuracy" -> Around[0.7082612691584489`,
+0.04739083011677022`],"EvaluationTime" -> 3.100636115671016`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 26280,"ModelUtility" -> -0.5600376427904227`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.01`,"TrainingMemory" -> 186512,"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[
+0.8501014445246827`,0.08932359026974308`]},"AccuracyHistory" -> {Around[0.7082612691584489`,
+0.03351037734162789`]}]},"PredictedPerformances" -> Association["EvaluationTime" -> 3.100636115671016`*^-5,
+"MeanCrossEntropy" -> Around[0.8501014445246827`,0.1263226327993281`],"ModelMemory" -> 26280,
+"TrainingMemory" -> 186512,"TrainingTime" -> 0.020439871706042268`],"Index" -> 2],
+Association["Value" -> "DecisionTree","Options" -> Association["DistributionSmoothing" -> Association[
+"Value" -> 1],"FeatureFraction" -> Association["Value" -> 1]]] -> Association["Experiments" -> {Association[
+"MeanCrossEntropy" -> Around[0.6578374724898378`,0.07559744345186871`],"Accuracy" -> Around[
+0.7280887062477976`,0.044372178100774665`],"EvaluationTime" -> 5.660722890537325`*^-5,
+"TestSize" -> 200,"ModelMemory" -> 20136,"ModelUtility" -> -0.2970768107864106`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.015848931924611134`,"TrainingMemory" -> 125352,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6578374724898378`,0.05345546490518292`]},"AccuracyHistory" -> {Around[
+0.7280887062477976`,0.031375868031074984`]}],Association["MeanCrossEntropy" -> Around[
+0.75160836471358`,0.04364398372017647`],"Accuracy" -> Around[0.5001402820845321`,
+0.07053382818600773`],"EvaluationTime" -> 5.01187233627272`*^-5,"TestSize" -> 100,
+"ModelMemory" -> 23592,"ModelUtility" -> -0.41915749869202834`,"TrainingSize" -> 40,
+"TrainingTime" -> 0.012589254117941668`,"TrainingMemory" -> 97376,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.75160836471358`,0.030860956846532065`]},"AccuracyHistory" -> {Around[
+0.5001402820845321`,0.049874948213372905`]}],Association["MeanCrossEntropy" -> Around[
+0.7647836402867749`,0.048843860668022925`],"Accuracy" -> Around[0.5001402820845321`,
+0.07053382818600773`],"EvaluationTime" -> 6.30957344480193`*^-5,"TestSize" -> 100,
+"ModelMemory" -> 31784,"ModelUtility" -> -0.4376811173234989`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.012589254117941668`,"TrainingMemory" -> 127728,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7647836402867749`,0.0345378250976899`]},"AccuracyHistory" -> {Around[
+0.5001402820845321`,0.049874948213372905`]}],Association["MeanCrossEntropy" -> Around[
+0.7642086188667023`,0.03628090124241563`],"Accuracy" -> Around[0.5028546194388409`,
+0.05212616808685046`],"EvaluationTime" -> 6.186582394029863`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 43176,"ModelUtility" -> -0.4336871693194465`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.01995262314968879`,"TrainingMemory" -> 502912,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7642086188667023`,0.025654471296071523`]},
+"AccuracyHistory" -> {Around[0.5028546194388409`,0.03685876693148176`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 6.186582394029863`*^-5,"MeanCrossEntropy" -> Around[0.7642086188667023`,
+0.03628090124241563`],"ModelMemory" -> 43176,"TrainingMemory" -> 502912,"TrainingTime" -> 0.04078290573786479`],
+"Index" -> 3],Association["Value" -> "NearestNeighbors","Options" -> Association[
+"NeighborsNumber" -> Association["Value" -> Automatic],"DistributionSmoothing" -> Association[
+"Value" -> 0.5`],"NearestMethod" -> Association["Value" -> Automatic]]] -> Association[
+"Experiments" -> {Association["MeanCrossEntropy" -> Around[0.7146537361562073`,0.05028561020141565`],
+"Accuracy" -> Around[0.623928542605347`,0.04831615914948912`],"EvaluationTime" -> 5.660722890537325`*^-5,
+"TestSize" -> 200,"ModelMemory" -> 15816,"ModelUtility" -> -0.3711680642916837`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.007943282347242814`,"TrainingMemory" -> 94672,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7146537361562073`,0.035557295969524436`]},
+"AccuracyHistory" -> {Around[0.623928542605347`,0.034164683775492206`]}],Association[
+"MeanCrossEntropy" -> Around[0.657447363466025`,0.07603134157063937`],"Accuracy" -> Around[
+0.6486551335696811`,0.06734435601184173`],"EvaluationTime" -> 7.943282347242814`*^-5,
+"TestSize" -> 100,"ModelMemory" -> 21832,"ModelUtility" -> -0.2966260413342432`,"TrainingSize" -> 40,
+"TrainingTime" -> 0.007943282347242814`,"TrainingMemory" -> 102328,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.657447363466025`,0.05376227720730974`]},"AccuracyHistory" -> {Around[
+0.6486551335696811`,0.047619650810614325`]}],Association["MeanCrossEntropy" -> Around[
+0.7309221571581456`,0.0704240343716267`],"Accuracy" -> Around[0.5892491929756216`,
+0.06940107206750279`],"EvaluationTime" -> 6.30957344480193`*^-5,"TestSize" -> 100,
+"ModelMemory" -> 38088,"ModelUtility" -> -0.3987895408853377`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.012589254117941668`,"TrainingMemory" -> 592128,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.7309221571581456`,0.04979731226269174`]},"AccuracyHistory" -> {Around[
+0.5892491929756216`,0.0490739686805475`]}],Association["MeanCrossEntropy" -> Around[
+0.6050567975388531`,0.07378027540651988`],"Accuracy" -> Around[0.7190747038644556`,
+0.046857747890452106`],"EvaluationTime" -> 6.516040465998788`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 105920,"ModelUtility" -> -0.21481557833003917`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.03981071705534971`,"TrainingMemory" -> 2699496,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6050567975388531`,0.05217053305776126`]},"AccuracyHistory" -> {Around[
+0.7190747038644556`,0.03313343128446832`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 6.516040465998788`*^-5,"MeanCrossEntropy" -> Around[0.6050567975388531`,
+0.07378027540651988`],"ModelMemory" -> 105920,"TrainingMemory" -> 2699496,"TrainingTime" -> 0.05769310065924873`],
+"Index" -> 4],Association["Value" -> "RandomForest","Options" -> Association["FeatureFraction" -> Association[
+"Value" -> Automatic],"LeafSize" -> Association["Value" -> Automatic],"TreeNumber" -> Association[
+"Value" -> Automatic],"DistributionSmoothing" -> Association["Value" -> 0.5`],"Implementation" -> Association[
+"Value" -> Automatic]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+0.6468606213399887`,0.02041218667047269`],"Accuracy" -> Around[0.7234040102518277`,
+0.04459504718638316`],"EvaluationTime" -> 7.943282347242814`*^-5,"TestSize" -> 200,
+"ModelMemory" -> 106168,"ModelUtility" -> -0.2638201890342363`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.0630957344480193`,"TrainingMemory" -> 261984,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6468606213399887`,0.014433595613536894`]},
+"AccuracyHistory" -> {Around[0.7234040102518277`,0.031533460272825595`]}],Association[
+"MeanCrossEntropy" -> Around[0.6466139058852861`,0.020575272389314805`],"Accuracy" -> Around[
+0.6635425182250541`,0.047128987188236375`],"EvaluationTime" -> 6.30957344480193`*^-5,
+"TestSize" -> 200,"ModelMemory" -> 109240,"ModelUtility" -> -0.26349130523606656`,
+"TrainingSize" -> 40,"TrainingTime" -> 0.025118864315095794`,"TrainingMemory" -> 177272,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.6466139058852861`,0.014548914631244836`]},
+"AccuracyHistory" -> {Around[0.6635425182250541`,0.03332522643125586`]}],Association[
+"MeanCrossEntropy" -> Around[0.6253112198900209`,0.042144016317032504`],"Accuracy" -> Around[
+0.7278630543617606`,0.0627835775553396`],"EvaluationTime" -> 6.30957344480193`*^-5,
+"TestSize" -> 100,"ModelMemory" -> 117112,"ModelUtility" -> -0.23703713984515584`,
+"TrainingSize" -> 150,"TrainingTime" -> 0.025118864315095794`,"TrainingMemory" -> 218088,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.6253112198900209`,0.02980031972421019`]},
+"AccuracyHistory" -> {Around[0.7278630543617606`,0.04439469343653215`]}],Association[
+"MeanCrossEntropy" -> Around[0.5719919316645952`,0.039769053668864074`],"Accuracy" -> Around[
+0.7411892904694682`,0.04563845140725499`],"EvaluationTime" -> 6.186582394029863`*^-5,
+"TestSize" -> 183,"ModelMemory" -> 148216,"ModelUtility" -> -0.14833380402191798`,
+"TrainingSize" -> 733,"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 492784,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.5719919316645952`,0.02812096753062553`]},
+"AccuracyHistory" -> {Around[0.7411892904694682`,0.03227125847292273`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 6.186582394029863`*^-5,"MeanCrossEntropy" -> Around[0.5719919316645952`,
+0.039769053668864074`],"ModelMemory" -> 148216,"TrainingMemory" -> 492784,"TrainingTime" -> 0.1026134198056487`],
+"Index" -> 5],Association["Value" -> "LogisticRegression","Options" -> Association[
+"L1Regularization" -> Association["Value" -> 0],"L2Regularization" -> Association[
+"Value" -> 1.`*^-5],"OptimizationMethod" -> Association["Value" -> Automatic],MaxIterations -> Association[
+"Value" -> 30]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+0.6530622708886118`,0.06432946470863944`],"Accuracy" -> Around[0.6923174659480088`,
+0.037374373610412945`],"EvaluationTime" -> 3.708140357079439`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 20928,"ModelUtility" -> -0.28657724054516265`,"TrainingSize" -> 40,
+"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 135440,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6530622708886118`,0.04548780072557963`]},"AccuracyHistory" -> {Around[
+0.6923174659480088`,0.026427673022522538`]}],Association["MeanCrossEntropy" -> Around[
+0.6287555255410447`,0.07330885323099583`],"Accuracy" -> Around[0.7130625987351409`,
+0.04511737991382101`],"EvaluationTime" -> 3.571674682851674`*^-5,"TestSize" -> 200,
+"ModelMemory" -> 25536,"ModelUtility" -> -0.25218907069041996`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 135576,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6287555255410447`,0.05183718724064649`]},"AccuracyHistory" -> {Around[
+0.7130625987351409`,0.031902805286432565`]}],Association["MeanCrossEntropy" -> Around[
+0.612856194810241`,0.07982635559361126`],"Accuracy" -> Around[0.7523273349310446`,
+0.04496655303514258`],"EvaluationTime" -> 3.548064555762048`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 31680,"ModelUtility" -> -0.22924313491559423`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.05011872336272722`,"TrainingMemory" -> 403696,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.612856194810241`,0.056445757357651206`]},"AccuracyHistory" -> {Around[
+0.7523273349310446`,0.03179615457773385`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 3.548064555762048`*^-5,"MeanCrossEntropy" -> Around[0.612856194810241`,
+0.07982635559361126`],"ModelMemory" -> 31680,"TrainingMemory" -> 403696,"TrainingTime" -> 0.09425408710681085`],
+"Index" -> 6],Association["Value" -> "LogisticRegression","Options" -> Association[
+"L1Regularization" -> Association["Value" -> 0],"L2Regularization" -> Association[
+"Value" -> 0.01`],"OptimizationMethod" -> Association["Value" -> Automatic],MaxIterations -> Association[
+"Value" -> 30]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+0.557826672909693`,0.055199031534170995`],"Accuracy" -> Around[0.7604935898121971`,
+0.03445637041166784`],"EvaluationTime" -> 3.70814035707944`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 25536,"ModelUtility" -> -0.12904132305133198`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 135128,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.557826672909693`,0.039031609512742385`]},"AccuracyHistory" -> {Around[
+0.7604935898121971`,0.02436433317316584`]}],Association["MeanCrossEntropy" -> Around[
+0.6128245971029775`,0.07980629639261881`],"Accuracy" -> Around[0.7523273349310446`,
+0.04496655303514258`],"EvaluationTime" -> 3.548064555762048`*^-5,"TestSize" -> 183,
+"ModelMemory" -> 31680,"ModelUtility" -> -0.22918650428560383`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.03981071705534971`,"TrainingMemory" -> 403952,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6128245971029775`,0.05643157336060427`]},"AccuracyHistory" -> {Around[
+0.7523273349310446`,0.03179615457773385`]}],Association["MeanCrossEntropy" -> Around[
+0.8332026562067529`,0.12735899394765884`],"Accuracy" -> Around[0.7634816627300652`,
+0.03442217351733479`],"EvaluationTime" -> 3.708140357079439`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 17856,"ModelUtility" -> -0.5407852152514557`,"TrainingSize" -> 10,
+"TrainingTime" -> 0.025118864315095794`,"TrainingMemory" -> 90528,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.8332026562067529`,0.09005640826548603`]},"AccuracyHistory" -> {Around[
+0.7634816627300652`,0.024340152317287422`]}],Association["MeanCrossEntropy" -> Around[
+0.6489378137081547`,0.0635618761111796`],"Accuracy" -> Around[0.6923174659480088`,
+0.037374373610412945`],"EvaluationTime" -> 3.1622776601683795`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 20928,"ModelUtility" -> -0.2801324332436146`,"TrainingSize" -> 40,
+"TrainingTime" -> 0.025118864315095794`,"TrainingMemory" -> 99088,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6489378137081547`,0.04494503362315431`]},"AccuracyHistory" -> {Around[
+0.6923174659480088`,0.026427673022522538`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 3.1622776601683795`*^-5,"MeanCrossEntropy" -> Around[0.6489378137081547`,
+0.0635618761111796`],"ModelMemory" -> 20928,"TrainingMemory" -> 99088,"TrainingTime" -> 0.2617115737279613`],
+"Index" -> 7],Association["Value" -> "LogisticRegression","Options" -> Association[
+"L1Regularization" -> Association["Value" -> 0],"L2Regularization" -> Association[
+"Value" -> 1.`*^-4],"OptimizationMethod" -> Association["Value" -> Automatic],MaxIterations -> Association[
+"Value" -> 30]]] -> Association["Experiments" -> {},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 1,"MeanCrossEntropy" -> 1,"ModelMemory" -> 1,"TrainingMemory" -> 1,
+"TrainingTime" -> 1],"Index" -> 8],Association["Value" -> "LogisticRegression","Options" -> Association[
+"L1Regularization" -> Association["Value" -> 0],"L2Regularization" -> Association[
+"Value" -> 0.1`],"OptimizationMethod" -> Association["Value" -> Automatic],MaxIterations -> Association[
+"Value" -> 30]]] -> Association["Experiments" -> {},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 1,"MeanCrossEntropy" -> 1,"ModelMemory" -> 1,"TrainingMemory" -> 1,
+"TrainingTime" -> 1],"Index" -> 9],Association["Value" -> "LogisticRegression","Options" -> Association[
+"L1Regularization" -> Association["Value" -> 0],"L2Regularization" -> Association[
+"Value" -> 1.`],"OptimizationMethod" -> Association["Value" -> Automatic],MaxIterations -> Association[
+"Value" -> 30]]] -> Association["Experiments" -> {Association["MeanCrossEntropy" -> Around[
+0.5663640808206618`,0.04162877289229459`],"Accuracy" -> Around[0.7529360020638423`,
+0.03506120789245856`],"EvaluationTime" -> 3.435209008623909`*^-5,"TestSize" -> 300,
+"ModelMemory" -> 25536,"ModelUtility" -> -0.13922605096541119`,"TrainingSize" -> 150,
+"TrainingTime" -> 0.03162277660168379`,"TrainingMemory" -> 135160,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.5663640808206618`,0.029435987604616225`]},
+"AccuracyHistory" -> {Around[0.7529360020638423`,0.024792017857348747`]}],Association[
+"MeanCrossEntropy" -> Around[0.6099028562652086`,0.07791205477644621`],"Accuracy" -> Around[
+0.7523273349310446`,0.04496655303514258`],"EvaluationTime" -> 3.548064555762048`*^-5,
+"TestSize" -> 183,"ModelMemory" -> 31680,"ModelUtility" -> -0.223923532480798`,"TrainingSize" -> 733,
+"TrainingTime" -> 0.03981071705534971`,"TrainingMemory" -> 403568,"ExperimentCount" -> 1,
+"MeanCrossEntropyHistory" -> {Around[0.6099028562652086`,0.055092142268602845`]},
+"AccuracyHistory" -> {Around[0.7523273349310446`,0.03179615457773385`]}],Association[
+"MeanCrossEntropy" -> Around[0.6103970238012403`,0.0403307331287251`],"Accuracy" -> Around[
+0.6624708751733698`,0.0384769387648147`],"EvaluationTime" -> 3.435209008623909`*^-5,
+"TestSize" -> 300,"ModelMemory" -> 17856,"ModelUtility" -> -0.21263298720558832`,
+"TrainingSize" -> 10,"TrainingTime" -> 0.01995262314968879`,"TrainingMemory" -> 90400,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.6103970238012403`,0.02851813488554646`]},
+"AccuracyHistory" -> {Around[0.6624708751733698`,0.027207304319900014`]}],Association[
+"MeanCrossEntropy" -> Around[0.6022970551111788`,0.04747772258567834`],"Accuracy" -> Around[
+0.7095149856487541`,0.03690747554389411`],"EvaluationTime" -> 3.491343280859839`*^-5,
+"TestSize" -> 300,"ModelMemory" -> 20928,"ModelUtility" -> -0.20178877135103213`,
+"TrainingSize" -> 40,"TrainingTime" -> 0.025118864315095794`,"TrainingMemory" -> 99264,
+"ExperimentCount" -> 1,"MeanCrossEntropyHistory" -> {Around[0.6022970551111788`,0.033571819595626856`]},
+"AccuracyHistory" -> {Around[0.7095149856487541`,0.026097526233564185`]}]},"PredictedPerformances" -> Association[
+"EvaluationTime" -> 3.491343280859839`*^-5,"MeanCrossEntropy" -> Around[0.6022970551111788`,
+0.04747772258567834`],"ModelMemory" -> 20928,"TrainingMemory" -> 99264,"TrainingTime" -> 0.2617115737279613`],
+"Index" -> 10]],TypeSystem`Assoc[TypeSystem`Struct[{"Value","Options"},{TypeSystem`Atom[
+TypeSystem`Enumeration["DecisionTree","GradientBoostedTrees","LogisticRegression",
+"NaiveBayes","NearestNeighbors","RandomForest"]],TypeSystem`Assoc[TypeSystem`AnyType,
+TypeSystem`Struct[{"Value"},{TypeSystem`AnyType}],TypeSystem`AnyLength]}],TypeSystem`Struct[
+{"Experiments","PredictedPerformances","Index"},{TypeSystem`Vector[TypeSystem`Struct[
+{"MeanCrossEntropy","Accuracy","EvaluationTime","TestSize","ModelMemory","ModelUtility","TrainingSize","TrainingTime","TrainingMemory","ExperimentCount","MeanCrossEntropyHistory","AccuracyHistory"},
+{TypeSystem`AnyType,TypeSystem`AnyType,TypeSystem`Atom[Real],TypeSystem`Atom[Integer],TypeSystem`Atom[
+Integer],TypeSystem`Atom[Real],TypeSystem`Atom[Integer],TypeSystem`Atom[Real],TypeSystem`Atom[
+Integer],TypeSystem`Atom[Integer],TypeSystem`Vector[TypeSystem`AnyType,1],TypeSystem`Vector[
+TypeSystem`AnyType,1]}],TypeSystem`AnyLength],TypeSystem`Struct[{"EvaluationTime","MeanCrossEntropy","ModelMemory","TrainingMemory","TrainingTime"},
+{TypeSystem`Atom[Real],TypeSystem`AnyType,TypeSystem`Atom[Integer],TypeSystem`Atom[
+Integer],TypeSystem`Atom[Real]}],TypeSystem`Atom[Integer]}],10],Association[]],"MaxTrainingSize" -> 916,
+"PreprocessorEvaluationTime" -> 2.5625`*^-5,"PreprocessorMemory" -> 95744,"InputDimension" -> 3,
+"OutputDimension" -> 1,"BaselineLogProbability" -> -0.6652042646399302`,"VariableBudget" -> True,
+"CheckpointingInfo" -> Association["Checkpointing" -> False],"UserStop" -> False,
+"NaturalStop" -> True,"AbortStop" -> False,"RoundPartitioning" -> Dataset[{Association[
+"TrainingSizes" -> 10,"TimeBudgets" -> 0.13719999999999996`,"ElapsedTimes" -> 0.264589`,
+"ExperimentCounts" -> 7],Association["TrainingSizes" -> 40,"TimeBudgets" -> 0.19599999999999995`,
+"ElapsedTimes" -> 0.272452`,"ExperimentCounts" -> 8],Association["TrainingSizes" -> 150,
+"TimeBudgets" -> 0.28`,"ElapsedTimes" -> 0.290322`,"ExperimentCounts" -> 8],Association[
+"TrainingSizes" -> 733,"TimeBudgets" -> 0.4`,"ElapsedTimes" -> 0.422772`,"ExperimentCounts" -> 8]},
+TypeSystem`Vector[TypeSystem`Struct[{"TrainingSizes","TimeBudgets","ElapsedTimes","ExperimentCounts"},
+{TypeSystem`Atom[Integer],TypeSystem`Atom[Real],TypeSystem`Atom[Real],TypeSystem`Atom[
+Integer]}],4],Association[]]],"AnomalyDetector" -> None,"Log" -> Association["Example" -> MachineLearning`MLDataset[
+Association["f1" -> Association["Type" -> "Nominal","Weight" -> 1,"Values" -> {"1st"},
+"ID" -> 7990967109164924396],"f2" -> Association["Type" -> "Nominal","Weight" -> 1,
+"Values" -> {31},"ID" -> 6705839947104244181],"f3" -> Association["Type" -> "Nominal",
+"Weight" -> 1,"Values" -> {"female"},"ID" -> 7731761509669997192]],Association["ExampleNumber" -> 1,
+"ExampleWeights" -> 1,"LogDensityRatios" -> 0,"RawExample" -> False]],"TrainingTime" -> 1.591165`,
+"MaxTrainingMemory" -> 3391768,"DataMemory" -> 695872,"FunctionMemory" -> 302448,
+"LanguageVersion" -> {13.1`,0},"Date" -> DateObject[{2022,10,8,12,39,7.41628`7.622761105388116},
+"Instant","Gregorian",-5.`],"ProcessorCount" -> 2,"ProcessorType" -> "x86-64","OperatingSystem" -> "Unix",
+"SystemWordLength" -> 64,"Evaluations" -> {}]]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[245]= ",ExpressionUUID -> "69022c13-6ad6-400a-bf6b-03ba15193b43"]},
+Open],ExpressionUUID -> "04039167-3d25-4b7a-9e19-874f4944baad"],Cell[
+TextData[{"Use"," ","the"," ","classifier"," ","to"," ","make"," ","predictions",":"}],
+"Text",ExpressionUUID -> "87d74a3f-85dd-447c-8eea-7cf6910844a4"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicClassifier","[",RowBox[{RowBox[{"<|",RowBox[{RowBox[
+{"\"Class\""," ","\[Rule]"," ","\"3rd\""}],",",RowBox[{"\"Age\""," ","\[Rule]"," ","23"}],",",RowBox[
+{"\"Gender\""," ","\[Rule]"," ","\"male\""}]}],"|>"}],",","\"Probabilities\""}],"]"}]],
+"Input",CellLabel -> "In[246]:= ",ExpressionUUID -> "4ec96b93-e75c-4727-b0d5-edff65ebf9ff"],Cell[
+BoxData[
+RowBox[{"\[LeftAssociation]",RowBox[{RowBox[{"\"died\"","\[Rule]","0.8867574632340053`"}],",",RowBox[
+{"\"survived\"","\[Rule]","0.11324253676599483`"}]}],"\[RightAssociation]"}],StandardForm],
+"Output",CellLabel -> "Out[246]= ",ExpressionUUID -> "62827e0c-08f1-4756-b1d4-e1d64f2319ba"]},
+Open],ExpressionUUID -> "b1ab6cb2-3838-4e19-b912-7497aec3a9b2"],Cell[
+TextData[{"Create"," ","an"," ","API"," ","that"," ","uses"," ","the"," ","classifier",":"}],
+"Text",ExpressionUUID -> "ec8f2ab9-6283-4fd8-8dc2-11babb5834be"],Cell[
+BoxData[RowBox[
+{RowBox[{"titanicAPI"," ","="," ",RowBox[{"APIFunction","[",RowBox[{RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"\"class\"","\[Rule]",RowBox[{RowBox[{"{",RowBox[{"\"1st\"",",","\"2nd\"",",","\"3rd\""}],"}"}]," ","\[Rule]"," ","\"1st\""}]}],",","\[IndentingNewLine]",RowBox[
+{"\"age\"","\[Rule]",RowBox[{RowBox[{"Restricted","[",RowBox[{"\"Number\"",",",RowBox[
+{"{",RowBox[{"1",",","100"}],"}"}]}],"]"}]," ","\[Rule]"," ","20"}]}],",","\[IndentingNewLine]",RowBox[
+{"\"gender\"","\[Rule]",RowBox[{RowBox[{"{",RowBox[{"\"male\"",",","\"female\""}],"}"}]," ","\[Rule]"," ","\"male\""}]}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"titanicClassifier","[",RowBox[{"<|",RowBox[{RowBox[{"\"Class\""," ","\[Rule]"," ","#class"}],",",RowBox[
+{"\"Age\""," ","\[Rule]"," ","#age"}],",",RowBox[{"\"Gender\""," ","\[Rule]"," ","#gender"}]}],"|>"}],"]"}],"&"}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",CellLabel -> "In[247]:= ",ExpressionUUID -> "40a7f71c-667c-449e-b76a-966692ba32df"],Cell[
+TextData[
+{"Call"," ","it"," ","locally",":"}],"Text",ExpressionUUID -> "e4204f68-941a-4a41-8740-8279aa7c0a27"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicAPI","[","]"}]],"Input",CellLabel -> "In[248]:= ",
+ExpressionUUID -> "504d3901-6da4-440b-a5d7-631799e0902b"],Cell[
+BoxData["\"died\"",
+StandardForm],"Output",CellLabel -> "Out[248]= ",ExpressionUUID -> "a726c18c-215f-4316-94d4-6ece238117b7"]},
+Open],ExpressionUUID -> "84fe3b9d-d52f-49b2-bab3-46232cec788e"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicAPI","[",RowBox[{"<|",RowBox[{RowBox[{"\"class\""," ","\[Rule]"," ","\"1st\""}],",",RowBox[
+{"\"age\""," ","\[Rule]"," ","50"}],",",RowBox[{"\"gender\""," ","\[Rule]"," ","\"female\""}]}],"|>"}],"]"}]],
+"Input",CellLabel -> "In[249]:= ",ExpressionUUID -> "ec8d5c15-be7f-41f8-871e-cf519eb943a9"],Cell[
+BoxData[
+"\"survived\"",StandardForm],"Output",CellLabel -> "Out[249]= ",ExpressionUUID -> "33fbe0c7-2262-4d55-83b0-5481a1465b8a"]},
+Open],ExpressionUUID -> "aad3a742-0828-4c13-858f-383fe625ac48"],Cell[
+TextData[{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],
+"Text",ExpressionUUID -> "89d2483a-e22a-42e0-8b50-7968542583bd"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicAPIDeployed"," ","="," ",RowBox[{"CloudDeploy","[","\[IndentingNewLine]",RowBox[
+{"titanicAPI",",","\[IndentingNewLine]",RowBox[{"CloudObject","[","\"WebServices/TitanicAPI\"","]"}],",","\[IndentingNewLine]",RowBox[
+{"Permissions"," ","\[Rule]"," ","\"Public\""}]}],"\[IndentingNewLine]","]"}]}]],
+"Input",CellLabel -> "In[250]:= ",ExpressionUUID -> "28cbc94e-39a1-430b-8642-cbcc567341c8"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"CloudObject","[",TemplateBox[{"\"https://www.wolframcloud.com/obj/boris.thurm/WebServices/TitanicAPI\"","https://www.wolframcloud.com/obj/boris.thurm/WebServices/TitanicAPI"},
+"HyperlinkURL"],"]"}],CloudObject["https://www.wolframcloud.com/obj/boris.thurm/WebServices/TitanicAPI"],
+SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[250]= ",ExpressionUUID -> "ea5910be-f65d-4a1d-94b2-84a9f44ac19c"]},
+Open],ExpressionUUID -> "a8f20c3f-163b-4b64-bdcb-eb388caecd6d"],Cell[
+TextData[{"Call"," ","it",":"}],
+"Text",ExpressionUUID -> "913b9aa5-2bf4-409b-a8a7-1a5523143eaf"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"URLExecute","[",RowBox[{"titanicAPIDeployed",","," ",RowBox[
+{"{",RowBox[{RowBox[{"\"class\""," ","\[Rule]"," ","\"1st\""}],",",RowBox[{"\"age\"","\[Rule]"," ","20"}],",",RowBox[
+{"\"gender\"","\[Rule]"," ","\"male\""}]}],"}"}]}],"]"}]],"Input",CellLabel -> "In[251]:= ",
+ExpressionUUID -> "c8d145cc-7249-4e3d-9f4a-0f1e032f918f"],Cell[
+BoxData["\"\\\"died\\\"\"",
+StandardForm],"Output",CellLabel -> "Out[251]= ",ExpressionUUID -> "7c21ecaa-6926-4623-b818-c67a60d4b665"]},
+Open],ExpressionUUID -> "643c35c9-1693-4233-9531-5b9558f810e8"]},{1}],ExpressionUUID -> "56590cdf-31e8-4be5-8608-afcd4595ffe7"]},
+{1}],ExpressionUUID -> "358dfb4c-3361-49d2-b6d1-81ec59ff27f2"]},{1}],ExpressionUUID -> "9a395abe-3a84-42d9-9bcf-58beb38304e3"],Cell[
 CellGroupData[
 {Cell[
 TextData[{"Web"," ","Forms"}],"Section",ExpressionUUID -> "a8373984-b0e5-4b81-9017-d91ce939b37e"],Cell[
@@ -556,18 +1480,18 @@ StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"Long"," ",RowBox[{"version",":"}]}],"
 {"{",RowBox[{"\"Red\"",","," ","\"Orange\"",","," ","\"Yellow\"",","," ","\"Green\"",","," ","\"Blue\"",","," ","\"Indigo\"",","," ","\"Violet\""}],"}"}]}],",","\[IndentingNewLine]",RowBox[
 {"\"Input\""," ","\[Rule]"," ","None"}],",","\[IndentingNewLine]",RowBox[{"\"Hint\""," ","\[Rule]"," ","\"Pick a colour from the list\""}],","," ","\[IndentingNewLine]",RowBox[
 {"\"Default\""," ","\[Rule]"," ","\"Green\""}]}],"\[IndentingNewLine]","|>"}]}],"\[IndentingNewLine]","}"}],"]"}]}],";"}]}]]],
-"Input",ExpressionUUID -> "813f3c61-4920-4612-bb4a-6634818dec82"],Cell[
+"Input",CellLabel -> "In[256]:= ",ExpressionUUID -> "813f3c61-4920-4612-bb4a-6634818dec82"],Cell[
 TextData[
 {"Display"," ","a"," ","form"," ","locally",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
 ExpressionUUID -> "9fd884e0-da42-453f-a3a3-a77886e1e3ba"],Cell[
 BoxData[RowBox[{"staticForm2","[","]"}]],
-"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "bdfbd852-f8ab-4643-a9a0-38b20fe88178"],Cell[
-TextData[
-{"Fill"," ","it"," ","out"," ","programmatically",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
-ExpressionUUID -> "673d393e-8be2-462d-bc4b-c557deaff82c"],Cell[
-BoxData[RowBox[{"staticForm2","[",RowBox[
-{"<|",RowBox[{"\"colour\""," ","\[Rule]"," ","\"Orange\""}],"|>"}],"]"}]],"Input",
-CellLabel -> "",ExpressionUUID -> "dbee136b-7e14-4d31-9b5f-882cfce1a453"],Cell[
+"Input",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},CellLabel -> "In[257]:= ",
+ExpressionUUID -> "bdfbd852-f8ab-4643-a9a0-38b20fe88178"],Cell[
+TextData[{"Fill"," ","it"," ","out"," ","programmatically",":"}],
+"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},ExpressionUUID -> "673d393e-8be2-462d-bc4b-c557deaff82c"],Cell[
+BoxData[
+RowBox[{"staticForm2","[",RowBox[{"<|",RowBox[{"\"colour\""," ","\[Rule]"," ","\"Orange\""}],"|>"}],"]"}]],
+"Input",CellLabel -> "",ExpressionUUID -> "dbee136b-7e14-4d31-9b5f-882cfce1a453"],Cell[
 TextData[
 {"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",CellGroupingRules -> {"GroupTogetherGrouping",10001.`},
 ExpressionUUID -> "6de11198-3b10-4eeb-a53d-a8a506707261"],Cell[
@@ -717,9 +1641,12 @@ BoxData[
 ExpressionUUID -> "ec051be2-df60-4307-b0db-c40e2b654f0b"],Cell[
 CellGroupData[{Cell[
 TextData[
-{"Example",StyleBox[RowBox[{":"," "}]],"Weather"," ","Data"}],"Subsection",ExpressionUUID -> "e5a9acd0-05b3-45a1-aea4-77dbc1ed3a91"],Cell[
-TextData[
-{"Create"," ","a"," ","form"," ","that"," ","gives"," ","the"," ","current"," ","weather"," ","at"," ","a"," ","location",StyleBox[
+{"Example"," ","Forms"}],"Subsection",ExpressionUUID -> "15afbd9a-9322-4621-9df5-b127b7b71d0c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Example",StyleBox[RowBox[{":"," "}]],"Weather"," ","Data"}],"Subsubsection",
+ExpressionUUID -> "e5a9acd0-05b3-45a1-aea4-77dbc1ed3a91"],Cell[
+TextData[{"Create"," ","a"," ","form"," ","that"," ","gives"," ","the"," ","current"," ","weather"," ","at"," ","a"," ","location",StyleBox[
 RowBox[{":"," "}]]}],"Text",ExpressionUUID -> "636957f2-b169-42e3-a9d2-0932814d17e8"],Cell[
 BoxData[
 RowBox[{RowBox[{"weatherForm"," ","="," ",RowBox[{"FormPage","[","\[IndentingNewLine]",RowBox[
@@ -739,17 +1666,175 @@ RowBox[{RowBox[{"weatherForm"," ","="," ",RowBox[{"FormPage","[","\[IndentingNew
 {"AppearanceRules"," ","\[Rule]"," ",RowBox[{"<|","\[IndentingNewLine]",RowBox[{RowBox[
 {"\"Title\""," ","\[Rule]"," ","\"Weather Data\""}],",","\[IndentingNewLine]",RowBox[
 {"\"Description\""," ","\[Rule]"," ","\"Enter a town or city in the field below to find the local weather.\""}]}],"\[IndentingNewLine]","|>"}]}]}],"\[IndentingNewLine]","]"}]}],";"}]],
-"Input",ExpressionUUID -> "a4684894-c1d0-48b7-8fc9-8d2c857f2a18"],Cell[
+"Input",CellLabel -> "In[254]:= ",ExpressionUUID -> "a4684894-c1d0-48b7-8fc9-8d2c857f2a18"],Cell[
 TextData[
 {"Display"," ","it"," ","locally",":"}],"Text",ExpressionUUID -> "53538ca8-4520-4e31-a310-6a48cbcb11d5"],Cell[
-BoxData[
-RowBox[{"weatherForm","[","]"}]],"Input",CellLabel -> "",ExpressionUUID -> "6240a077-8903-4d24-9e08-8ecada7869ac"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"weatherForm","[","]"}]],"Input",CellLabel -> "In[255]:= ",
+ExpressionUUID -> "6240a077-8903-4d24-9e08-8ecada7869ac"],Cell[
+BoxData[InterpretationBox[
+DynamicModuleBox[{Set[Forms`FormPage`PackagePrivate`temp$$,Association["location" -> Association[
+"Interpreter" -> "City","Label" -> "Location","Input" -> "Lausanne"]]],Set[Forms`FormPage`PackagePrivate`vals$$,
+Association["location" -> Entity["City",{"Lausanne","Vaud","Switzerland"}]]],Set[
+Forms`FormPage`PackagePrivate`valid$$,True],Set[Forms`FormPage`PackagePrivate`form2$$,
+FormObject[Association["location" -> Association["Interpreter" -> "City","Label" -> "Location",
+"Input" -> "Lausanne"]],Association["location" -> Entity["City",{"Lausanne","Vaud","Switzerland"}]],
+AppearanceRules -> Association["Title" -> "Weather Data","Description" -> "Enter a town or city in the field below to find the local weather."]]],Forms`FormPage`PackagePrivate`valid2$$},
+DynamicBox[ToBoxes[With[{Set[Forms`FormPage`PackagePrivate`formpane$,Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Forms`getFormLayout[
+Forms`PackageScope`bindableForm[Forms`FormPage`PackagePrivate`temp$$,Evaluate[Forms`FormPage`PackagePrivate`form2$$],
+None,None -> Forms`PackageScope`completeAction[Forms`FormPage`PackagePrivate`form2$$,
+Forms`FormPage`PackagePrivate`temp$$,Forms`FormPage`PackagePrivate`vals$$,Function[
+CompoundExpression[Unset[Forms`FormPage`PackagePrivate`vals$$],Set[Forms`FormPage`PackagePrivate`vals$$,
+Slot[1]],Set[Forms`FormPage`PackagePrivate`valid2$$,Not[TrueQ[Forms`PackageScope`$DontComplete]]]]],
+{AppearanceRules -> Association["Title" -> "Weather Data","Description" -> "Enter a town or city in the field below to find the local weather."]}]]]]],Set[
+Forms`FormPage`PackagePrivate`resultpane$,Column[{Forms`PackageScope`formPanel[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,"FormPanelStyle"]][If[Set[Forms`FormPage`PackagePrivate`valid$$,And[
+UnsameQ[Forms`FormPage`PackagePrivate`vals$$,Association[]],FreeQ[Values[Forms`FormPage`PackagePrivate`vals$$],
+Alternatives[Blank[Failure],Forms`PackageScope`fieldHidden]],TrueQ[Forms`FormPage`PackagePrivate`valid2$$]]],
+CompoundExpression[Unset[Forms`FormPage`PackagePrivate`valid2$$],Style[Function[Grid[
+{{Slot["location"],ReplaceAll[Grid[{{"Temperature",WeatherData[Slot["location"],"Temperature"]},{"Precipitation",WeatherData[
+Slot["location"],"TotalPrecipitation"]},{"Wind speed",WeatherData[Slot["location"],
+"WindSpeed"]},{"Cloud cover",WeatherData[Slot["location"],"CloudCoverFraction"]}}],
+Missing[BlankNullSequence[]] -> "-"]},{StringJoin["Last date loaded: ",DateString[
+Now]],SpanFromLeft}},Frame -> All,BaseStyle -> "Text"]][Forms`FormPage`PackagePrivate`vals$$],
+"Output",ToString[StandardForm]]],Style["Invalid form","Message"]]]}]]},Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Column[Forms`doLayout[
+Automatic,Forms`FormPage`PackagePrivate`valid$$,{Forms`FormPage`PackagePrivate`formpane$,Forms`FormPage`PackagePrivate`resultpane$,Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Item[Row[
+{Spacer[0],Forms`PackageScope`formDefaultButton[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"CurrentSubmitLabel"]],
+Forms`PackageScope`completeAction[Forms`FormPage`PackagePrivate`form2$$,Forms`FormPage`PackagePrivate`temp$$,
+Forms`FormPage`PackagePrivate`vals$$,Function[CompoundExpression[Unset[Forms`FormPage`PackagePrivate`vals$$],
+Set[Forms`FormPage`PackagePrivate`vals$$,Slot[1]],Set[Forms`FormPage`PackagePrivate`valid2$$,
+Not[TrueQ[Forms`PackageScope`$DontComplete]]]]],{AppearanceRules -> Association["Title" -> "Weather Data",
+"Description" -> "Enter a town or city in the field below to find the local weather."]}],
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormDefaultButtonStyle"]]}],
+Alignment -> Right]]},Forms`PackageScope`formPanel[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,"FormPanelStyle"]][BlankNullSequence[]],Function[Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Column[Part[
+{SlotSequence[1]},All,1]]]]]]]],StandardForm],RuleDelayed[TrackedSymbols,{Forms`FormPage`PackagePrivate`vals$$}]],
+RuleDelayed[DynamicModuleValues,{}],ExpressionUUID -> "4ea4924d-a469-44ed-a426-b1677365939c"],
+FormPage[FormObject[Association["location" -> Association["Interpreter" -> "City",
+"Label" -> "Location"]],Association["location" -> Failure["MissingParameter",Association[
+RuleDelayed["MessageTemplate",MessageName[Interpreter,"required"]],"MessageParameters" -> Association[]]]],
+AppearanceRules -> Association["Title" -> "Weather Data","Description" -> "Enter a town or city in the field below to find the local weather."]],
+Function[Grid[{{Slot["location"],ReplaceAll[Grid[{{"Temperature",WeatherData[Slot[
+"location"],"Temperature"]},{"Precipitation",WeatherData[Slot["location"],"TotalPrecipitation"]},{"Wind speed",WeatherData[
+Slot["location"],"WindSpeed"]},{"Cloud cover",WeatherData[Slot["location"],"CloudCoverFraction"]}}],
+Missing[BlankNullSequence[]] -> "-"]},{StringJoin["Last date loaded: ",DateString[
+Now]],SpanFromLeft}},Frame -> All,BaseStyle -> "Text"]]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[255]= ",ExpressionUUID -> "89f85fc8-fd85-4b61-84ab-ffd5a17c0e0d"]},
+Open],ExpressionUUID -> "a8ae9ab9-906d-4868-9642-203acd36c178"],Cell[
+TextData[{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],
+"Text",ExpressionUUID -> "3ea3d0d3-5e65-4565-b6cb-197f9bfd6f3b"],Cell[
+BoxData[RowBox[
+{"CloudDeploy","[",RowBox[{"weatherForm",","," ","\"WebServices/WeatherForm\""}],"]"}]],
+"Input",ExpressionUUID -> "6f438ece-e58d-41cd-ada0-410cd6533ba4"]},{1}],ExpressionUUID -> "6ff00a30-f3ca-4bb7-a4bb-60e682037a44"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Example",StyleBox[RowBox[{":"," "}]],"Titanic"," ","Classifier"}],
+"Subsubsection",ExpressionUUID -> "d5765176-1a6c-4381-becf-a9fd2d7711e3"],Cell[
 TextData[
-{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "3ea3d0d3-5e65-4565-b6cb-197f9bfd6f3b"],Cell[
+{"Create"," ","a"," ","form"," ","that"," ","uses"," ","the"," ","Titanic"," ","classifier",":"}],
+"Text",ExpressionUUID -> "32df7f30-4462-4a84-a01d-b80fc725f752"],Cell[
+BoxData[RowBox[
+{RowBox[{"titanicForm"," ","="," ",RowBox[{"FormPage","[","\[IndentingNewLine]",RowBox[
+{RowBox[{"{","\[IndentingNewLine]",RowBox[{RowBox[{RowBox[{"{",RowBox[{"\"class\"",","," ","\"Class\""}],"}"}]," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"\"1st\"",",","\"2nd\"",",","\"3rd\""}],"}"}]}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"age\"",","," ","\"Age\""}],"}"}],"\[Rule]",RowBox[{"Restricted","[",RowBox[
+{"\"Number\"",",",RowBox[{"{",RowBox[{"1",",","100"}],"}"}]}],"]"}]}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"gender\"",","," ","\"Gender\""}],"}"}],"\[Rule]",RowBox[{"{",RowBox[
+{"\"male\"",",","\"female\""}],"}"}]}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{RowBox[{"Grid","[","\[IndentingNewLine]",RowBox[{RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"{",RowBox[{"\"Class\"",","," ","#class"}],"}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{"\"Age\"",","," ","#age"}],"}"}],",","\[IndentingNewLine]",RowBox[{"{",RowBox[
+{"\"Gender\"",","," ","#gender"}],"}"}],",","\[IndentingNewLine]",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{"\"Chance of survival\"",",","\[IndentingNewLine]",RowBox[{"Row","[",RowBox[{"{","\[IndentingNewLine]",RowBox[
+{RowBox[{"100","*",RowBox[{RowBox[{"titanicClassifier","[",RowBox[{RowBox[{"<|",RowBox[
+{RowBox[{"\"Class\""," ","\[Rule]"," ","#class"}],",",RowBox[{"\"Age\""," ","\[Rule]"," ","#age"}],",",RowBox[
+{"\"Gender\""," ","\[Rule]"," ","#gender"}]}],"|>"}],","," ","\"Probabilities\""}],"]"}],"[","\"survived\"","]"}]}],",","\[IndentingNewLine]","\"%\""}],"\[IndentingNewLine]","}"}],"]"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"{",RowBox[{RowBox[{"\"Last date loaded: \""," ","<>"," ",RowBox[{"DateString","[","Now","]"}]}],","," ","SpanFromLeft"}],"}"}]}],"\[IndentingNewLine]","}"}],",","\[IndentingNewLine]",RowBox[
+{"Frame"," ","\[Rule]"," ","All"}],",","\[IndentingNewLine]",RowBox[{"BaseStyle"," ","\[Rule]"," ","\"Text\""}]}],"\[IndentingNewLine]","]"}],"&"}],",","\[IndentingNewLine]",RowBox[
+{"AppearanceRules"," ","\[Rule]"," ",RowBox[{"<|","\[IndentingNewLine]",RowBox[{RowBox[
+{"\"Title\""," ","\[Rule]"," ","\"Titanic Passenger Survival\""}],",","\[IndentingNewLine]",RowBox[
+{"\"Description\""," ","\[Rule]"," ","\"Enter the details of a passenger to see if they would have been likely to survive the sinking of the Titanic.\""}]}],"\[IndentingNewLine]","|>"}]}]}],"\[IndentingNewLine]","]"}]}],";"}]],
+"Input",CellLabel -> "In[252]:= ",ExpressionUUID -> "80344811-b32f-4e72-96c0-3f735bf464cd"],Cell[
+TextData[
+{"Display"," ","it"," ","locally",":"}],"Text",ExpressionUUID -> "d40b73bb-97ec-48ba-a7a7-112aca0b355d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"titanicForm","[","]"}]],"Input",CellLabel -> "In[253]:= ",
+ExpressionUUID -> "addcf4ee-7bc2-44b5-9782-a9483f7eb688"],Cell[
+BoxData[InterpretationBox[
+DynamicModuleBox[{Set[Forms`FormPage`PackagePrivate`temp$$,Association["class" -> Association[
+"Interpreter" -> {"1st","2nd","3rd"},"Label" -> "Class","Input" -> "~08dd19da7af57e03"],
+"age" -> Association["Interpreter" -> Restricted["Number",{1,100}],"Label" -> "Age",
+"Input" -> "23"],"gender" -> Association["Interpreter" -> {"male","female"},"Label" -> "Gender",
+"Input" -> "~2659ef9d31d08088"]]],Set[Forms`FormPage`PackagePrivate`vals$$,Association[
+"class" -> "1st","age" -> 23,"gender" -> "male"]],Set[Forms`FormPage`PackagePrivate`valid$$,
+True],Set[Forms`FormPage`PackagePrivate`form2$$,FormObject[Association["class" -> Association[
+"Interpreter" -> {"1st","2nd","3rd"},"Label" -> "Class","Input" -> "~08dd19da7af57e03"],
+"age" -> Association["Interpreter" -> Restricted["Number",{1,100}],"Label" -> "Age",
+"Input" -> "23"],"gender" -> Association["Interpreter" -> {"male","female"},"Label" -> "Gender",
+"Input" -> "~2659ef9d31d08088"]],Association["class" -> "1st","age" -> 23,"gender" -> "male"],
+AppearanceRules -> Association["Title" -> "Titanic Passenger Survival","Description" -> "Enter the details of a passenger to see if they would have been likely to survive the sinking of the Titanic."]]],Forms`FormPage`PackagePrivate`valid2$$},
+DynamicBox[ToBoxes[With[{Set[Forms`FormPage`PackagePrivate`formpane$,Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Forms`getFormLayout[
+Forms`PackageScope`bindableForm[Forms`FormPage`PackagePrivate`temp$$,Evaluate[Forms`FormPage`PackagePrivate`form2$$],
+None,None -> Forms`PackageScope`completeAction[Forms`FormPage`PackagePrivate`form2$$,
+Forms`FormPage`PackagePrivate`temp$$,Forms`FormPage`PackagePrivate`vals$$,Function[
+CompoundExpression[Unset[Forms`FormPage`PackagePrivate`vals$$],Set[Forms`FormPage`PackagePrivate`vals$$,
+Slot[1]],Set[Forms`FormPage`PackagePrivate`valid2$$,Not[TrueQ[Forms`PackageScope`$DontComplete]]]]],
+{AppearanceRules -> Association["Title" -> "Titanic Passenger Survival","Description" -> "Enter the details of a passenger to see if they would have been likely to survive the sinking of the Titanic."]}]]]]],Set[
+Forms`FormPage`PackagePrivate`resultpane$,Column[{Forms`PackageScope`formPanel[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,"FormPanelStyle"]][If[Set[Forms`FormPage`PackagePrivate`valid$$,And[
+UnsameQ[Forms`FormPage`PackagePrivate`vals$$,Association[]],FreeQ[Values[Forms`FormPage`PackagePrivate`vals$$],
+Alternatives[Blank[Failure],Forms`PackageScope`fieldHidden]],TrueQ[Forms`FormPage`PackagePrivate`valid2$$]]],
+CompoundExpression[Unset[Forms`FormPage`PackagePrivate`valid2$$],Style[Function[Grid[
+{{"Class",Slot["class"]},{"Age",Slot["age"]},{"Gender",Slot["gender"]},{"Chance of survival",Row[
+{Times[100,titanicClassifier[Association["Class" -> Slot["class"],"Age" -> Slot["age"],
+"Gender" -> Slot["gender"]],"Probabilities"]["survived"]],"%"}]},{StringJoin["Last date loaded: ",
+DateString[Now]],SpanFromLeft}},Frame -> All,BaseStyle -> "Text"]][Forms`FormPage`PackagePrivate`vals$$],
+"Output",ToString[StandardForm]]],Style["Invalid form","Message"]]]}]]},Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Column[Forms`doLayout[
+Automatic,Forms`FormPage`PackagePrivate`valid$$,{Forms`FormPage`PackagePrivate`formpane$,Forms`FormPage`PackagePrivate`resultpane$,Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Item[Row[
+{Spacer[0],Forms`PackageScope`formDefaultButton[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"CurrentSubmitLabel"]],
+Forms`PackageScope`completeAction[Forms`FormPage`PackagePrivate`form2$$,Forms`FormPage`PackagePrivate`temp$$,
+Forms`FormPage`PackagePrivate`vals$$,Function[CompoundExpression[Unset[Forms`FormPage`PackagePrivate`vals$$],
+Set[Forms`FormPage`PackagePrivate`vals$$,Slot[1]],Set[Forms`FormPage`PackagePrivate`valid2$$,
+Not[TrueQ[Forms`PackageScope`$DontComplete]]]]],{AppearanceRules -> Association["Title" -> "Titanic Passenger Survival",
+"Description" -> "Enter the details of a passenger to see if they would have been likely to survive the sinking of the Titanic."]}],
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormDefaultButtonStyle"]]}],
+Alignment -> Right]]},Forms`PackageScope`formPanel[Forms`FormPage`PackagePrivate`form2$$[
+AppearanceRules,"FormPanelStyle"]][BlankNullSequence[]],Function[Forms`PackageScope`formPanel[
+Forms`FormPage`PackagePrivate`form2$$[AppearanceRules,"FormPanelStyle"]][Column[Part[
+{SlotSequence[1]},All,1]]]]]]]],StandardForm],RuleDelayed[TrackedSymbols,{Forms`FormPage`PackagePrivate`vals$$}]],
+RuleDelayed[DynamicModuleValues,{}],ExpressionUUID -> "8a79c4b1-1624-48bb-bd5f-7af4f4db441c"],
+FormPage[FormObject[Association["class" -> Association["Interpreter" -> {"1st","2nd","3rd"},
+"Label" -> "Class"],"age" -> Association["Interpreter" -> Restricted["Number",{1,100}],
+"Label" -> "Age"],"gender" -> Association["Interpreter" -> {"male","female"},"Label" -> "Gender"]],
+Association["class" -> Failure["MissingParameter",Association[RuleDelayed["MessageTemplate",
+MessageName[Interpreter,"required"]],"MessageParameters" -> Association[]]],"age" -> Failure[
+"MissingParameter",Association[RuleDelayed["MessageTemplate",MessageName[Interpreter,
+"required"]],"MessageParameters" -> Association[]]],"gender" -> Failure["MissingParameter",
+Association[RuleDelayed["MessageTemplate",MessageName[Interpreter,"required"]],"MessageParameters" -> Association[]]]],
+AppearanceRules -> Association["Title" -> "Titanic Passenger Survival","Description" -> "Enter the details of a passenger to see if they would have been likely to survive the sinking of the Titanic."]],
+Function[Grid[{{"Class",Slot["class"]},{"Age",Slot["age"]},{"Gender",Slot["gender"]},{"Chance of survival",Row[
+{Times[100,titanicClassifier[Association["Class" -> Slot["class"],"Age" -> Slot["age"],
+"Gender" -> Slot["gender"]],"Probabilities"]["survived"]],"%"}]},{StringJoin["Last date loaded: ",
+DateString[Now]],SpanFromLeft}},Frame -> All,BaseStyle -> "Text"]]],Selectable -> False,
+Editable -> False,SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[253]= ",
+ExpressionUUID -> "a99a83ac-2e06-4d6d-89aa-0a20eb5609c0"]},Open],ExpressionUUID -> "31336034-e51c-4cbf-917d-55a8c32d8d3c"],Cell[
+TextData[
+{"Deploy"," ","it"," ","to"," ","the"," ","cloud",":"}],"Text",ExpressionUUID -> "fffa9a4d-2a79-40a4-b2ec-0a8178718a54"],Cell[
 BoxData[
-RowBox[{"CloudDeploy","[",RowBox[{"weatherForm",","," ","\"WebServices/WeatherForm\""}],"]"}]],
-"Input",ExpressionUUID -> "6f438ece-e58d-41cd-ada0-410cd6533ba4"]},{1}],ExpressionUUID -> "6ff00a30-f3ca-4bb7-a4bb-60e682037a44"]},
-{1}],ExpressionUUID -> "9337f2f5-352c-45e6-bdbf-be4d4f803ee7"],Cell[
+RowBox[{"CloudDeploy","[",RowBox[{"titanicForm",","," ","\"WebServices/TitanicForm\""}],"]"}]],
+"Input",ExpressionUUID -> "d9ed9cdd-e8b1-4054-89ee-9b7836cb701b"]},{1}],ExpressionUUID -> "24bbc274-91a7-4045-9543-ebd479aa1e4e"]},
+{1}],ExpressionUUID -> "92ee5ab1-2f52-46aa-b027-b66ca12f1688"]},{1}],ExpressionUUID -> "9337f2f5-352c-45e6-bdbf-be4d4f803ee7"],Cell[
 CellGroupData[
 {Cell[
 TextData[{"Cloud"," ","Storage"}],"Section",ExpressionUUID -> "047452c8-99fc-4602-b456-dbe01c7553f3"],Cell[
