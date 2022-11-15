@@ -8,5 +8,6 @@ Use this repository to view the code and assignments for the course.
 - Week 4: [Association Rules]
 - Week 5: [Recommender Systems 1]
 - Week 6: [Recommender Systems 2]
+- Week 7: [Neural Networks](NeuralNetworks)
 
 
