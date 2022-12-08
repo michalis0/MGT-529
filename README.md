@@ -11,5 +11,6 @@ Use this repository to view the code and assignments for the course.
 - Week 7: [Neural Networks](NeuralNetworks)
 - Week 8: [Neural Networks for Text](NeuralNetwork_Text)
 - Week 9: [Neural Networks for Images](NeuralNetwork_Images)
+- Week 10: [Neural Networks for Audio](NeuralNetwork_Audio)
 
 
